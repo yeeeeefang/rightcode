@@ -1,0 +1,107 @@
+@use './reset';
+@use './variables'as *;
+
+#LearnPageAll {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .LearnPageLeft-1,
+    .LearnPageLeft-2 {
+        width: 48px;
+
+        &:active {
+            scale: (1.2);
+        }
+    }
+    .LearnPageLeft-1.hideArrow,
+    .LearnPageLeft-2.hideArrow {
+        opacity: 0;
+    }
+
+    .Learn-Card-all {
+        /* 捲軸效果讓他消失 超過數量箭頭要消失 */
+        display: flex;
+        justify-content: space-around;
+        overflow: auto;
+        transition: transform 0.5s ease;
+        padding-top: 10px;
+        height: 300px;
+        width: 800px;
+        border-radius: 19px;
+        flex: 1;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .Learn-Card-1 {
+            min-width: 200px; // 卡片寬度
+            flex-shrink: 0; // 卡片不壓縮
+            width: 200px;
+            height: 250px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 10px 10px 0px 2px #000000;
+            transition: transform 0.5s, box-shadow 0.2s; // 添加平滑效果
+            margin-left: 50px;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+
+            &:active {
+                box-shadow: none; // 點擊時移除陰影
+                transform: translateX(5px) translateY(5px);
+
+            }
+
+            .Learn-Card-bk-1 {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                height: 90%;
+
+                .Learn-Card-icon-1 {
+                    width: 24px;
+                    height: 24px;
+                    margin-top: 6px;
+                    margin-left: 150px;
+
+                }
+
+                .Learn-Card-2 {
+                    .Learn-Card-Content-1 {
+                        display: block;
+                        flex: 2;
+                        line-height: 60px;
+                        text-align: center;
+                        font-weight: $font-w-bold;
+                    }
+
+                    .Learn-Card-Content-2 {
+                        display: flex;
+                        justify-content: center;
+                        align-items: start;
+                        flex: 2;
+                        font-size: $font-size-10;
+
+                        p {
+                            display: block;
+                            background-color: $primary;
+                            text-align: center;
+                            border-radius: 99px;
+                            line-height: 25px;
+                            width: 60px;
+                            margin: 0 10px;
+                        }
+                    }
+                }
+
+            }
+        }
+        
+    }
+}

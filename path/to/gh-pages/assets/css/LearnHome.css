@@ -1,0 +1,343 @@
+@charset "UTF-8";
+/* reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* 重置字體 */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial, "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  line-height: 1.5;
+}
+
+/* 重置標題 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+/* 重置列表 */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 重置圖片 */
+img {
+  display: block;
+  width: 100%;
+}
+
+/* 重置連結 */
+a {
+  display: block;
+  /* 將a預設inline改為block，才能設定間距及寬高*/
+  color: #000000;
+  text-decoration: none;
+}
+
+/* 卷軸樣式 */
+/* ::-webkit-scrollbar {
+    //捲動條
+    width: 15px; //垂直卷軸寬
+    height: 15px; //水平卷軸高
+    // border-radius: 99px;
+
+}
+
+::-webkit-scrollbar-button {
+    background-color: $lesser-3;
+    width: 15px; //水平卷軸按鈕寬
+    height: 15px; //垂直捲職按鈕寬
+}
+
+// 卷軸按鈕(上下按鈕)
+
+::-webkit-scrollbar-thumb {
+    //卷軸手柄
+    background-color: $lesser-4;
+    width: 12px;
+    border-radius: 99;
+}
+
+::-webkit-scrollbar-track {
+    //滾動條軌道的顏色
+    background-color: $lesser-1;
+}
+
+::-webkit-scrollbar-corner {
+    //水平垂直卷軸的右下底角
+    background-color: $lesser-2;
+}
+::-webkit-resizer{//多行文字欄位右下縮放按鈕
+    background-color: $lesser-1;
+} */
+/* reset end */
+#learnhome-page {
+  overflow: hidden;
+  background-color: #8ECAE6;
+  height: 100vh;
+  /* 最大的容器 */
+}
+#learnhome-page .link-learn {
+  width: 100%;
+}
+#learnhome-page h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #000;
+  letter-spacing: 2rem;
+  text-align: center;
+}
+#learnhome-page .learnhome-section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+#learnhome-page .learnhome-section1 .learning-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FFD640;
+  width: 100%;
+  height: 28.6vh;
+  cursor: pointer;
+}
+#learnhome-page .learnhome-section1 .learning-section h2 {
+  width: 40%;
+  transition: font-size 0.35s ease-in;
+}
+#learnhome-page .learnhome-section1 .learning-section:hover h2 {
+  font-size: 5rem;
+}
+#learnhome-page .learnhome-section1 .learning-section .learngreen {
+  width: 220px;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#learnhome-page .learnhome-section1 .learning-section .learngreen .learngreenB {
+  width: 80%;
+  height: 80%;
+  align-content: center;
+  transform: rotate(5deg);
+}
+#learnhome-page .learnhome-section1 .learnhome-section2 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  cursor: pointer;
+}
+#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .practice-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #EE3627;
+  height: 28.5vh;
+}
+#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .practice-section h2 {
+  width: 55%;
+  transition: font-size 0.35s ease-in;
+}
+#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .practice-section:hover h2 {
+  font-size: 4.5rem;
+}
+#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .practice-section:hover .star {
+  animation: my-animation 2s infinite;
+}
+@keyframes my-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .practice-section .learnblue {
+  margin-top: 120px;
+  height: 280px;
+  width: 280px;
+}
+#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .practice-section .learnblue .learnblue-svg {
+  height: 100%;
+  width: 100%;
+}
+#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .practice-section .learnblue .star {
+  opacity: 0;
+}
+#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .explore-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1CB76B;
+  height: 28.5vh;
+  overflow: hidden;
+}
+#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .explore-section h2 {
+  width: 70%;
+  transition: font-size 0.35s ease-in;
+}
+#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .explore-section:hover h2 {
+  font-size: 4.5rem;
+}
+#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .explore-section:hover .heart {
+  animation: my-animation 2s infinite;
+}
+@keyframes my-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .explore-section:hover .mouth {
+  animation: rotate-mouth 2s ease-in-out infinite;
+}
+@keyframes rotate-mouth {
+  0% {
+    transform: rotate(0);
+  }
+  15% {
+    transform: translateX(15px);
+  }
+  50% {
+    transform: rotate(0);
+  }
+}
+#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .explore-section .learnpink {
+  width: 250px;
+  height: 250px;
+}
+#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .explore-section .learnpink .learnpink-svg {
+  margin-top: 80px;
+  width: 100%;
+  height: 100%;
+}
+#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .explore-section .learnpink .heart {
+  opacity: 0;
+}
+#learnhome-page .learnhome-section1 .learnhome-section2 .doit-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #8ECAE6;
+  justify-content: center;
+  width: 500px;
+  padding-top: 30px;
+}
+#learnhome-page .learnhome-section1 .learnhome-section2 .doit-section .speech-bubble {
+  background-image: url("../images/speech-bobble.png");
+  width: fit-content;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 25px 60px 50px;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #000;
+}
+#learnhome-page .learnhome-section1 .learnhome-section2 .doit-section img {
+  width: 320px;
+}/*# sourceMappingURL=LearnHome.css.map */

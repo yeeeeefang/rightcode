@@ -1,0 +1,241 @@
+@use "./reset";
+@use "./variables" as *;
+
+#login-page {
+    overflow: hidden;
+    background-color: $primary; // 背景黃色
+    height: 100vh;
+    // border: 1px solid red;
+
+    .login-main {
+        // overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        // border: 1px solid red;
+
+        .amoeba-blobs {
+            width: 90%;
+            position: absolute;
+            left: 152px;
+            top: -350px;
+            overflow: hidden;
+            // border: 1px solid red;
+        }
+
+        .characters {
+            .green-char {
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                top: -67px;
+                left: 380px;
+                transform: rotate(40deg);
+            }
+
+            }
+            .red-char {
+                width: 220px;
+                height: 220px;
+                position: absolute;
+                top: 420px;
+                left: 1200px;
+                animation: float 2s ease-in-out infinite;
+                // border: 1px solid red;
+
+                @keyframes float {
+                    0% {
+                        transform: translateY(0);
+                    }
+                    50% {
+                        transform: translateY(-20px); // 向上移動 10px（可調整）
+                    }
+                    100% {
+                        transform: translateY(0);
+                    }
+                }
+
+                // transform: rotate(5deg) rotateY(-180deg);
+                // border: 1px solid red;
+            }
+            .blue-char {
+                width: 175px;
+                height: 175px;
+                position: absolute;
+                top: 245px;
+                left: 145px;
+            }
+            .pink-char {
+                width: 170px;
+                height: 170px;
+                position: absolute;
+                top: 450px;
+                left: 550px;
+                z-index: 888;
+                // border: 1px solid red;
+
+                animation: rotate-small 2s ease-in-out infinite;
+                @keyframes rotate-small {
+                    0% {
+                        transform: rotate(0);
+                    }
+                    25% {
+                        transform:translateX(30px);
+                    }
+                    50% {
+                        transform: rotate(0);
+                    }
+                }
+
+        }
+
+        .login-form {
+
+            background-color: $register-1;
+            padding: 36px;
+            border-radius: 20px;
+            box-shadow: 8px 8px 0 $shadow-3;
+            width: 440px;
+            height: 530px;
+            position: absolute;
+            top: 20px;
+            left: 700px;
+            z-index: 777;
+            // border: 1px solid red;
+
+            h2 {
+                color: $shadow-3; // 紫色標題
+                text-align: center;
+                font-size: $font-size-32;
+                font-weight: $font-w-bold;
+                margin-bottom: 24px;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    color: $shadow-3;
+                    font-weight: bold;
+                    margin-bottom: 8px;
+                }
+
+                input {
+                    border: 1px solid #ddd;
+                    border-radius: 10px;
+                    padding: 8px;
+                    margin-bottom: 16px;
+                }
+
+                .forgot-password {
+                    text-align: right;
+                    color: $shadow-3;
+                    font-size: 0.9rem;
+                    margin-bottom: 16px;
+                }
+
+                .login-button {
+                    background-color: $shadow-3;
+                    color: #fff;
+                    border: none;
+                    padding: 18px 36px;
+                    border-radius: 10px;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    box-shadow: 3px 3px 0 rgb(233, 210, 243);
+                    cursor: pointer;
+                    &:hover {
+                        background-color: #b9b4f5;
+                        color: $shadow-3;
+                    }
+                }
+            }
+
+            .login-divider {
+                display: flex;
+                align-items: center;
+                margin: 24px 0;
+
+                hr {
+                    flex: 1;
+                    border: none;
+                    height: 2px;
+                    background-color: $register-2;
+                }
+
+                span {
+                    margin: 0 8px;
+                    color: $register-2;
+                    font-weight: bold;
+                }
+            }
+
+            .social-login {
+                display: flex;
+                justify-content: space-around;
+
+                button {
+                    cursor: pointer;
+                    border: none;
+                    background-color: transparent;
+                    &:hover {
+                        scale: 1.05;
+                    }
+                }
+            }
+        }
+        @media ($mediaLg) {
+            .amoeba-blobs {
+                width: 100%;
+                top: -600px;
+                left: 172px;
+                overflow: hidden;
+                // border: 1px solid red;
+            }
+    
+            .characters {
+                .green-char {
+                    width: 280px;
+                    height: 280px;
+                    top: -150px;
+                    left: 520px;
+                    transform: rotate(20deg);
+
+                }
+    
+                }
+                .red-char {
+                    width: 300px;
+                    height: 300px;
+                    top: 500px;
+                    left: 1440px;
+                }
+                .blue-char {
+                    width: 240px;
+                    height: 240px;
+                    top:300px;
+                    left: 160px;
+                }
+                .pink-char {
+                    width: 220px;
+                    height: 220px;
+                    top: 570px;
+                    left: 680px;
+            }
+    
+            .login-form {
+                width: 480px;
+                height: 560px;
+                top: 50px;
+                left: 920px;
+    
+                .login-divider {
+                    margin: 36px 0 24px;
+                }
+        }
+    }
+}
+}
