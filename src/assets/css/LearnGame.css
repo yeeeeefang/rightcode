@@ -1,0 +1,317 @@
+@charset "UTF-8";
+/* reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* 重置字體 */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial, "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  line-height: 1.5;
+}
+
+/* 重置標題 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+/* 重置列表 */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 重置圖片 */
+img {
+  display: block;
+  width: 100%;
+}
+
+/* 重置連結 */
+a {
+  display: block;
+  /* 將a預設inline改為block，才能設定間距及寬高*/
+  color: #000000;
+  text-decoration: none;
+}
+
+/* 卷軸樣式 */
+/* ::-webkit-scrollbar {
+    //捲動條
+    width: 15px; //垂直卷軸寬
+    height: 15px; //水平卷軸高
+    // border-radius: 99px;
+
+}
+
+::-webkit-scrollbar-button {
+    background-color: $lesser-3;
+    width: 15px; //水平卷軸按鈕寬
+    height: 15px; //垂直捲職按鈕寬
+}
+
+// 卷軸按鈕(上下按鈕)
+
+::-webkit-scrollbar-thumb {
+    //卷軸手柄
+    background-color: $lesser-4;
+    width: 12px;
+    border-radius: 99;
+}
+
+::-webkit-scrollbar-track {
+    //滾動條軌道的顏色
+    background-color: $lesser-1;
+}
+
+::-webkit-scrollbar-corner {
+    //水平垂直卷軸的右下底角
+    background-color: $lesser-2;
+}
+::-webkit-resizer{//多行文字欄位右下縮放按鈕
+    background-color: $lesser-1;
+} */
+/* reset end */
+#LearnGame-page-all {
+  background-color: #FFD640;
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+}
+
+#LearnGame-page {
+  /* 確保父容器高度為視口高度 */
+  display: flex;
+  /* 啟用 flexbox 布局 */
+  justify-content: center;
+  /* 水平方向置中 */
+  margin-top: 30px;
+  /* 垂直方向置中 */
+}
+#LearnGame-page .LearnGame-img-position-1 {
+  position: absolute;
+  width: 5%;
+  left: 50px;
+  top: 100px;
+}
+#LearnGame-page .LearnGame-img-position-2 {
+  position: absolute;
+  width: 3%;
+  right: 50px;
+  top: 200px;
+}
+#LearnGame-page .LearnGame-img-position-3 {
+  position: absolute;
+  width: 2%;
+  left: 80px;
+  bottom: 100px;
+}
+#LearnGame-page .LearnGame-img-position-4 {
+  position: absolute;
+  width: 5%;
+  right: 110px;
+  bottom: 100px;
+}
+#LearnGame-page .LearnGame-img-position-green {
+  position: absolute;
+  width: 15%;
+  bottom: -30px;
+  left: 600px;
+  z-index: 11;
+}
+#LearnGame-page .LearnGame-img-position-red {
+  position: absolute;
+  width: 15%;
+  bottom: -60px;
+  right: 200px;
+  z-index: 11;
+}
+#LearnGame-page .LearnGame-img-position-pink {
+  position: absolute;
+  width: 15%;
+  bottom: 0px;
+  left: 150px;
+  z-index: 11;
+}
+#LearnGame-page .LearnGame-img-position-blue {
+  position: absolute;
+  width: 12%;
+  top: 250px;
+  left: 100px;
+  transform: rotate(-35deg);
+  z-index: 9;
+}
+#LearnGame-page .LearnGame-blackboard {
+  width: 1000px;
+  height: 575px;
+  background-color: #2B7551;
+  border: 13px solid #C3825A;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 68px 100px 83px 100px;
+  position: relative;
+  z-index: 10;
+}
+#LearnGame-page .LearnGame-blackboard .LearnGame-img-position-5 {
+  position: absolute;
+  width: 5%;
+  bottom: 0px;
+  right: 80px;
+}
+#LearnGame-page .LearnGame-blackboard .LearnGame-content-1,
+#LearnGame-page .LearnGame-blackboard .LearnGame-content-2 {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: 700;
+}
+#LearnGame-page .LearnGame-blackboard .LearnGame-ready-1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#LearnGame-page .LearnGame-blackboard .LearnGame-ready-1 .LearnGame-ready-bk-1 {
+  display: flex;
+}
+#LearnGame-page .LearnGame-blackboard .LearnGame-ready-1 .LearnGame-ready-bk-1 img {
+  width: 20%;
+  flex: 1;
+  margin-right: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+#LearnGame-page .LearnGame-blackboard .LearnGame-ready-1 .LearnGame-ready-bk-1 p {
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: 700;
+  background-color: #E7E7E7;
+  display: inline-block;
+  border-radius: 20px;
+  line-height: 60px;
+  padding: 0 6px;
+  text-align: center;
+  margin-right: 10px;
+}
+#LearnGame-page .LearnGame-blackboard .LearnGame-ready-1 .LearnGame-ready-bk-1:hover img {
+  opacity: 1;
+}
+#LearnGame-page .LearnGame-blackboard .LearnGame-ready-1 .LearnGame-ready-bk-2 {
+  display: flex;
+}
+#LearnGame-page .LearnGame-blackboard .LearnGame-ready-1 .LearnGame-ready-bk-2 img {
+  width: 20%;
+  margin-right: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+#LearnGame-page .LearnGame-blackboard .LearnGame-ready-1 .LearnGame-ready-bk-2 p {
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: 700;
+  background-color: #E7E7E7;
+  display: inline-block;
+  border-radius: 20px;
+  line-height: 60px;
+  padding: 0 6px;
+  text-align: center;
+}
+#LearnGame-page .LearnGame-blackboard .LearnGame-ready-1 .LearnGame-ready-bk-2:hover img {
+  opacity: 1;
+}
+
+/* 動畫 *//*# sourceMappingURL=LearnGame.css.map */

@@ -1,0 +1,348 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap");
+/* reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* 重置字體 */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial, "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  line-height: 1.5;
+}
+
+/* 重置標題 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+/* 重置列表 */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 重置圖片 */
+img {
+  display: block;
+  width: 100%;
+}
+
+/* 重置連結 */
+a {
+  display: block;
+  /* 將a預設inline改為block，才能設定間距及寬高*/
+  color: #000000;
+  text-decoration: none;
+}
+
+/* 卷軸樣式 */
+/* ::-webkit-scrollbar {
+    //捲動條
+    width: 15px; //垂直卷軸寬
+    height: 15px; //水平卷軸高
+    // border-radius: 99px;
+
+}
+
+::-webkit-scrollbar-button {
+    background-color: $lesser-3;
+    width: 15px; //水平卷軸按鈕寬
+    height: 15px; //垂直捲職按鈕寬
+}
+
+// 卷軸按鈕(上下按鈕)
+
+::-webkit-scrollbar-thumb {
+    //卷軸手柄
+    background-color: $lesser-4;
+    width: 12px;
+    border-radius: 99;
+}
+
+::-webkit-scrollbar-track {
+    //滾動條軌道的顏色
+    background-color: $lesser-1;
+}
+
+::-webkit-scrollbar-corner {
+    //水平垂直卷軸的右下底角
+    background-color: $lesser-2;
+}
+::-webkit-resizer{//多行文字欄位右下縮放按鈕
+    background-color: $lesser-1;
+} */
+/* reset end */
+@font-face {
+  font-family: SweiGothicCJKtc-Regular;
+  src: url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff) format("woff");
+}
+#Hamburger {
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+  height: 705px;
+  background-color: #FFF0C0;
+  border-radius: 20px;
+  border: 1px solid;
+}
+#Hamburger .Ham-Bk-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 28px 46px 26px 46px;
+}
+#Hamburger .Ham-Bk-1 p {
+  background-color: #FDBABA;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "SweiGothicCJKtc-Regular", sans-serif;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 99px;
+  width: 150px;
+  height: 60px;
+  box-shadow: 5px 5px 0px 2px #000000;
+  transition: transform 0.5s, box-shadow 0.1s;
+}
+#Hamburger .Ham-Bk-1 p:hover {
+  background-color: #fda2a2;
+}
+#Hamburger .Ham-Bk-1 p:active {
+  box-shadow: none;
+  transform: translateX(5px) translateY(5px);
+}
+#Hamburger .Ham-Bk-1 .iconX {
+  background-color: #FDBABA;
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 5px 5px 0px 2px #000000;
+  transition: transform 0.5s, box-shadow 0.1s;
+}
+#Hamburger .Ham-Bk-1 .iconX:hover {
+  background-color: #fda2a2;
+}
+#Hamburger .Ham-Bk-1 .iconX:active {
+  box-shadow: none;
+  transform: translateX(5px) translateY(5px);
+}
+#Hamburger .Ham-Bk-1 .iconX .bar {
+  display: block;
+  width: 36px;
+  height: 4px;
+  background-color: #333;
+  border-radius: 99px;
+  margin: 5px auto;
+}
+#Hamburger .Ham-Bk-1 .iconX .bar:nth-child(1) {
+  transform: rotate(45deg) translateY(11px) translateX(12px);
+}
+#Hamburger .Ham-Bk-1 .iconX .bar:nth-child(2) {
+  transform: rotate(-45deg) translateY(5px) translateX(-5px);
+}
+#Hamburger .barLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#Hamburger .barLink .bar-Content {
+  display: flex;
+  align-items: center;
+  width: 322px;
+  height: 60px;
+  margin: 15px 0;
+  background-color: #FFD640;
+  border-radius: 30px;
+  justify-content: space-around;
+  box-shadow: 5px 5px 0px 2px #000000;
+  transition: transform 0.5s, box-shadow 0.1s;
+}
+#Hamburger .barLink .bar-Content:hover {
+  box-shadow: none;
+  transform: translateX(5px) translateY(5px);
+}
+#Hamburger .barLink .bar-Content p {
+  text-align: center;
+  font-size: 24px;
+  font-family: "SweiGothicCJKtc-Regular", sans-serif;
+  font-weight: 500;
+}
+#Hamburger .barLink .bar-Content img {
+  width: 48px;
+  height: 48px;
+}
+#Hamburger .bar-bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 26px;
+}
+#Hamburger .bar-bottom p {
+  display: block;
+  text-align: center;
+  width: 153px;
+  height: 60px;
+  font-size: 24px;
+  line-height: 60px;
+  font-family: "SweiGothicCJKtc-Regular", sans-serif;
+  font-weight: 500;
+  background-color: #FDBABA;
+  border-radius: 30px;
+  box-shadow: 5px 5px 0px 2px #000000;
+  transition: transform 0.5s, box-shadow 0.1s;
+}
+#Hamburger .bar-bottom p:hover {
+  background-color: #fda2a2;
+}
+#Hamburger .bar-bottom p:active {
+  box-shadow: none;
+  transform: translateX(5px) translateY(5px);
+}
+#Hamburger .bar-bottom img {
+  width: 100px;
+  height: 87px;
+}
+
+.bar-content-icon {
+  display: none;
+}
+
+.bar-Content:hover .bar-content-icon {
+  display: block;
+}
+
+.bar-content-iconiconhover {
+  display: none;
+}
+
+.bar-Content-1 {
+  display: flex;
+  align-items: center;
+  width: 322px;
+  height: 60px;
+  margin: 15px 0;
+  background-color: #FFD640;
+  border-radius: 30px;
+  justify-content: center;
+  box-shadow: 5px 5px 0px 2px #000000;
+  transition: transform 0.5s, box-shadow 0.1s;
+}
+.bar-Content-1 p {
+  text-align: center;
+  font-size: 24px;
+  font-family: "SweiGothicCJKtc-Regular", sans-serif;
+  font-weight: 500;
+  padding-right: 40px;
+}
+.bar-Content-1 img {
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+  opacity: 0;
+}
+.bar-Content-1:hover {
+  background-color: #fabf33;
+}
+.bar-Content-1:hover img {
+  opacity: 1;
+}
+.bar-Content-1:active {
+  box-shadow: none;
+  transform: translateX(5px) translateY(5px);
+  background-color: #fabf33;
+}/*# sourceMappingURL=Hamburger.css.map */
