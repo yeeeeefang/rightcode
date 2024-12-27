@@ -23,7 +23,7 @@ function App() {
   
   return (
     <>
-       <Router>
+       {/* <Router> */}
         <Routes>
           <Route path='/' element={<Home />}></Route>
           <Route path='/Hamburger' element={<Hamburger />}></Route>
@@ -41,7 +41,7 @@ function App() {
           {/* Example of a fallback route */}
           <Route path="*" element={<h1>404 Not Found</h1>} />
         </Routes>
-      </Router>
+      {/* </Router> */}
     </>
   )
 }
