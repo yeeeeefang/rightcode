@@ -1,0 +1,234 @@
+@use './reset';
+@use './variables/' as *;
+
+
+.tdcard {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    .tdtd1,
+    .tdtd2 {
+        // padding-top: 90px;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        .ttitle1 {
+            padding-left: 100px;
+
+            .trendtitle1 {
+                background-image: url('../images/trendDeco1.png');
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 270px;
+                height: 100px;
+
+                display: flex;
+
+                .titleicon-1 {
+                    width: 80px;
+                    height: 90px;
+                }
+
+                h3 {
+                    font-size: 24px;
+                    text-align: center;
+                    line-height: 100px;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .ttitle2 {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 90px;
+
+            .trendtitle2 {
+                // border: 1px solid tomato;
+                background-image: url('../images/trendDeco2.png');
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 270px;
+                height: 130px;
+                text-align: right;
+
+                display: flex;
+                // justify-content: flex-end;
+
+                .titleicon-1 {
+                    width: 80px;
+                    height: 90px;
+                }
+
+                h3 {
+                    font-size: 24px;
+                    text-align: center;
+                    line-height: 100px;
+                    font-weight: bold;
+                }
+            }
+        }
+
+
+        .tdcard-1,
+        .tdcard-2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            // margin-top: 300px;
+
+            .card1-1,
+            .card2-1,
+            .card3-1,
+            .card4-1,
+            .card5-1,
+            .card6-1,
+            .card7-1,
+            .card8-1 {
+                // border: 2px solid rgba(255, 0, 0, 0.808);
+                width: 16%;
+                // margin: 20px;
+                background-color: #FFFFFF;
+                border-radius: 12px;
+                box-shadow: 8px 8px 0 hsla(0, 0%, 0%, 0.8);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 10px 0;
+                margin-bottom: 100px;
+                cursor: pointer;
+                transition: transform 0.3s ease;
+
+                /* 卡片暫停動畫 */
+                &:hover {
+                    animation-play-state: paused;
+                    rotate: 0deg;
+                    scale: 1.05;
+                }
+
+
+                .learn-1 {
+                    line-height: 25px;
+                    text-align: center;
+                    font-size: 19px;
+                    font-weight: bold;
+                    background-color: $primary ;
+                    width: 45%;
+                    border-radius: 12px;
+                    margin-bottom: 12px;
+                }
+
+                .item-1 {
+                    .learn1-1 {
+                        font-size: 19px;
+                        font-weight: bold;
+                        margin: 12px 0;
+
+                    }
+
+                    .content-1 {
+                        border-radius: 24px;
+                        font-size: 17px;
+                        background-color: $btn-4;
+                        margin: 6px;
+                        // border: 2px red solid;
+                    }
+                }
+            }
+
+
+
+            @keyframes float {
+
+                0%,
+                100% {
+                    transform: translate(0);
+                    /* 初始位置 */
+                }
+
+                50% {
+                    transform: translate(10px, -10px);
+                    /* 向上浮动的高度 */
+                }
+            }
+
+            .card1-1,
+            .card3-1,
+            .card5-1,
+            .card7-1 {
+                animation: float 2s infinite ease-in-out;
+                /* 2秒循环 */
+                rotate: -5deg;
+
+            }
+
+            @keyframes float1 {
+
+                0%,
+                100% {
+                    transform: translate(10px, -10px);
+                    /* 初始位置 */
+                }
+
+                50% {
+                    transform: translate(0);
+                }
+            }
+
+            .card2-1,
+            .card4-1,
+            .card6-1,
+            .card8-1 {
+                animation: float 3s infinite ease-in-out;
+                rotate: 5deg;
+            }
+
+        }}
+
+        .out {
+            position: relative;
+            width: 100%;
+            // margin-top: 200px;
+
+            .sofa {
+                // border: 1px solid red;
+                height: 500px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    height: 300px;
+                }
+            }
+
+            .deco1-1 {
+                width: 4%;
+                position: absolute;
+                z-index: 10;
+                left: 168px;
+                bottom: 350px;
+
+
+            }
+
+            .deco1-2 {
+                width: 3%;
+                position: absolute;
+                z-index: 11;
+                right: 150px;
+                top: 100px;
+            }
+        }
+
+    
+}

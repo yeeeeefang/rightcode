@@ -1,0 +1,70 @@
+@use './reset';
+@use './variables/' as *;
+
+#LearnAreaall {
+    width: 100%;
+    overflow: hidden;
+    margin-top: -118px;//讓navbar出現同一頁
+
+    .la1 {
+        display: flex;
+        justify-content: space-between;
+        height: 100vh;
+        position: relative;
+
+        .la1-1 {
+            display: flex;
+            flex-direction: column;
+            
+
+            .la1-11 {
+                flex: 3;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                padding: 50px 0 0 125px;
+
+                .gee {
+                    position: absolute;
+                    width: 25%;
+                    left: 250px;
+                    // width: 315px;
+                }
+            }
+        }
+
+        .la1-2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            position: relative;
+
+            .la1-22 {
+                display: flex;
+
+                .rai1{
+                    position: absolute;
+                    right: 300px;
+                    bottom: 270px;
+                    width: 32%;
+                }
+                .rai2{
+                    position: absolute;
+                    right: 20px;
+                    width: 38%;
+                }
+            }
+            .rainbowtitle{
+                position: absolute;
+                bottom: 120px;
+                right: 570px;
+
+                font-size: $font-size-64;
+                font-weight:$font-w-black ;
+            }
+            .rainbow{
+                width: 120%;
+            }
+        }
+    }
+}

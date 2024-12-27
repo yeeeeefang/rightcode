@@ -1,0 +1,300 @@
+@use "./reset";
+@use "./variables" as *;
+
+#LearnGameChooseall {
+    background-color: $primary;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+
+    .gamenavbar {
+        width: 100%;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+    }
+
+    .LearnGameChoose {
+        text-align: center;
+        width: 1000px;
+        height: 575px;
+        background-color: $g-board1;
+        border: $g-board2 13px solid;
+        border-radius: 20px;
+        margin-top: 50px;
+
+
+        .questiontitle {
+            font-size: 36px;
+            font-weight: 700;
+            color: $fc-6;
+            line-height: 100px;
+        }
+
+        .options-container {
+            display: flex; // 使用 flex 排列
+            flex-wrap: wrap; // 允許換行
+            justify-content: center; // 水平居中
+            align-items: flex-start; // 垂直從頂部開始
+            // gap: 20px; // 卡片之間的間距
+            max-width: 800px; // 限制容器寬度
+            height: 400px;
+            margin: 0 auto; // 容器居中
+        }
+
+        .card {
+            width: 45%; // 每個卡片占 45% 的寬度，確保每行最多兩個卡片
+            max-width: 300px; // 卡片的最大寬度
+            height: 150px; // 卡片高度
+            perspective: 1000px;
+            position: relative;
+            cursor: pointer;
+            margin: 0 auto;
+
+
+            &.flipped .card-front {
+                transform: rotateY(180deg);
+            }
+
+            &.flipped .card-back {
+                transform: rotateY(0);
+            }
+
+            .card-front,
+            .card-back {
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 16px;
+                transition: transform 0.6s;
+                border-radius: 10px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                // font-size: 40px;
+
+                .correct-text {
+                    color: rgb(51, 187, 51, .85); // 綠色，表示正確答案
+                    font-weight: bold; // 加粗以突出顯示
+                }
+
+                .incorrect-text {
+                    color: #9E4C5F; // 紅色，表示錯誤答案
+                    font-weight: bold; // 加粗以突出顯示
+                }
+            }
+
+            .card-front {
+                transform: rotateY(0);
+            }
+
+            .card-back {
+                transform: rotateY(-180deg);
+            }
+
+            &.option-0 .card-front,
+            &.option-0 .card-back {
+                background-color: #C1FFE1;
+                background-image: url(../images/icon_greenA.svg);
+                background-position: right bottom;
+                background-repeat: no-repeat;
+                background-size: 33% 33%;
+            }
+
+            // &.option-0 .card-back {
+            //   background-color: #ffaaaa;
+            // }
+
+            &.option-1 .card-front,
+            &.option-1 .card-back {
+                background-color: #A0D7FF;
+                background-image: url(../images/icon_blue.svg);
+                background-position: right bottom;
+                background-repeat: no-repeat;
+                background-size: 33% 33%;
+            }
+
+            // &.option-1 .card-back {
+            //   background-color: #aaffaa;
+            // }
+
+            &.option-2 .card-front,
+            &.option-2 .card-back {
+                background-color: #F1CAF5;
+                background-image: url(../images/icon_pink.svg);
+                background-position: left bottom;
+                background-repeat: no-repeat;
+                background-size: 33% 33%;
+            }
+
+            // &.option-2 .card-back {
+            //   background-color: #aaaaff;
+            // }
+
+            &.option-3 .card-front,
+            &.option-3 .card-back {
+                background-color: #FFAFAD;
+                background-image: url(../images/icon_red.svg);
+                background-position: left bottom;
+                background-repeat: no-repeat;
+                background-size: 33% 33%;
+            }
+
+            // &.option-3 .card-back {
+            //   background-color: #ffffaa;
+            // }
+        }
+
+        button {
+            // margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4caf50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: #45a049;
+            }
+        }
+
+    }
+
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $fc-2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .modal-content {
+            background-color:$fc-6;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 30%;
+            height: fit-content;
+
+            .gameaward-wrapper {
+                width: 150px; // 固定寬度
+                height: 150px; // 固定高度
+                display: flex; // 使用 Flexbox
+                justify-content: center; // 水平置中
+                align-items: center; // 垂直置中
+                position: relative; // 確保內部的絕對定位元素（如 glow）可以參考這個容器
+                margin: 0 auto; // 讓整個 `.trophy-wrapper` 本身也水平置中
+
+                .awardlight {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 100% ;
+                    height: 100%;
+                    border-radius: 50%;
+                    background: radial-gradient(circle, rgba(255, 223, 0, 0.8) 0%, rgba(255, 223, 0, 0) 70%);
+                    //circle 指定漸層是以圓形方式繪製 0%是圓心
+                    z-index: 1; // 在獎盃圖片後面
+                    animation: flicker-glow 2s infinite alternate ease-in-out;
+                }
+
+                .gameaward {
+                    width: 80%; // 圖片相對於容器自適應
+                    height: auto;
+                    z-index: 2; // 確保獎盃圖片在最上層
+                    position: relative;
+                }
+            }
+
+           
+            .buttonbox {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                height: 80px;
+
+                .choosebutton {
+                    margin: 10px;
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 16px;
+
+                    &:first-child {
+                        background-color:$learn-h2;
+                        color: $fc-6;
+                    }
+
+                    &:last-child {
+                        background-color: $learn-h3;
+                        color: $fc-6;
+                    }
+                }
+            }
+
+        }
+    }
+    .LearnChoose-img-position-1 {
+        position: absolute;
+        width: 5%;
+        left: 50px;
+        top: 100px;
+    }
+
+    .LearnChoose-img-position-2 {
+        position: absolute;
+        width: 3%;
+        right: 50px;
+        top: 200px;
+    }
+
+    .LearnChoose-img-position-3 {
+        position: absolute;
+        width: 2%;
+        left: 80px;
+        bottom: 100px;
+
+    }
+
+    .LearnChoose-img-position-4 {
+        position: absolute;
+        width: 5%;
+        right: 110px;
+        bottom: 100px;
+
+    }
+}
+ // 光暈閃爍動畫
+ @keyframes flicker-glow {
+    0% {
+        opacity: 0.8;
+        transform: translate(-50%, -50%) scale(1);
+        filter: blur(5px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.2);
+        filter: blur(10px);
+    }
+
+    100% {
+        opacity: 0.8;
+        transform: translate(-50%, -50%) scale(1);
+        filter: blur(5px);
+    }
+}

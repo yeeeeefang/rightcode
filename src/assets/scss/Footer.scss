@@ -1,0 +1,218 @@
+@use './reset';
+@use './variables/' as *;
+
+.nav1 {
+  /* 定在最底下 */
+  // position: fixed;
+  // bottom: 0;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: $learn-h1;
+  padding: 40px 125px;
+  height: 250px;
+
+  a:hover {
+    scale: 1.05;
+  }
+
+  #nav1-1 {
+    display: flex;
+
+    .item1 {
+      padding-right: 80px;
+
+      .pp1 {
+        font-size: $font-size-20;
+        padding-bottom: 25px;
+        font-weight: $font-w-bold;
+      }
+  
+
+    .item2 {
+      padding-bottom: 20px;
+      font-size: $font-size-16;
+      font-weight: $font-w-medium ;
+       }
+
+    }
+    
+
+    .lm {
+      display: flex;
+      // width: 160px;
+      a{
+        font-size: $font-size-16;
+      font-weight: $font-w-medium ;
+      }
+    }
+  }
+
+  .donimg {
+    display: block;
+    text-align: center;
+    width: 150px;
+    height: 160px;
+
+    .donimg-1 {
+      width: 100%;
+      height: 100%;
+      padding-top: 30px;
+
+    }
+  }
+
+  .foo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+      width: 125px;
+      margin-bottom: 30px;
+      padding-top: 10px;
+
+    }
+
+    .icon {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .iconfb,
+      .iconig {
+        width: 48px;
+      }
+    }
+
+    .footersamll {
+      padding-top: 10px;
+      text-align: right;
+    }
+  }
+}
+
+/* 跳窗 */
+.foomodal {
+  position: fixed;
+  z-index: 1001;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $fc-2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .foomodal-content {
+    background-color: $fc-5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 40%;
+    height: fit-content;
+
+    h3 {
+      font-size: $font-size-40 ;
+      padding-bottom: 10px;
+      font-weight: $font-w-black ;
+      color: $primary;
+      letter-spacing: 10px;
+      -webkit-text-stroke: 2px $fc-2;
+      text-stroke: 2px $fc-2;
+    }
+
+    
+
+    p {
+      font-size: $font-size-20;
+      font-weight: $font-w-medium ;
+    }
+
+    .foomodal-wrapper {
+      width: 250px;
+      height: 250px;
+      position: relative;
+      margin: 0 auto;
+
+      .foomodalimg {
+        // width: 90%; 
+        height: auto;
+        z-index: 2; // 確保獎盃圖片在最上層
+        position: relative;
+      }
+    }
+
+    .foored {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h4 {
+        font-size: $font-size-24 ;
+        font-weight: $font-w-bold ;
+      }
+      img {
+        width: 48px;
+        height: 48px;
+      }
+    }
+
+  }
+}
+
+@keyframes ani-love1 {
+
+  /*動畫名稱為 ani-love1 */
+  0%,
+  100% {
+    transform: translate(0);
+    /* 初始位置 */
+  }
+
+  50% {
+    transform: translateY(20px);
+    /* 向上浮动的高度 */
+  }
+}
+
+@keyframes ani-love2 {
+
+  /*動畫名稱為 ani-love1 */
+  0%,
+  100% {
+    transform: translate(0);
+    /* 初始位置 */
+  }
+
+  50% {
+    transform: translateY(-15px);
+    /* 向上浮动的高度 */
+  }
+}
+
+.donimg:hover {
+  scale: 1.05;
+  cursor: pointer;
+
+  .testt {
+    animation-name: ani-love1;
+    /*動畫名稱*/
+    animation-duration: 2s;
+    /*一次完整動畫時間為2秒*/
+    animation-iteration-count: infinite;
+    /*播放次數為無限次*/
+  }
+
+  .testt1 {
+    animation-name: ani-love2;
+    /*動畫名稱*/
+    animation-duration: 2s;
+    /*一次完整動畫時間為2秒*/
+    animation-iteration-count: infinite;
+    /*播放次數為無限次*/
+  }
+}
