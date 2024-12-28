@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import '../assets/css/LearnArea4.css';
+import { Link } from "react-router-dom";
 
 export default function LearnArea4() {
   const [draggableItems, setDraggableItems] = useState([
@@ -56,7 +57,7 @@ export default function LearnArea4() {
   };
 
   const handleEmotionClick = () => {
-    window.location.href = "/LearnPage"; // 跳轉到指定的頁面
+    // window.location.href = "/LearnPage"; // 跳轉到指定的頁面
   };
 
   return (
@@ -111,29 +112,31 @@ export default function LearnArea4() {
               <h2>Congratulations!</h2>
               <p>已完成此課程！(•̀ᴗ•́)و</p>
               <p>我覺得 ...</p>
-              <div className="emotions-container">
-                {[
-                  { id: 1, name: "Happy", image: "./images/icon_greenA.svg" },
-                  { id: 2, name: "Angry", image: "./images/icon_red.svg" },
-                  { id: 3, name: "Surprised", image: "./images/icon_pink.svg" },
-                  { id: 4, name: "Confused", image: "./images/icon_blue.svg" }
-                ].map((emotion) => (
-                  <button
-                    key={emotion.id}
-                    className="emotion-button"
-                    onClick={handleEmotionClick}
-                  >
-                    <img src={emotion.image} alt={emotion.name} className="emoji-img" />
-                  </button>
-                ))}
-              </div>
+              <Link to="/LearnPage" onClick={handleEmotionClick}>
+                <div className="emotions-container" >
+                  {[
+                    { id: 1, name: "Happy", image: "./images/icon_greenA.svg" },
+                    { id: 2, name: "Angry", image: "./images/icon_red.svg" },
+                    { id: 3, name: "Surprised", image: "./images/icon_pink.svg" },
+                    { id: 4, name: "Confused", image: "./images/icon_blue.svg" }
+                  ].map((emotion) => (
+                    <button
+                      key={emotion.id}
+                      className="emotion-button"
+                      onClick={handleEmotionClick}
+                    >
+                      <img src={emotion.image} alt={emotion.name} className="emoji-img" />
+                    </button>
+                  ))}
+                </div>
+              </Link>
             </div>
           </div>
         )}
       </div>
       <div className="road">
-       <img className="road1" src="./images/greenA.svg" alt="" />
-       <img className="road2" src="./images/learnAreaPath.png" alt="" />
+        <img className="road1" src="./images/greenA.svg" alt="" />
+        <img className="road2" src="./images/learnAreaPath.png" alt="" />
       </div>
     </section>
   );
