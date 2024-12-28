@@ -58,6 +58,7 @@ export default function LearnArea4() {
 
   const handleEmotionClick = () => {
     // window.location.href = "/LearnPage"; // 跳轉到指定的頁面
+    <Link to="/LearnPage" onClick={handleEmotionClick}></Link>
   };
 
   return (
@@ -112,7 +113,7 @@ export default function LearnArea4() {
               <h2>Congratulations!</h2>
               <p>已完成此課程！(•̀ᴗ•́)و</p>
               <p>我覺得 ...</p>
-              <Link to="/LearnPage" onClick={handleEmotionClick}>
+              {/* <Link to="/LearnPage" onClick={handleEmotionClick}> */}
                 <div className="emotions-container" >
                   {[
                     { id: 1, name: "Happy", image: "./images/icon_greenA.svg" },
@@ -129,7 +130,7 @@ export default function LearnArea4() {
                     </button>
                   ))}
                 </div>
-              </Link>
+              {/* </Link> */}
             </div>
           </div>
         )}
