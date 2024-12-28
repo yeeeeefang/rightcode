@@ -24,7 +24,7 @@ function NavbarBack() {
                     <div className="navlogo">
 
                         {/* <Link to=''>1234</Link> Link 打了之後出不來 */}
-                        <Link to='/'><img src="/images/logo.png" alt="" /></Link>
+                        <Link to='/'><img src="./images/logo.png" alt="" /></Link>
                     </div>
                     {/* 這邊back跟two的navbar尚未處理 剩下接完成 */}
                     <div className="navBarBk-1">

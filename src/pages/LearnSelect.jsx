@@ -11,9 +11,9 @@ export default function LearnSelect() {
                 </header>
                 <div id="codeCourse">
                     <section id="codePic">
-                        <img className="tier4" src="/images/learnSelectCodeA.svg" alt="" />
-                        <img className="tier3" src="/images/redB.svg" alt="" />
-                        <img className="tier2" src="/images/learnSelectCodeB.svg" alt="" />
+                        <img className="tier4" src="./images/learnSelectCodeA.svg" alt="" />
+                        <img className="tier3" src="./images/redB.svg" alt="" />
+                        <img className="tier2" src="./images/learnSelectCodeB.svg" alt="" />
                         {/* 小粉 */}
                         <svg className="tier1a" width="90" height="90" viewBox="0 0 216 226" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <defs>
@@ -87,7 +87,7 @@ export default function LearnSelect() {
                                 </filter>
                             </defs>
                         </svg>
-                        <img className="tier1c" src="/images/blueS.gif" alt="" />
+                        <img className="tier1c" src="./images/blueS.gif" alt="" />
                     </section>
 
                     <section id="course">

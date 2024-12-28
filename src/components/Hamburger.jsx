@@ -23,31 +23,31 @@ function Hamburger({ onClose }) {
                 <div className="barLink">
                     <Link to='/'>
                         <div className="bar-Content-1">
-                            <img className='bar-content-icon-1' src="/images/icon_greenA.svg" alt="" />
+                            <img className='bar-content-icon-1' src="./images/icon_greenA.svg" alt="" />
                             <p>關於我們</p>
                         </div>
                     </Link>
                     <Link to='/LearnSelect'>
                         <div className="bar-Content-1">
-                            <img className='bar-content-icon-1' src="/images/icon_pink.svg" alt="" />
+                            <img className='bar-content-icon-1' src="./images/icon_pink.svg" alt="" />
                             <p>學習區</p>
                         </div>
                     </Link>
                     <Link to='/LearnGame'>
                         <div className="bar-Content-1">
-                            <img className='bar-content-icon-1' src="/images/icon_red.svg" alt="" />
+                            <img className='bar-content-icon-1' src="./images/icon_red.svg" alt="" />
                             <p>小試身手</p>
                         </div>
                     </Link>
                     <Link to='/Trend'>
                         <div className="bar-Content-1">
-                            <img className='bar-content-icon-1' src="/images/icon_blueB.svg" alt="" />
+                            <img className='bar-content-icon-1' src="./images/icon_blueB.svg" alt="" />
                             <p>學習趨勢</p>
                         </div>
                     </Link>
                     <Link to='/Member'>
                         <div className="bar-Content-1">
-                            <img className='bar-content-icon-1' src="/images/icon_greenB.svg" alt="" />
+                            <img className='bar-content-icon-1' src="./images/icon_greenB.svg" alt="" />
                             <p>會員中心</p>
                         </div>
                     </Link>

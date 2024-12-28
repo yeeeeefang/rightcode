@@ -28,14 +28,14 @@ function Navbar() {
                     <div className="navlogo">
 
                         {/* <Link to=''>1234</Link> Link 打了之後出不來 */}
-                        <Link to='/'><img src="/images/logo.png" alt="" /></Link>
+                        <Link to='/'><img src="./images/logo.png" alt="" /></Link>
                     </div>
                     <div className="navBarBk-1">
                         <Link to='/LearnHome'>
                             <div className="navlearningBtn">
                                 <p className='navHamBtn-starLearn'>Start Learning</p>
 
-                                {/* <img src="../public/images/navBtn.png" alt=""
+                                {/* <img src="../public./images/navBtn.png" alt=""
                                     ref={starLearnBtnRef}
                                     onMouseDown={navbtnMouseDown}
                                     onMouseUp={navbtnMouseUp}
@@ -48,7 +48,7 @@ function Navbar() {
                                 <span className="nav-bar"></span>
                                 <span className="nav-bar"></span>
                             </button>
-                            {/* <img src="../public/images/hamBtn.svg" alt=""
+                            {/* <img src="../public./images/hamBtn.svg" alt=""
                                 ref={humBtnRef}
                                 onMouseDown={humBtnMouseDown}
                                 onMouseUp={humBtnMouseUp}

@@ -17,13 +17,13 @@ export default function Trend() {
 
         <div className="lightcontainer">
 
-          <img className="light" src="/images/trendLight.png" alt="" />
+          <img className="light" src="./images/trendLight.png" alt="" />
           <h3 className="hottitle">熱門學習趨勢</h3>
           <div className="container">
             {/* 
-            <img className="light1" src="./public/images/trendLightA.svg" alt="" /> 
-             <img className="light2" src="./public/images/trendLightB.svg" alt="" />
-             <img className="light3" src="./public/images/trendLightC.svg" alt="" /> */}
+            <img className="light1" src="./public./images/trendLightA.svg" alt="" /> 
+             <img className="light2" src="./public./images/trendLightB.svg" alt="" />
+             <img className="light3" src="./public./images/trendLightC.svg" alt="" /> */}
             <svg className="light1" width="1484" height="823" viewBox="0 0 1484 823" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 822.225L638.5 0H764L1483.5 814L0 822.225Z" fill="rgba(255, 233, 162, 0.8)" />
             </svg>
@@ -37,16 +37,16 @@ export default function Trend() {
           </div>
         </div>
         <TrendCard />
-        <img className="deco-1" src="/images/trendDecoA.png" alt="" />
-        <img className="deco-2" src="/images/trendDecoB.png" alt="" />
-        <img className="deco-3" src="/images/trendDecoC.png" alt="" />
+        <img className="deco-1" src="./images/trendDecoA.png" alt="" />
+        <img className="deco-2" src="./images/trendDecoB.png" alt="" />
+        <img className="deco-3" src="./images/trendDecoC.png" alt="" />
         <div id="item3">
-          <div className="item4"><img className="char-1" src="/images/blueA.svg" alt="" /></div>
-          <div className="item4"><img className="char-2" src="/images/redC.svg" alt="" /></div>
-          <div className="item4"><img className="char-3" src="/images/pinkE.svg" alt="" /></div>
+          <div className="item4"><img className="char-1" src="./images/blueA.svg" alt="" /></div>
+          <div className="item4"><img className="char-2" src="./images/redC.svg" alt="" /></div>
+          <div className="item4"><img className="char-3" src="./images/pinkE.svg" alt="" /></div>
         </div>
         <div >
-          <img className="path" src="/images/trendPath.svg" alt="" />
+          <img className="path" src="./images/trendPath.svg" alt="" />
         </div>
       </section>
       <section id="div2">

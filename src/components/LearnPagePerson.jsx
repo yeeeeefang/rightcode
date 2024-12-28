@@ -10,7 +10,7 @@ function LearnPagePerson() {
                         <p>開始<span className="LearnPage-class-1">課程名稱</span>的探索之旅</p>
                     </div>
                     <div className="LearnPage-img-1">
-                        <img src="/images/greenA.svg" alt="" />
+                        <img src="./images/greenA.svg" alt="" />
                     </div>
                 </div>
             </section>

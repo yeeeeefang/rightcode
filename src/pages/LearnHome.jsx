@@ -14,10 +14,10 @@ export default function LearnHome() {
                 {/* topbar  */}
                 {/* <header id="topbar">
                     <div className="logo">
-                        <h1 className="logo"><img src="/images/logo.png" alt="rightCode" title="rightCode" /></h1>
+                        <h1 className="logo"><img src="./images/logo.png" alt="rightCode" title="rightCode" /></h1>
                     </div>
                     <div className="learnBtn">
-                        <figure><img src="/images/hamBtn.svg" alt="" /></figure>
+                        <figure><img src="./images/hamBtn.svg" alt="" /></figure>
                     </div>
                 </header> */}
 
@@ -68,7 +68,7 @@ export default function LearnHome() {
                                             </filter>
                                         </defs>
                                     </svg> */}
-                                        <img src="/images/learngreenB.gif" alt="" />
+                                        <img src="./images/learngreenB.gif" alt="" />
                                 </div>
                                 <h2>學習區</h2>
                             </div>
@@ -154,10 +154,10 @@ export default function LearnHome() {
                         <div className="doit-section">
                             <div className="speech-bubble">
                                 <p>Do it!</p>
-                                {/* <img src="/images/speech-bobble.png" alt="" /> */}
+                                {/* <img src="./images/speech-bobble.png" alt="" /> */}
                             </div>
                             <img
-                                src="/images/redB.svg"
+                                src="./images/redB.svg"
                                 alt="Red Character"
                                 className="redA"
                             />

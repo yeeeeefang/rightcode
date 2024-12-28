@@ -9,9 +9,9 @@ function LearnArea2() {
             <section id='LearnAreaall2'>
                 <div className="areaTitle">
                     <div className="areaBlue">
-                        <img src="/images/blueB.svg" alt="" />
+                        <img src="./images/blueB.svg" alt="" />
                     </div>
-                    <img className='areaimportant' src="/images/LearnArea-important.svg" alt="" />
+                    <img className='areaimportant' src="./images/LearnArea-important.svg" alt="" />
                     <h2 className='areah2'>你能想像字體能做甚麼變化嗎?</h2>
 
                 </div>
@@ -29,7 +29,7 @@ function LearnArea2() {
                             </div>
 
                             <div className='areaimg1'>
-                                <img className='areaimg1-1' src="/images/redBack.svg" alt="" />
+                                <img className='areaimg1-1' src="./images/redBack.svg" alt="" />
                             </div>
                         </div>
                     </div>
@@ -41,7 +41,7 @@ function LearnArea2() {
                                 <p className='diatext'>甚至還有斜斜的像溜滑梯！</p>
                             </div>
                             <div>
-                                <img src="/images/pinkBack.svg" alt="" />
+                                <img src="./images/pinkBack.svg" alt="" />
                             </div>
                         </div>
                         {/* 第四個(綠) */}
@@ -51,7 +51,7 @@ function LearnArea2() {
                                 <p className='areap4-2 diatext'>也有些細細的像電線</p>
                             </div>
                             <div>
-                                <img src="/images/greenBack.svg" alt="" />
+                                <img src="./images/greenBack.svg" alt="" />
                             </div>
                         </div>
                     </div>

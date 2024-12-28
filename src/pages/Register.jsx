@@ -11,22 +11,22 @@ export default function Register() {
                 {/* topbar  */}
                 {/* <header className="topbar">
                     <div className="logo">
-                        <h1 className="logo"><img src="/images/logo.png" alt="rightCode" title="rightCode" /></h1>
+                        <h1 className="logo"><img src="./images/logo.png" alt="rightCode" title="rightCode" /></h1>
                     </div>
                     <div className="learnBtn">
-                        <figure><img src="/images/hamBtn.svg" alt="" /></figure>
+                        <figure><img src="./images/hamBtn.svg" alt="" /></figure>
                     </div>
                 </header> */}
                 <div className="register-main">
                     <div className="amoeba-blobs2">
-                        <img src="/images/register.png" alt="" />
+                        <img src="./images/register.png" alt="" />
                     </div>
 
                     <div className="characters">
-                        <img src="/images/greenA.svg" alt="" className="green-char" />
-                        <img src="/images/red.svg" alt="" className="red-char" />
-                        <img src="/images/blueA.svg" alt="" className="blue-char" />
-                        <img src="/images/pinkA.svg" alt="" className="pink-char" />
+                        <img src="./images/greenA.svg" alt="" className="green-char" />
+                        <img src="./images/red.svg" alt="" className="red-char" />
+                        <img src="./images/blueA.svg" alt="" className="blue-char" />
+                        <img src="./images/pinkA.svg" alt="" className="pink-char" />
                     </div>
 
                     <div className="register-form">
@@ -55,9 +55,9 @@ export default function Register() {
                             <hr />
                         </div>
                         <div className="social-register">
-                            <button className="facebook"><img src="/images/icon_fb.svg" alt="" /></button>
-                            <button className="apple"><img src="/images/icon_apple.svg" alt="" /></button>
-                            <button className="google"><img src="/images/icon_google.svg" alt="" /></button>
+                            <button className="facebook"><img src="./images/icon_fb.svg" alt="" /></button>
+                            <button className="apple"><img src="./images/icon_apple.svg" alt="" /></button>
+                            <button className="google"><img src="./images/icon_google.svg" alt="" /></button>
                         </div>
                     </div>
                 </div>

@@ -50,14 +50,14 @@ function Footer() {
                     <div id="nav1-2">
                         <h1 className="logo"><a href="./index.html">
                             {/*  SVG預設自動寬度100%  */}
-                            <img className='logoimg' src="/images/logo.png" alt="RightCodeLOGO" title="RightCodeLOGO" />
+                            <img className='logoimg' src="./images/logo.png" alt="RightCodeLOGO" title="RightCodeLOGO" />
                         </a></h1>
                         <ul className="icon">
                             <li><a className="iconfb" href="#">
-                                <img src="/images/icon_fb.svg" alt="" />
+                                <img src="./images/icon_fb.svg" alt="" />
                             </a></li>
                             <li><a className="iconig" href="#">
-                                <img src="/images/icon_ig.svg" alt="" />
+                                <img src="./images/icon_ig.svg" alt="" />
                             </a></li>
                         </ul>
 
@@ -71,11 +71,11 @@ function Footer() {
                         <h3>謝謝支持</h3>
                         <p>幫助我們持續帶來樂趣、創新與挑戰！</p>
                         <div className="foomodal-wrapper">
-                            <img className="foomodalimg" src="/images/qrCode.svg" alt="" />
+                            <img className="foomodalimg" src="./images/qrCode.svg" alt="" />
                         </div>
                         <div className="foored">
                             <h4>讓我們一起打造更好的Right Code</h4>
-                            <img src="/images/icon_red.svg" alt="" />
+                            <img src="./images/icon_red.svg" alt="" />
                         </div>
                         
                     </div>

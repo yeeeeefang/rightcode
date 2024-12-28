@@ -176,10 +176,10 @@ const LearnGameChoose = () => {
         {correctAnswered && <button onClick={handleNextQuestion}>下一題</button>}
       </div>
       <div className='LearnChoose-img-position'>
-        <img className='LearnChoose-img-position-1' src="/images/GameDecoA.svg" alt="" />
-        <img className='LearnChoose-img-position-2' src="/images/GameDecoB.svg" alt="" />
-        <img className='LearnChoose-img-position-3' src="/images/GameDecoC.svg" alt="" />
-        <img className='LearnChoose-img-position-4' src="/images/GameDecoD.svg" alt="" />
+        <img className='LearnChoose-img-position-1' src="./images/GameDecoA.svg" alt="" />
+        <img className='LearnChoose-img-position-2' src="./images/GameDecoB.svg" alt="" />
+        <img className='LearnChoose-img-position-3' src="./images/GameDecoC.svg" alt="" />
+        <img className='LearnChoose-img-position-4' src="./images/GameDecoD.svg" alt="" />
       </div>
       {showModal && (
         <div className="modal">
@@ -189,7 +189,7 @@ const LearnGameChoose = () => {
             <p>獲得答題小達人獎盃</p>
             <div className="gameaward-wrapper">
               <div className="awardlight"></div>
-              <img className="gameaward" src="/images/award.svg" alt="" />
+              <img className="gameaward" src="./images/award.svg" alt="" />
             </div>
             <p>是否要繼續遊玩？</p>
             <div className="buttonbox">

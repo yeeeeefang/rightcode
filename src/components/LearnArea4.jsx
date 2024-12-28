@@ -4,9 +4,9 @@ import '../assets/css/LearnArea4.css';
 
 export default function LearnArea4() {
   const [draggableItems, setDraggableItems] = useState([
-    { id: 1, iconName: "./public/images/learnAreaI.png", brandName: "./public/images/learnAreaQ1.png", isDropped: false },
-    { id: 2, iconName: "./public/images/learnAreaS.png", brandName: "./public/images/learnAreaQ2.png", isDropped: false },
-    { id: 3, iconName: "./public/images/learnAreaU.png", brandName: "./public/images/learnAreaQ3.png", isDropped: false }
+    { id: 1, iconName: "./images/learnAreaI.png", brandName: "./images/learnAreaQ1.png", isDropped: false },
+    { id: 2, iconName: "./images/learnAreaS.png", brandName: "./images/learnAreaQ2.png", isDropped: false },
+    { id: 3, iconName: "./images/learnAreaU.png", brandName: "./images/learnAreaQ3.png", isDropped: false }
   ]);
 
   const [droppedItems, setDroppedItems] = useState([]);
@@ -43,9 +43,9 @@ export default function LearnArea4() {
 
   const resetGame = () => {
     setDraggableItems([
-      { id: 1, iconName: "/images/learnAreaI.png", brandName: "/images/learnAreaQ1.png", isDropped: false },
-      { id: 2, iconName: "/images/learnAreaS.png", brandName: "/images/learnAreaQ2.png", isDropped: false },
-      { id: 3, iconName: "/images/learnAreaU.png", brandName: "/images/learnAreaQ3.png", isDropped: false }
+      { id: 1, iconName: "./images/learnAreaI.png", brandName: "./images/learnAreaQ1.png", isDropped: false },
+      { id: 2, iconName: "./images/learnAreaS.png", brandName: "./images/learnAreaQ2.png", isDropped: false },
+      { id: 3, iconName: "./images/learnAreaU.png", brandName: "./images/learnAreaQ3.png", isDropped: false }
     ]);
     setDroppedItems([]);
     setIsModalVisible(false);
@@ -113,10 +113,10 @@ export default function LearnArea4() {
               <p>我覺得 ...</p>
               <div className="emotions-container">
                 {[
-                  { id: 1, name: "Happy", image: "/images/icon_greenA.svg" },
-                  { id: 2, name: "Angry", image: "/images/icon_red.svg" },
-                  { id: 3, name: "Surprised", image: "/images/icon_pink.svg" },
-                  { id: 4, name: "Confused", image: "/images/icon_blue.svg" }
+                  { id: 1, name: "Happy", image: "./images/icon_greenA.svg" },
+                  { id: 2, name: "Angry", image: "./images/icon_red.svg" },
+                  { id: 3, name: "Surprised", image: "./images/icon_pink.svg" },
+                  { id: 4, name: "Confused", image: "./images/icon_blue.svg" }
                 ].map((emotion) => (
                   <button
                     key={emotion.id}
@@ -132,8 +132,8 @@ export default function LearnArea4() {
         )}
       </div>
       <div className="road">
-       <img className="road1" src="/images/greenA.svg" alt="" />
-       <img className="road2" src="/images/learnAreaPath.png" alt="" />
+       <img className="road1" src="./images/greenA.svg" alt="" />
+       <img className="road2" src="./images/learnAreaPath.png" alt="" />
       </div>
     </section>
   );

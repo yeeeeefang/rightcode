@@ -11,19 +11,19 @@ function LearnCard({ selectedSection }) {
             children: [
                 {
                     title: "定義文檔的標籤",
-                    imgSrc: "../images/learnPage8.svg",
+                    imgSrc: "./images/learnPage8.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
                 {
                     title: "定義標題、描述與資源",
-                    imgSrc: "../images/learnPage9.svg",
+                    imgSrc: "./images/learnPage9.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
                 {
                     title: "引用外部資源與連結",
-                    imgSrc: "../images/learnPage10.svg",
+                    imgSrc: "./images/learnPage10.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
@@ -35,43 +35,43 @@ function LearnCard({ selectedSection }) {
             children: [
                 {
                     title: "標題與段落",
-                    imgSrc: "../images/learnPage1.svg",
+                    imgSrc: "./images/learnPage1.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
                 {
                     title: "文字樣式-1",
-                    imgSrc: "../images/learnPage2.svg",
+                    imgSrc: "./images/learnPage2.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
                 {
                     title: "文字樣式-2",
-                    imgSrc: "../images/learnPage3.svg",
+                    imgSrc: "./images/learnPage3.svg",
                     tags: ["#問題解決", "#決策能力"],
                     isFavorite: false,
                 },
                 {
                     title: "短語和語義",
-                    imgSrc: "../images/learnPage4.svg",
+                    imgSrc: "./images/learnPage4.svg",
                     tags: ["#問題解決", "#創意思維"],
                     isFavorite: false,
                 },
                 {
                     title: "引用",
-                    imgSrc: "../images/learnPage5.svg",
+                    imgSrc: "./images/learnPage5.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
                 {
                     title: "分隔、刪除與插入",
-                    imgSrc: "../images/learnPage6.svg",
+                    imgSrc: "./images/learnPage6.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
                 {
                     title: "超連結和導覽列",
-                    imgSrc: "../images/learnPage7.svg",
+                    imgSrc: "./images/learnPage7.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
@@ -83,19 +83,19 @@ function LearnCard({ selectedSection }) {
             children: [
                 {
                     title: "圖像與圖例",
-                    imgSrc: "../images/learnPage11.svg",
+                    imgSrc: "./images/learnPage11.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
                 {
                     title: "音檔與影片",
-                    imgSrc: "../images/learnPage12.svg",
+                    imgSrc: "./images/learnPage12.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
                 {
                     title: "嵌入內容",
-                    imgSrc: "../images/learnPage13.svg",
+                    imgSrc: "./images/learnPage13.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
@@ -107,25 +107,25 @@ function LearnCard({ selectedSection }) {
             children: [
                 {
                     title: "表格行列",
-                    imgSrc: "../images/learnPage14.svg",
+                    imgSrc: "./images/learnPage14.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
                 {
                     title: "結構與標題",
-                    imgSrc: "../images/learnPage15.svg",
+                    imgSrc: "./images/learnPage15.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
                 {
                     title: "表單元素-1",
-                    imgSrc: "../images/learnPage16.svg",
+                    imgSrc: "./images/learnPage16.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
                 {
                     title: "表單元素-2",
-                    imgSrc: "../images/learnPage17.svg",
+                    imgSrc: "./images/learnPage17.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
@@ -137,13 +137,13 @@ function LearnCard({ selectedSection }) {
             children: [
                 {
                     title: "列表標籤",
-                    imgSrc: "../images/learnPage18.svg",
+                    imgSrc: "./images/learnPage18.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
                 {
                     title: "節內容",
-                    imgSrc: "../images/learnPage19.svg",
+                    imgSrc: "./images/learnPage19.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
@@ -155,19 +155,19 @@ function LearnCard({ selectedSection }) {
             children: [
                 {
                     title: "內嵌標籤",
-                    imgSrc: "../images/learnPage20.svg",
+                    imgSrc: "./images/learnPage20.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
                 {
                     title: "無語意標籤",
-                    imgSrc: "../images/learnPage21.svg",
+                    imgSrc: "./images/learnPage21.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
                 {
                     title: "程式和模組化",
-                    imgSrc: "../images/learnPage22.svg",
+                    imgSrc: "./images/learnPage22.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
@@ -179,19 +179,19 @@ function LearnCard({ selectedSection }) {
             children: [
                 {
                     title: "結構",
-                    imgSrc: "../images/learnPage23.svg",
+                    imgSrc: "./images/learnPage23.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
                 {
                     title: "媒體",
-                    imgSrc: "../images/learnPage24.svg",
+                    imgSrc: "./images/learnPage24.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
                 {
                     title: "表單擴展",
-                    imgSrc: "../images/learnPage25.svg",
+                    imgSrc: "./images/learnPage25.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
@@ -202,17 +202,17 @@ function LearnCard({ selectedSection }) {
     /* 點選切換圖片的效果 */
     const LeftRef = useRef(null)
     const LeftImgMouseDown = () => {
-        LeftRef.current.src = '../images/learnPageLeft_hover.svg'
+        LeftRef.current.src = './images/learnPageLeft_hover.svg'
     }
     const LeftImgMouseUp = () => {
-        LeftRef.current.src = '../images/learnPageLeft.svg'
+        LeftRef.current.src = './images/learnPageLeft.svg'
     }
     const RightRef = useRef(null)
     const RightImgMouseDown = () => {
-        RightRef.current.src = '../images/learnPageRight_hover.svg'
+        RightRef.current.src = './images/learnPageRight_hover.svg'
     }
     const RightImgMouseUp = () => {
-        RightRef.current.src = '../images/learnPageRight.svg'
+        RightRef.current.src = './images/learnPageRight.svg'
     }
 
     /* 愛心卡片 */
@@ -303,7 +303,7 @@ function LearnCard({ selectedSection }) {
         <section id='LearnPageAll'>
             <div className='LearnPageLeft-1 ' /* onClick={changLeft} */>
                 <img
-                    src="../images/learnPageLeft.svg"
+                    src="./images/learnPageLeft.svg"
                     alt="Previous"
                     ref={LeftRef}
                     onMouseEnter={LeftImgMouseDown}
@@ -329,8 +329,8 @@ function LearnCard({ selectedSection }) {
 
                                     src={
                                         favorites[child.title]
-                                            ? "../images/learnPageLeftHeart_hover.svg"
-                                            : "../images/learnPageLeftHeart.svg"
+                                            ? "./images/learnPageLeftHeart_hover.svg"
+                                            : "./images/learnPageLeftHeart.svg"
                                     }
                                     alt="favorite toggle"
                                     onClick={() => toggleFavorite(child.title)} // 使用 title 作為鍵切換狀態
@@ -357,7 +357,7 @@ function LearnCard({ selectedSection }) {
             </div>
             <div className='LearnPageLeft-2 ' /* onClick={chalgRight} */>
                 <img
-                    src="../images/learnPageRight.svg"
+                    src="./images/learnPageRight.svg"
                     alt="Next"
                     ref={RightRef}
                     onMouseEnter={RightImgMouseDown}
