@@ -2,11 +2,22 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; 
-    URL='https://yeeeeefang.github.io/newcode/'">
-    <title>gh-page-router-test 404 re-direct</title>
+    <meta charset="utf-8">
+    <title>Single Page Apps for GitHub Pages</title>
+    <script type="text/javascript">
+        var pathSegmentsToKeep = 1; // 根據項目根目錄調整
+
+        var l = window.location;
+        var newUrl =
+            l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+            l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+            l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+            (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+            l.hash;
+
+        window.location.replace(newUrl); // 重定向到 SPA 的入口
+
+    </script>
 </head>
 
 <body>
