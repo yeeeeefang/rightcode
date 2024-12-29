@@ -6,4 +6,8 @@ export default defineConfig({
   // base:process.env.NODE_ENV==='production'?'/newcode/':'/',
   base:'/newcode/',
   plugins: [react()],
+  server: {
+    open: true, // 啟動時自動打開瀏覽器
+    historyApiFallback: true, // 確保非根路徑正確返回 index.html
+  },
 })
