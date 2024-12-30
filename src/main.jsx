@@ -4,8 +4,9 @@ import ReactDOM from 'react-dom/client'
 // import { createRoot } from 'react-dom/client'
 // import './index.css'
 import App from './App.jsx'
-import '../src/assets/css/App.css'
+// import '../src/assets/css/App.css'
 import { BrowserRouter } from 'react-router-dom'
+import './assets/css/App.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -13,5 +14,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
  
     <App />
     </BrowserRouter>
-  </React.StrictMode>,
+  </React.StrictMode>
 )
