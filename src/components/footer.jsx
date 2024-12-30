@@ -1,11 +1,13 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../../src/assets/css/Footer.css';
 
 
+
 function Footer() {
-    const[foomodal,setFoomodal] = useState(false);
-    const foomodalOpen =()=> {setFoomodal(true);}
-    const foomodalClose =()=> {setFoomodal(false);}
+    const [foomodal, setFoomodal] = useState(false);
+    const foomodalOpen = () => { setFoomodal(true); }
+    const foomodalClose = () => { setFoomodal(false); }
 
     return (
         <div>
@@ -13,20 +15,20 @@ function Footer() {
                 <div id="nav1-1">
                     <ul className="item1">
                         <p className='pp1'>首頁</p>
-                        <li className="item2"><a href="/Home"><p>關於我們</p></a></li>
+                        <li className="item2"><Link to="/Home"><p>關於我們</p></Link></li>
 
                     </ul>
                     <ul className="item1">
                         <p className='pp1'>學習專區</p>
-                        <li className="item2"><a href="/LearnHome"><p>學習區</p></a></li>
-                        <li className="item2"><a href="/Game"><p>小試身手</p></a></li>
-                        <li className="item2"><a href="/Trend"><p>探索學習趨勢</p></a></li>
+                        <li className="item2"><Link to="/LearnHome"><p>學習區</p></Link></li>
+                        <li className="item2"><Link to="/LearnGame"><p>小試身手</p></Link></li>
+                        <li className="item2"><Link to="/Trend"><p>探索學習趨勢</p></Link></li>
 
                     </ul>
                     <ul className="item1">
                         <p className='pp1'>會員專區</p>
-                        <li className="item2 lm"><a href="/Login"><p>登入</p></a>/<a href="/Register"><p>註冊</p></a></li>
-                        <li className="item2"><a href="/Member"><p>我的帳號</p></a></li>
+                        <li className="item2 lm"><Link to='/Login'><p>登入</p></Link>/<Link to='/Register'><p>註冊</p></Link></li>
+                        <li className="item2"><Link to="/Member"><p>我的帳號</p></Link></li>
 
                     </ul>
                 </div>
@@ -48,17 +50,17 @@ function Footer() {
                 </div>
                 <div className="foo">
                     <div id="nav1-2">
-                        <h1 className="logo"><a href="./index.html">
+                        <Link to='/'> <h1 className="logo">
                             {/*  SVG預設自動寬度100%  */}
                             <img className='logoimg' src="./images/logo.png" alt="RightCodeLOGO" title="RightCodeLOGO" />
-                        </a></h1>
+                        </h1> </Link>
                         <ul className="icon">
-                            <li><a className="iconfb" href="#">
+                            <li className="iconfb">
                                 <img src="./images/icon_fb.svg" alt="" />
-                            </a></li>
-                            <li><a className="iconig" href="#">
+                            </li>
+                            <li className="iconig">
                                 <img src="./images/icon_ig.svg" alt="" />
-                            </a></li>
+                            </li>
                         </ul>
 
                     </div>
@@ -66,7 +68,7 @@ function Footer() {
                 </div>
             </nav >
             {foomodal && (
-                <div className="foomodal" onClick={foomodalClose}> 
+                <div className="foomodal" onClick={foomodalClose}>
                     <div className="foomodal-content">
                         <h3>謝謝支持</h3>
                         <p>幫助我們持續帶來樂趣、創新與挑戰！</p>
@@ -77,7 +79,7 @@ function Footer() {
                             <h4>讓我們一起打造更好的Right Code</h4>
                             <img src="./images/icon_red.svg" alt="" />
                         </div>
-                        
+
                     </div>
                 </div>
             )}
