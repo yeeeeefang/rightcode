@@ -1,0 +1,253 @@
+@charset "UTF-8";
+/* reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* 重置字體 */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial, "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  line-height: 1.5;
+}
+
+/* 重置標題 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+/* 重置列表 */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 重置圖片 */
+img {
+  display: block;
+  width: 100%;
+}
+
+/* 重置連結 */
+a {
+  display: block;
+  /* 將a預設inline改為block，才能設定間距及寬高*/
+  color: #000000;
+  text-decoration: none;
+}
+
+/* 卷軸樣式 */
+/* ::-webkit-scrollbar {
+    //捲動條
+    width: 15px; //垂直卷軸寬
+    height: 15px; //水平卷軸高
+    // border-radius: 99px;
+
+}
+
+::-webkit-scrollbar-button {
+    background-color: $lesser-3;
+    width: 15px; //水平卷軸按鈕寬
+    height: 15px; //垂直捲職按鈕寬
+}
+
+// 卷軸按鈕(上下按鈕)
+
+::-webkit-scrollbar-thumb {
+    //卷軸手柄
+    background-color: $lesser-4;
+    width: 12px;
+    border-radius: 99;
+}
+
+::-webkit-scrollbar-track {
+    //滾動條軌道的顏色
+    background-color: $lesser-1;
+}
+
+::-webkit-scrollbar-corner {
+    //水平垂直卷軸的右下底角
+    background-color: $lesser-2;
+}
+::-webkit-resizer{//多行文字欄位右下縮放按鈕
+    background-color: $lesser-1;
+} */
+/* reset end */
+#LearnPageAllCss {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#LearnPageAllCss .LearnPageLeft-1,
+#LearnPageAllCss .LearnPageLeft-2 {
+  width: 48px;
+}
+#LearnPageAllCss .LearnPageLeft-1:active,
+#LearnPageAllCss .LearnPageLeft-2:active {
+  scale: 1.2;
+}
+#LearnPageAllCss .LearnPageLeft-1.hideArrow,
+#LearnPageAllCss .LearnPageLeft-2.hideArrow {
+  opacity: 0;
+}
+#LearnPageAllCss .Learn-CardCss-all {
+  /* 捲軸效果讓他消失 超過數量箭頭要消失 */
+  display: flex;
+  justify-content: space-around;
+  overflow: auto;
+  transition: transform 0.5s ease;
+  padding-top: 10px;
+  height: 300px;
+  width: 800px;
+  border-radius: 19px;
+  flex: 1;
+}
+#LearnPageAllCss .Learn-CardCss-all::-webkit-scrollbar {
+  display: none;
+}
+#LearnPageAllCss .Learn-CardCss-all .Learn-CardCss-1 {
+  min-width: 200px;
+  flex-shrink: 0;
+  width: 200px;
+  height: 250px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 10px 10px 0px 2px #000000;
+  transition: transform 0.5s, box-shadow 0.2s;
+  margin-left: 50px;
+}
+#LearnPageAllCss .Learn-CardCss-all .Learn-CardCss-1:hover {
+  transform: scale(1.05);
+}
+#LearnPageAllCss .Learn-CardCss-all .Learn-CardCss-1:active {
+  box-shadow: none;
+  transform: translateX(5px) translateY(5px);
+}
+#LearnPageAllCss .Learn-CardCss-all .Learn-CardCss-1 .Learn-CardCss-bk-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 90%;
+}
+#LearnPageAllCss .Learn-CardCss-all .Learn-CardCss-1 .Learn-CardCss-bk-1 .Learn-CardCss-icon-1 {
+  width: 24px;
+  height: 24px;
+  margin-top: 6px;
+  margin-left: 150px;
+}
+#LearnPageAllCss .Learn-CardCss-all .Learn-CardCss-1 .Learn-CardCss-bk-1 .Learn-CardCss-2 .Learn-CardCss-Content-1 {
+  display: block;
+  flex: 2;
+  line-height: 60px;
+  text-align: center;
+  font-weight: 700;
+}
+#LearnPageAllCss .Learn-CardCss-all .Learn-CardCss-1 .Learn-CardCss-bk-1 .Learn-CardCss-2 .Learn-CardCss-Content-2 {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex: 2;
+  font-size: 0.6rem;
+}
+#LearnPageAllCss .Learn-CardCss-all .Learn-CardCss-1 .Learn-CardCss-bk-1 .Learn-CardCss-2 .Learn-CardCss-Content-2 p {
+  display: block;
+  background-color: #FFD640;
+  text-align: center;
+  border-radius: 99px;
+  line-height: 25px;
+  width: 60px;
+  margin: 0 10px;
+}/*# sourceMappingURL=LearnCardCss.css.map */

@@ -95,7 +95,7 @@ export default function LearnSelect() {
                             <Link to="/LearnPage" className="select-link HTML"><h2>HTML</h2></Link>
                         </div>
                         <div className="select">
-                            <Link to="/LearnPage" className="select-link CSS"><h2>CSS</h2></Link>
+                            <Link to="/LearnPageCss" className="select-link CSS"><h2>CSS</h2></Link>
                         </div>
                     </section>
                 </div>

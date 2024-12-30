@@ -10,6 +10,7 @@ import Home from './pages/Home'
 import LearnHome from './pages/LearnHome';
 import Member from './pages/Member';
 import LearnPage from './pages/LearnPage';
+import LearnPageCss from './pages/LearnPageCss';
 import LearnGame from './pages/LearnGame';
 import LearnGameChoose from './pages/LearnGameChoose';
 import Login from './pages/Login';
@@ -31,6 +32,7 @@ function App() {
           <Route path='/Login' element={<Login />}></Route>
           <Route path='/LearnHome' element={<LearnHome />}></Route>
           <Route path='/LearnPage' element={<LearnPage />}></Route>
+          <Route path='/LearnPageCss' element={<LearnPageCss />}></Route>
           <Route path='/LearnGame' element={<LearnGame />}></Route>
           <Route path='/LearnGameChoose' element={<LearnGameChoose />}></Route>
           <Route path='/Trend' element={<Trend />}></Route>
