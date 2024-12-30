@@ -204,8 +204,12 @@ a {
 #LEPCss-Home #LEPCss-bk-big {
   display: flex;
   justify-content: center;
-  padding-top: 60px;
   padding-left: 94px;
+}
+@media (min-width: 1441px) {
+  #LEPCss-Home #LEPCss-bk-big {
+    padding-top: 60px;
+  }
 }
 #LEPCss-Home #LEPCss-bk-big .LEPCss-title {
   background-color: #fff;

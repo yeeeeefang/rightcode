@@ -41,8 +41,11 @@
     #LEP-bk-big {
         display: flex;
         justify-content: center;
-        padding-top: 60px;
         padding-left: 94px;
+        @media ($mediaLg) {
+            padding-top: 60px;
+
+        }
         .LEP-title {
             background-color: #fff;
             border-radius: 20px;

@@ -204,8 +204,12 @@ a {
 #LEP-Home #LEP-bk-big {
   display: flex;
   justify-content: center;
-  padding-top: 60px;
   padding-left: 94px;
+}
+@media (min-width: 1441px) {
+  #LEP-Home #LEP-bk-big {
+    padding-top: 60px;
+  }
 }
 #LEP-Home #LEP-bk-big .LEP-title {
   background-color: #fff;
