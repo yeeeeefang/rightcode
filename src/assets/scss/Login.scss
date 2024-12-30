@@ -35,59 +35,67 @@
                 transform: rotate(40deg);
             }
 
-            }
-            .red-char {
-                width: 220px;
-                height: 220px;
-                position: absolute;
-                top: 420px;
-                left: 1200px;
-                animation: float 2s ease-in-out infinite;
-                // border: 1px solid red;
+        }
 
-                @keyframes float {
-                    0% {
-                        transform: translateY(0);
-                    }
-                    50% {
-                        transform: translateY(-20px); // 向上移動 10px（可調整）
-                    }
-                    100% {
-                        transform: translateY(0);
-                    }
+        .red-char {
+            width: 220px;
+            height: 220px;
+            position: absolute;
+            top: 420px;
+            left: 1200px;
+            animation: float 2s ease-in-out infinite;
+            // border: 1px solid red;
+
+            @keyframes float {
+                0% {
+                    transform: translateY(0);
                 }
 
-                // transform: rotate(5deg) rotateY(-180deg);
-                // border: 1px solid red;
-            }
-            .blue-char {
-                width: 175px;
-                height: 175px;
-                position: absolute;
-                top: 245px;
-                left: 145px;
-            }
-            .pink-char {
-                width: 170px;
-                height: 170px;
-                position: absolute;
-                top: 450px;
-                left: 550px;
-                z-index: 888;
-                // border: 1px solid red;
-
-                animation: rotate-small 2s ease-in-out infinite;
-                @keyframes rotate-small {
-                    0% {
-                        transform: rotate(0);
-                    }
-                    25% {
-                        transform:translateX(30px);
-                    }
-                    50% {
-                        transform: rotate(0);
-                    }
+                50% {
+                    transform: translateY(-20px); // 向上移動 10px（可調整）
                 }
+
+                100% {
+                    transform: translateY(0);
+                }
+            }
+
+            // transform: rotate(5deg) rotateY(-180deg);
+            // border: 1px solid red;
+        }
+
+        .blue-char {
+            width: 175px;
+            height: 175px;
+            position: absolute;
+            top: 245px;
+            left: 145px;
+        }
+
+        .pink-char {
+            width: 170px;
+            height: 170px;
+            position: absolute;
+            top: 450px;
+            left: 550px;
+            z-index: 888;
+            // border: 1px solid red;
+
+            animation: rotate-small 2s ease-in-out infinite;
+
+            @keyframes rotate-small {
+                0% {
+                    transform: rotate(0);
+                }
+
+                25% {
+                    transform: translateX(30px);
+                }
+
+                50% {
+                    transform: rotate(0);
+                }
+            }
 
         }
 
@@ -147,6 +155,7 @@
                     font-weight: bold;
                     box-shadow: 3px 3px 0 rgb(233, 210, 243);
                     cursor: pointer;
+
                     &:hover {
                         background-color: #b9b4f5;
                         color: $shadow-3;
@@ -181,12 +190,14 @@
                     cursor: pointer;
                     border: none;
                     background-color: transparent;
+
                     &:hover {
                         scale: 1.05;
                     }
                 }
             }
         }
+
         @media ($mediaLg) {
             .amoeba-blobs {
                 width: 100%;
@@ -195,7 +206,7 @@
                 overflow: hidden;
                 // border: 1px solid red;
             }
-    
+
             .characters {
                 .green-char {
                     width: 280px;
@@ -205,37 +216,123 @@
                     transform: rotate(20deg);
 
                 }
-    
-                }
-                .red-char {
-                    width: 300px;
-                    height: 300px;
-                    top: 500px;
-                    left: 1440px;
-                }
-                .blue-char {
-                    width: 240px;
-                    height: 240px;
-                    top:300px;
-                    left: 160px;
-                }
-                .pink-char {
-                    width: 220px;
-                    height: 220px;
-                    top: 570px;
-                    left: 680px;
+
             }
-    
+
+            .red-char {
+                width: 300px;
+                height: 300px;
+                top: 500px;
+                left: 1440px;
+            }
+
+            .blue-char {
+                width: 240px;
+                height: 240px;
+                top: 300px;
+                left: 160px;
+            }
+
+            .pink-char {
+                width: 220px;
+                height: 220px;
+                top: 570px;
+                left: 680px;
+            }
+
             .login-form {
                 width: 480px;
                 height: 560px;
                 top: 50px;
                 left: 920px;
-    
+
                 .login-divider {
                     margin: 36px 0 24px;
                 }
+            }
         }
     }
-}
+
+    /* 跳窗 */
+    .forgot {
+        position: fixed;
+        z-index: 1001;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $fc-2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .forgot-content {
+            background-color: $fc-5;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            width: 25%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .foricon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                h4 {
+                    font-size: $font-size-20 ;
+                    font-weight: $font-w-bold ;
+                    color: $shadow-3;
+                }
+
+                img {
+                    width: 48px;
+                    height: 48px;
+                }
+            }
+
+            .forgot-form {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 15px;
+
+                label {
+                    color: $shadow-3;
+                    font-weight: bold;
+                    margin-bottom: 5px;
+                }
+
+                input {
+                    border: 1px solid #ddd;
+                    border-radius: 10px;
+                    padding: 8px;
+                    margin-bottom: 16px;
+                }
+            }
+
+            .forgot-button {
+                width: 100px;
+                height: 40px;
+                background-color: $shadow-3;
+                color: #fff;
+                border: none;
+                text-align: center;
+                line-height: 40px;
+                border-radius: 10px;
+                font-size: 1rem;
+                font-weight: bold;
+                box-shadow: 3px 3px 0 rgb(233, 210, 243);
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #b9b4f5;
+                    color: $shadow-3;
+                }
+            }
+        }
+    }
 }
