@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base:process.env.NODE_ENV==='production'?'/newcode/':'/',
   // base:'/newcode/',
+  // base:'./',
   plugins: [react()],
   server: {
     open: true, // 啟動時自動打開瀏覽器
