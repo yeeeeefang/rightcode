@@ -209,7 +209,14 @@ a {
   cursor: pointer;
   padding: 3px 9.5px;
 }
+#HtmlClassTitle-all .Html-title-all .Html-Class .Html-H2:hover {
+  transition: all 0.3s ease;
+  color: #fff;
+  background-color: #1E77B8;
+}
 #HtmlClassTitle-all .Html-title-all .Html-Class .Html-H2.selected {
+  transition: all 0.3s ease;
+  color: #fff;
   background-color: #1E77B8;
 }
 #HtmlClassTitle-all .Html-title-all .Html-Class .Html-Span {

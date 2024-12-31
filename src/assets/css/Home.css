@@ -662,6 +662,7 @@ a {
     margin-bottom: 90px;
   }
   #Home-page-5 .Home-content-bk-4 .Home-content-bk-5 .Home-content-bk-text-5:hover {
+    transition: all 0.5s ease;
     background-color: #f44f46;
   }
   #Home-page-5 .Home-content-bk-4 .Home-content-bk-5 .Home-content-bk-text-5:active {

@@ -199,6 +199,7 @@ a {
   transition: transform 0.5s, box-shadow 0.1s;
 }
 #Hamburger .Ham-Bk-1 p:hover {
+  transition: all 0.5s ease;
   background-color: #fda2a2;
 }
 #Hamburger .Ham-Bk-1 p:active {
@@ -215,6 +216,7 @@ a {
   transition: transform 0.5s, box-shadow 0.1s;
 }
 #Hamburger .Ham-Bk-1 .iconX:hover {
+  transition: all 0.5s ease;
   background-color: #fda2a2;
 }
 #Hamburger .Ham-Bk-1 .iconX:active {
@@ -253,6 +255,7 @@ a {
   transition: transform 0.5s, box-shadow 0.1s;
 }
 #Hamburger .barLink .bar-Content:hover {
+  transition: all 0.5s ease;
   box-shadow: none;
   transform: translateX(5px) translateY(5px);
 }
@@ -287,6 +290,7 @@ a {
   transition: transform 0.5s, box-shadow 0.1s;
 }
 #Hamburger .bar-bottom p:hover {
+  transition: all 0.5s ease;
   background-color: #fda2a2;
 }
 #Hamburger .bar-bottom p:active {
@@ -302,6 +306,9 @@ a {
   display: none;
 }
 
+.bar-Content:hover {
+  transition: all 0.5s ease;
+}
 .bar-Content:hover .bar-content-icon {
   display: block;
 }
@@ -336,6 +343,7 @@ a {
   opacity: 0;
 }
 .bar-Content-1:hover {
+  transition: all 0.5s ease;
   background-color: #fabf33;
 }
 .bar-Content-1:hover img {
