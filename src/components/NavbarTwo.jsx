@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react'
+import { useState } from 'react'
 import '../../src/assets/css/navbar.css'
 import Hamburger from './Hamburger'
 import { Link } from 'react-router-dom';
