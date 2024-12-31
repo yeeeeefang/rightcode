@@ -1,0 +1,87 @@
+@use "./reset";
+@use "./variables"as *;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zen+Maru+Gothic&display=swap');
+
+@font-face {
+    font-family: SweiGothicCJKtc-Regular;
+    src: url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff) format("woff");
+}
+
+#LEPCss-Home {
+    background-color: #FF9EC9;
+    background-image: url(../images/homeDeco.png);
+    background-position: 500px;
+    background-size: 55%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+
+    .LEPCss-img-top {
+        position: absolute;
+        z-index: 1;
+        width: 20%;
+        height: 15%;
+        right: -130px;
+        bottom: 0px;
+        transform: rotate(30deg);
+
+    }
+
+    .LEPCss-content-top {
+        font-size: $font-size-14;
+        font-weight: $font-w-bold;
+        position: absolute;
+        right: 72px;
+        bottom: 23px;
+        width: 30%;
+        z-index: 3;
+
+        .LEP-content-top-3 {
+            text-align: right;
+        }
+    }
+
+    #LEPCss-bk-big {
+        display: flex;
+        justify-content: center;
+align-items: center;
+        padding-left: 94px;
+
+        @media ($mediaLg) {
+            padding-top: 60px;
+
+        }
+
+        .LEPCss-title {
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 0px 20px;
+            font-family: "SweiGothicCJKtc-Regular", serif;
+            height: 100%;
+        }
+
+        .LEPCss-PersonCard {
+            width: 100%;
+
+            .LEPCss-personAll {
+                .LEPCss-PersonEXP {
+                    display: flex;
+                    justify-content: center;
+                    margin: 0px 70px 0px 33px;
+
+                    .LEPCss-PE {
+                        width: 442px;
+                        margin-right: 100px;
+                    }
+                }
+            }
+
+            .LEPCss-card {
+                margin: 50px 120px 0px 30px;
+                padding-top: 10px;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,37 @@
+@use "./reset";
+@use "./variables/"as *;
+
+#LearnPageExpCss {
+    font-weight: $font-w-medium;
+    margin-top: -25px;
+
+    .LearnPageExpCss-bk-big {
+        .LearnPageExpCss-content-1 {
+            padding-bottom: 10px;
+        }
+
+        .LearnPageExpCss-bk-1 {
+            display: flex;
+            flex-wrap: wrap;
+
+            .LearnPageExpCss-content-2 {
+                progress {
+                    appearance: none;
+                    font-weight: $font-w-medium;
+
+                    &::-webkit-progress-value {
+                        background-color: $learn-p1;
+                        border-radius: 25px;
+                    }
+
+                    &::-webkit-progress-bar {
+                        background-color: #fff;
+                        border-radius: 25px;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
