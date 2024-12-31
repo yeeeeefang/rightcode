@@ -8,7 +8,6 @@
     position: sticky;
     z-index: 999;
 
-
     .navlogo {
         width: 87px;
         height: 53px;
@@ -38,6 +37,8 @@
                 transition: transform 0.5s, box-shadow 0.1s; // 添加平滑效果
 
                 &:hover {
+                    transition: all 0.5s ease;
+
                     background-color: #d2cbcb;
                 }
 
@@ -63,6 +64,8 @@
                 cursor: pointer;
 
                 &:hover {
+                    transition: all 0.5s ease;
+
                     background-color: #ef7f0f;
                 }
 

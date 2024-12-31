@@ -171,9 +171,9 @@ a {
   src: url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff) format("woff");
 }
 #LEPCss-Home {
-  background-color: #FF9EC9;
-  background-image: url(../images/homeDeco.png);
-  background-position: 500px;
+  background-color: #FFD0D0;
+  background-image: url(../images/LearnpageDeco.svg);
+  background-position: 50% 50%;
   background-size: 55%;
   background-repeat: no-repeat;
   overflow: hidden;

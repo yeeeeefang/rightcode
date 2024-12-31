@@ -172,8 +172,8 @@ a {
 }
 #LEP-Home {
   background-color: #8BC5EA;
-  background-image: url(../images/homeDeco.png);
-  background-position: 500px;
+  background-image: url(../images/LearnpageDeco.svg);
+  background-position: 50% 50%;
   background-size: 55%;
   background-repeat: no-repeat;
   overflow: hidden;

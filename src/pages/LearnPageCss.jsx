@@ -18,7 +18,9 @@ function LearnPageCss() {
             <section id="LEPCss-Home">
                 <NavbarBack />
                 <div id="LEPCss-bk-big">
-                    <div className="LEPCss-img-top"><img src="./images/homeBubble.png" alt="" /></div>
+                    <div className="LEPCss-img-top">
+                       {/*  <img src="./images/homeBubble.png" alt="" /> */}
+                    </div>
                     <div className="LEPCss-content-top">
                         <p className="LEPCss-content-top-1">每個困境中都存在著機會。</p>
                         <p className="LEPCss-content-top-2">In the middle of every difficulty lies opportunity.</p>
@@ -36,7 +38,7 @@ function LearnPageCss() {
                                 </div>
                                 <div><CircularProgressCss /></div>
                             </div>
-                        </div> 
+                        </div>
                         <div className="LEPCss-card">
                             <LearnCardCss selectedSection={selectedSection} />
                         </div>
