@@ -189,17 +189,20 @@ a {
   bottom: 0px;
   transform: rotate(30deg);
 }
-#LEPCss-Home .LEPCss-content-top {
+#LEPCss-Home .LEPCss-conten-all .LEPCss-content-top {
   font-size: 0.85rem;
   font-weight: 700;
-  position: absolute;
-  right: 72px;
-  bottom: 23px;
-  width: 30%;
-  z-index: 3;
+  margin: 0 0 50px 0;
 }
-#LEPCss-Home .LEPCss-content-top .LEP-content-top-3 {
+#LEPCss-Home .LEPCss-conten-all .LEPCss-content-top .LEPCss-content-top-3 {
   text-align: right;
+}
+#LEPCss-Home .LEPCss-conten-all .LEPCss-title {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 0px 20px;
+  font-family: "SweiGothicCJKtc-Regular", serif;
+  height: 100%;
 }
 #LEPCss-Home #LEPCss-bk-big {
   display: flex;
@@ -212,15 +215,9 @@ a {
     padding-top: 60px;
   }
 }
-#LEPCss-Home #LEPCss-bk-big .LEPCss-title {
-  background-color: #fff;
-  border-radius: 20px;
-  padding: 0px 20px;
-  font-family: "SweiGothicCJKtc-Regular", serif;
-  height: 100%;
-}
 #LEPCss-Home #LEPCss-bk-big .LEPCss-PersonCard {
   width: 100%;
+  margin-left: 100px;
 }
 #LEPCss-Home #LEPCss-bk-big .LEPCss-PersonCard .LEPCss-personAll .LEPCss-PersonEXP {
   display: flex;
@@ -229,7 +226,7 @@ a {
 }
 #LEPCss-Home #LEPCss-bk-big .LEPCss-PersonCard .LEPCss-personAll .LEPCss-PersonEXP .LEPCss-PE {
   width: 442px;
-  margin-right: 100px;
+  margin-left: 100px;
 }
 #LEPCss-Home #LEPCss-bk-big .LEPCss-PersonCard .LEPCss-card {
   margin: 50px 120px 0px 30px;

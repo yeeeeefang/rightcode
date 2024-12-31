@@ -21,22 +21,24 @@ function LearnPage() {
                     <div className="LEP-img-top">
                         {/* <img src="./images/homeBubble.png" alt="" /> */}
                     </div>
-                    <div className="LEP-content-top">
-                        <p className="LEP-content-top-1">每個困境中都存在著機會。</p>
-                        <p className="LEP-content-top-2">In the middle of every difficulty lies opportunity.</p>
-                        <p className="LEP-content-top-3">- Albert Einstein</p>
-                    </div>
-                    <div className="LEP-title">
-                        <LearnTitle onSelectTitle={setSelectedSection} />
+                    <div className="LEP-content-top-all">
+                        <div className="LEP-content-top">
+                            <p className="LEP-content-top-1">每個困境中都存在著機會。</p>
+                            <p className="LEP-content-top-2">In the middle of every difficulty lies opportunity.</p>
+                            <p className="LEP-content-top-3">- 愛因斯坦 Albert Einstein</p>
+                        </div>
+                        <div className="LEP-title">
+                            <LearnTitle onSelectTitle={setSelectedSection} />
+                        </div>
                     </div>
                     <div className="LEP-PersonCard">
                         <div className="LEP-personAll">
                             <div className="LEP-PersonEXP">
+                                <div><CircularProgress /></div>
                                 <div className="LEP-PE">
                                     <div className="LEP-Person"><LearnPagePerson /></div>
                                     <div><LearnPageExp /></div>
                                 </div>
-                                <div><CircularProgress /></div>
                             </div>
                         </div>
                         <div className="LEP-card">

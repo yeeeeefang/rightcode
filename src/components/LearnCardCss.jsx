@@ -33,6 +33,12 @@ function LearnCardCss({ selectedSection }) {
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
+                {
+                    title: "文字樣式-4",
+                    imgSrc: "./images/learnPageCss5.svg",
+                    tags: ["#問題解決", "#邏輯思考"],
+                    isFavorite: false,
+                },
             ],
         },
         {
@@ -41,25 +47,25 @@ function LearnCardCss({ selectedSection }) {
             children: [
                 {
                     title: "顏色",
-                    imgSrc: "./images/learnPageCss5.svg",
-                    tags: ["#問題解決", "#邏輯思考"],
-                    isFavorite: false,
-                },
-                {
-                    title: "背景-1",
                     imgSrc: "./images/learnPageCss6.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
                 {
-                    title: "背景-2",
+                    title: "背景 - 1",
                     imgSrc: "./images/learnPageCss7.svg",
+                    tags: ["#問題解決", "#邏輯思考"],
+                    isFavorite: false,
+                },
+                {
+                    title: "背景 - 2",
+                    imgSrc: "./images/learnPageCss8.svg",
                     tags: ["#問題解決", "#決策能力"],
                     isFavorite: false,
                 },
                 {
-                    title: "背景-3",
-                    imgSrc: "./images/learnPageCss8.svg",
+                    title: "背景 - 3",
+                    imgSrc: "./images/learnPageCss9.svg",
                     tags: ["#問題解決", "#創意思維"],
                     isFavorite: false,
                 },
@@ -71,25 +77,25 @@ function LearnCardCss({ selectedSection }) {
             children: [
                 {
                     title: "邊距",
-                    imgSrc: "./images/learnPageCss9.svg",
-                    tags: ["#問題解決", "#邏輯思考"],
-                    isFavorite: false,
-                },
-                {
-                    title: "內距",
                     imgSrc: "./images/learnPageCss10.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
                 {
-                    title: "邊框",
+                    title: "內距",
                     imgSrc: "./images/learnPageCss11.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
                 {
-                    title: "大小",
+                    title: "邊框",
                     imgSrc: "./images/learnPageCss12.svg",
+                    tags: ["#問題解決", "#邏輯思考"],
+                    isFavorite: false,
+                },
+                {
+                    title: "大小",
+                    imgSrc: "./images/learnPageCss13.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
@@ -102,25 +108,25 @@ function LearnCardCss({ selectedSection }) {
             children: [
                 {
                     title: "顯示與可見性",
-                    imgSrc: "./images/learnPageCss13.svg",
-                    tags: ["#問題解決", "#邏輯思考"],
-                    isFavorite: false,
-                },
-                {
-                    title: "定位-1",
                     imgSrc: "./images/learnPageCss14.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
                 {
-                    title: "定位-2",
+                    title: "定位 - 1",
                     imgSrc: "./images/learnPageCss15.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
                 {
-                    title: "浮動與清除",
+                    title: "定位 - 2",
                     imgSrc: "./images/learnPageCss16.svg",
+                    tags: ["#問題解決", "#邏輯思考"],
+                    isFavorite: false,
+                },
+                {
+                    title: "浮動與清除",
+                    imgSrc: "./images/learnPageCss17.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
@@ -131,25 +137,25 @@ function LearnCardCss({ selectedSection }) {
             title: "彈性盒模型 (Flexbox)",
             children: [
                 {
-                    title: "容器屬性-1",
+                    title: "容器屬性 - 1",
                     imgSrc: "./images/learnPageCss29.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
                 {
-                    title: "容器屬性-2",
+                    title: "容器屬性 - 2",
                     imgSrc: "./images/learnPageCss30.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
                 {
-                    title: "子項目屬性-1",
+                    title: "子項目屬性 - 1",
                     imgSrc: "./images/learnPageCss31.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
                 {
-                    title: "子項目屬性-2",
+                    title: "子項目屬性 - 2",
                     imgSrc: "./images/learnPageCss32.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
@@ -162,20 +168,20 @@ function LearnCardCss({ selectedSection }) {
             title: "網格佈局 (Grid Layout)",
             children: [
                 {
-                    title: "容器屬性-1",
-                    imgSrc: "./images/learnPageCss18.svg",
-                    tags: ["#問題解決", "#邏輯思考"],
-                    isFavorite: false,
-                },
-                {
-                    title: "容器屬性-2",
+                    title: "容器屬性 - 1",
                     imgSrc: "./images/learnPageCss19.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
                 {
-                    title: "子項目屬性",
+                    title: "容器屬性 - 2",
                     imgSrc: "./images/learnPageCss20.svg",
+                    tags: ["#問題解決", "#邏輯思考"],
+                    isFavorite: false,
+                },
+                {
+                    title: "子項目屬性",
+                    imgSrc: "./images/learnPageCss21.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
@@ -186,26 +192,26 @@ function LearnCardCss({ selectedSection }) {
             title: "過渡與動畫",
             children: [
                 {
-                    title: "過渡-1",
-                    imgSrc: "./images/learnPageCss21.svg",
-                    tags: ["#問題解決", "#邏輯思考"],
-                    isFavorite: false,
-                },
-                {
-                    title: "過渡-2",
+                    title: "過渡 - 1",
                     imgSrc: "./images/learnPageCss22.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
                 {
-                    title: "動畫-1",
+                    title: "過渡 - 2",
                     imgSrc: "./images/learnPageCss23.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
                 {
-                    title: "動畫-2",
+                    title: "動畫 - 1",
                     imgSrc: "./images/learnPageCss24.svg",
+                    tags: ["#問題解決", "#邏輯思考"],
+                    isFavorite: false,
+                },
+                {
+                    title: "動畫 - 2",
+                    imgSrc: "./images/learnPageCss25.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
@@ -217,25 +223,25 @@ function LearnCardCss({ selectedSection }) {
             children: [
                 {
                     title: "剪裁與遮罩",
-                    imgSrc: "./images/learnPageCss25.svg",
-                    tags: ["#問題解決", "#邏輯思考"],
-                    isFavorite: false,
-                },
-                {
-                    title: "游標",
                     imgSrc: "./images/learnPageCss26.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
                 {
-                    title: "滾動",
+                    title: "游標",
                     imgSrc: "./images/learnPageCss27.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },
                 {
-                    title: "內容屬性",
+                    title: "滾動",
                     imgSrc: "./images/learnPageCss28.svg",
+                    tags: ["#問題解決", "#邏輯思考"],
+                    isFavorite: false,
+                },
+                {
+                    title: "內容屬性",
+                    imgSrc: "./images/learnPageCss29.svg",
                     tags: ["#問題解決", "#邏輯思考"],
                     isFavorite: false,
                 },

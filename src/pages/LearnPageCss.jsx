@@ -19,24 +19,26 @@ function LearnPageCss() {
                 <NavbarBack />
                 <div id="LEPCss-bk-big">
                     <div className="LEPCss-img-top">
-                       {/*  <img src="./images/homeBubble.png" alt="" /> */}
+                        {/*  <img src="./images/homeBubble.png" alt="" /> */}
                     </div>
-                    <div className="LEPCss-content-top">
-                        <p className="LEPCss-content-top-1">每個困境中都存在著機會。</p>
-                        <p className="LEPCss-content-top-2">In the middle of every difficulty lies opportunity.</p>
-                        <p className="LEPCss-content-top-3">- Albert Einstein</p>
-                    </div>
-                    <div className="LEPCss-title">
-                        <LearnTitleCss onSelectTitle={setSelectedSection} />
+                    <div className="LEPCss-conten-all">
+                        <div className="LEPCss-content-top">
+                            <p className="LEPCss-content-top-1">學習並裝備好自己，機會終將到來。</p>
+                            <p className="LEPCss-content-top-2">I will study and prepare myself, and someday my chance will come.</p>
+                            <p className="LEPCss-content-top-3">- 林肯 Abraham Lincoln</p>
+                        </div>
+                        <div className="LEPCss-title">
+                            <LearnTitleCss onSelectTitle={setSelectedSection} />
+                        </div>
                     </div>
                     <div className="LEPCss-PersonCard">
                         <div className="LEPCss-personAll">
                             <div className="LEPCss-PersonEXP">
+                                <div><CircularProgressCss /></div>
                                 <div className="LEPCss-PE">
                                     <div className="LEPCss-Person"><LearnPagePersonCss /></div>
                                     <div><LearnPageExpCss /></div>
                                 </div>
-                                <div><CircularProgressCss /></div>
                             </div>
                         </div>
                         <div className="LEPCss-card">
