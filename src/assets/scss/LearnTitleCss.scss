@@ -1,15 +1,16 @@
 @use "./reset";
-@use "./variables" as *;
+@use "./variables"as *;
 
 
 #CssClassTitle-all {
     background-color: #fff;
-    border-radius: 20px;
+    padding-bottom: 20px;
+    width: 200px;
 
     .Css-H1 {
         font-size: $font-size-24;
         font-weight: $font-w-bold;
-        color: $learn-p2; 
+        color: $learn-p2;
         text-align: center;
         line-height: 40px;
         margin-top: 10px;
@@ -17,7 +18,7 @@
 
     .Css-title-all {
         overflow: auto;
-        height: 70vh;
+
 
         &::-webkit-scrollbar {
             width: 10px;
@@ -26,18 +27,20 @@
 
         &::-webkit-scrollbar-thumb {
             border-radius: 10px;
-            background-color: $register-2;
-        
+
         }
 
         .Css-Class {
+            display: flex;
+            flex-direction: column;
+
             .Css-H2 {
                 text-align: center;
                 display: block;
                 font-size: $font-size-16;
                 font-weight: $font-w-medium;
                 background-color: $learn-p3;
-                margin-top: 5px;
+                margin-top: 15px;
                 border-radius: 20px;
                 overflow: hidden;
                 /* 隱藏超出內容 */
@@ -46,9 +49,10 @@
                 text-overflow: ellipsis;
                 /* 超出部分顯示省略號 */
                 cursor: pointer;
-                padding: 0 10px;
+                padding: 3px 9.5px;
 
             }
+
             .Css-H2.selected {
                 background-color: $learn-p4;
             }

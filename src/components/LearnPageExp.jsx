@@ -34,28 +34,28 @@ function LearnPageExp() {
                     </div>
                     <div className='LearnPageExp-bk-1'>
                         <div className='LearnPageExp-img-1'>
-                            <img src="./images/icon_greenB.svg" alt="" />
+                            <img src="./images/icon_blueC.svg" alt="" />
                         </div>
                         <div className='LearnPageExp-content-2'>
                             <p>邏輯思考</p>
                             <progress value={progressValues[0]} max={100} className='LearnPageExp-progress' />
                         </div>
                         <div className='LearnPageExp-img-1'>
-                            <img src="./images/icon_greenB.svg" alt="" />
+                            <img src="./images/icon_blueC.svg" alt="" />
                         </div>
                         <div className='LearnPageExp-content-2'>
                             <p>問題解決</p>
                             <progress value={progressValues[1]} max={100} className='LearnPageExp-progress' />
                         </div>
                         <div className='LearnPageExp-img-1'>
-                            <img src="./images/icon_greenB.svg" alt="" />
+                            <img src="./images/icon_blueC.svg" alt="" />
                         </div>
                         <div className='LearnPageExp-content-2'>
                             <p>決策能力</p>
                             <progress value={progressValues[2]} max={100} className='LearnPageExp-progress' />
                         </div>
                         <div className='LearnPageExp-img-1'>
-                            <img src="./images/icon_greenB.svg" alt="" />
+                            <img src="./images/icon_blueC.svg" alt="" />
                         </div>
                         <div className='LearnPageExp-content-2'>
                             <p>創意思維</p>

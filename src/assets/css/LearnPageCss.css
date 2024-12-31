@@ -171,7 +171,7 @@ a {
   src: url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff) format("woff");
 }
 #LEPCss-Home {
-  background-color: #FFD640;
+  background-color: #FF9EC9;
   background-image: url(../images/homeDeco.png);
   background-position: 500px;
   background-size: 55%;
@@ -204,6 +204,7 @@ a {
 #LEPCss-Home #LEPCss-bk-big {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-left: 94px;
 }
 @media (min-width: 1441px) {
@@ -216,6 +217,7 @@ a {
   border-radius: 20px;
   padding: 0px 20px;
   font-family: "SweiGothicCJKtc-Regular", serif;
+  height: 100%;
 }
 #LEPCss-Home #LEPCss-bk-big .LEPCss-PersonCard {
   width: 100%;

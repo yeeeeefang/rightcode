@@ -298,11 +298,11 @@ function LearnTitleCss({ onSelectTitle }) {
                                     {section.title}
                                 </h2>
                             </div>
-                            <div className='Css-Span'>
+                            {/* <div className='Css-Span'>
                                 {section.children.map((child, childIndex) => (
                                     <span key={childIndex}>{child.title} <br /></span>
                                 ))}
-                            </div>
+                            </div> */}
                         </div>
                     ))}
                 </div>

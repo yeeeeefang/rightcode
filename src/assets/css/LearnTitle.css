@@ -167,19 +167,19 @@ a {
 /* reset end */
 #HtmlClassTitle-all {
   background-color: #fff;
-  border-radius: 20px;
+  padding-bottom: 20px;
+  width: 200px;
 }
 #HtmlClassTitle-all .Html-H1 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #CA5171;
+  color: #8BC5EA;
   text-align: center;
   line-height: 40px;
   margin-top: 10px;
 }
 #HtmlClassTitle-all .Html-title-all {
   overflow: auto;
-  height: 70vh;
 }
 #HtmlClassTitle-all .Html-title-all::-webkit-scrollbar {
   width: 10px;
@@ -187,15 +187,18 @@ a {
 }
 #HtmlClassTitle-all .Html-title-all::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #A2A2A2;
+}
+#HtmlClassTitle-all .Html-title-all .Html-Class {
+  display: flex;
+  flex-direction: column;
 }
 #HtmlClassTitle-all .Html-title-all .Html-Class .Html-H2 {
   text-align: center;
   display: block;
   font-size: 1rem;
-  font-weight: 500;
-  background-color: #FDBABA;
-  margin-top: 5px;
+  font-weight: 700;
+  background-color: #8BC5EA;
+  margin-top: 15px;
   border-radius: 20px;
   overflow: hidden;
   /* 隱藏超出內容 */
@@ -204,10 +207,10 @@ a {
   text-overflow: ellipsis;
   /* 超出部分顯示省略號 */
   cursor: pointer;
-  padding: 0 10px;
+  padding: 3px 9.5px;
 }
 #HtmlClassTitle-all .Html-title-all .Html-Class .Html-H2.selected {
-  background-color: #8ECAE6;
+  background-color: #1E77B8;
 }
 #HtmlClassTitle-all .Html-title-all .Html-Class .Html-Span {
   font-size: 0.8rem;

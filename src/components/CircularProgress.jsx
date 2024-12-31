@@ -45,8 +45,8 @@ function CircularProgress() {
                         // pathTransition: 'none',
 
                         // 顏色
-                        pathColor: `rgba(222, 91, 91)`, //內圈顏色
-                        textColor: '#de5b5b', //文字顏色
+                        pathColor: `#1E77B8`, //內圈顏色
+                        textColor: '#1E77B8', //文字顏色
                         trailColor: '#fff', //剩餘圈數顏色
                         backgroundColor: '#fff',
                     })}

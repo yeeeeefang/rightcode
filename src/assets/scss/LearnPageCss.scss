@@ -8,7 +8,7 @@
 }
 
 #LEPCss-Home {
-    background-color: $primary;
+    background-color: #FF9EC9;
     background-image: url(../images/homeDeco.png);
     background-position: 500px;
     background-size: 55%;
@@ -45,7 +45,7 @@
     #LEPCss-bk-big {
         display: flex;
         justify-content: center;
-
+align-items: center;
         padding-left: 94px;
 
         @media ($mediaLg) {
@@ -58,7 +58,7 @@
             border-radius: 20px;
             padding: 0px 20px;
             font-family: "SweiGothicCJKtc-Regular", serif;
-
+            height: 100%;
         }
 
         .LEPCss-PersonCard {
