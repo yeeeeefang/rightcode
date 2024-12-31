@@ -5,7 +5,7 @@
     overflow: hidden;
     background-color: $primary; // 背景黃色
     height: 100vh;
-    // border: 1px solid red;
+
 
     .login-main {
         // overflow: hidden;
@@ -14,7 +14,6 @@
         width: 100%;
         height: 100vh;
         position: relative;
-        // border: 1px solid red;
 
         .amoeba-blobs {
             width: 90%;
@@ -22,7 +21,6 @@
             left: 152px;
             top: -350px;
             overflow: hidden;
-            // border: 1px solid red;
         }
 
         .characters {
@@ -44,7 +42,6 @@
             top: 420px;
             left: 1200px;
             animation: float 2s ease-in-out infinite;
-            // border: 1px solid red;
 
             @keyframes float {
                 0% {
@@ -59,9 +56,6 @@
                     transform: translateY(0);
                 }
             }
-
-            // transform: rotate(5deg) rotateY(-180deg);
-            // border: 1px solid red;
         }
 
         .blue-char {
@@ -79,7 +73,6 @@
             top: 450px;
             left: 550px;
             z-index: 888;
-            // border: 1px solid red;
 
             animation: rotate-small 2s ease-in-out infinite;
 
@@ -111,7 +104,6 @@
             top: 20px;
             left: 700px;
             z-index: 777;
-            // border: 1px solid red;
 
             h2 {
                 color: $shadow-3; // 紫色標題
@@ -143,6 +135,7 @@
                     color: $shadow-3;
                     font-size: 0.9rem;
                     margin-bottom: 16px;
+                    cursor: pointer;
                 }
 
                 .login-button {
@@ -204,7 +197,6 @@
                 top: -600px;
                 left: 172px;
                 overflow: hidden;
-                // border: 1px solid red;
             }
 
             .characters {
@@ -267,9 +259,10 @@
         justify-content: center;
 
         .forgot-content {
-            background-color: $fc-5;
-            padding: 20px;
-            border-radius: 10px;
+            background-color: $Login-1;
+            box-shadow: 5px 5px 0 $shadow-3;
+            padding: 12px;
+            border-radius: 16px;
             text-align: left;
             width: 25%;
             height: fit-content;
@@ -277,6 +270,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            
 
             .foricon {
                 display: flex;
@@ -284,9 +278,9 @@
                 align-items: center;
 
                 h4 {
-                    font-size: $font-size-20 ;
+                    font-size: $font-size-24 ;
                     font-weight: $font-w-bold ;
-                    color: $shadow-3;
+                    color: $fc-3;
                 }
 
                 img {
@@ -299,16 +293,19 @@
                 display: flex;
                 flex-direction: column;
                 margin-bottom: 15px;
+                width: 100%;
 
                 label {
-                    color: $shadow-3;
-                    font-weight: bold;
+                    color: $fc-3;
+                    font-size: $font-size-16;
+                    font-weight: $font-w-medium;
                     margin-bottom: 5px;
                 }
 
                 input {
-                    border: 1px solid #ddd;
-                    border-radius: 10px;
+                    border: none;
+                    background-color: $Login-2;
+                    border-radius: 99px;
                     padding: 8px;
                     margin-bottom: 16px;
                 }
@@ -317,7 +314,7 @@
             .forgot-button {
                 width: 100px;
                 height: 40px;
-                background-color: $shadow-3;
+                background-color: $g-card3;
                 color: $fc-6;
                 border: none;
                 text-align: center;
@@ -325,7 +322,7 @@
                 border-radius: 10px;
                 font-size: 1rem;
                 font-weight: bold;
-                box-shadow: 3px 3px 0 rgb(233, 210, 243);
+                box-shadow: 0 2px 0 $shadow-3;
                 cursor: pointer;
 
                 &:hover {
