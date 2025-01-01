@@ -113,11 +113,11 @@ export default function LearnArea4() {
               <h2>Congratulations!</h2>
               <p>已完成此課程！(•̀ᴗ•́)و</p>
               <p>我覺得 ...</p>
-              {/* <Link to="/LearnPage" onClick={handleEmotionClick}> */}
+              <Link to="/LearnPage" onClick={handleEmotionClick}>
                 <div className="emotions-container" >
                   {[
-                    { id: 1, name: "Happy", image: "./images/icon_greenA.svg" },
-                    { id: 2, name: "Angry", image: "./images/icon_red.svg" },
+                    { id: 1, name: "great", image: "./images/icon_greenA.svg" },
+                    { id: 2, name: "good", image: "./images/icon_red.svg" },
                     { id: 3, name: "Surprised", image: "./images/icon_pink.svg" },
                     { id: 4, name: "Confused", image: "./images/icon_blue.svg" }
                   ].map((emotion) => (
@@ -130,7 +130,7 @@ export default function LearnArea4() {
                     </button>
                   ))}
                 </div>
-              {/* </Link> */}
+              </Link>
             </div>
           </div>
         )}
