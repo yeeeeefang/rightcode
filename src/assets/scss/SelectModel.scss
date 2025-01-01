@@ -1,0 +1,101 @@
+@use './reset';
+@use './variables/' as *;
+
+
+.overlayselect {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalselect {
+    // display: flex;
+    // flex-direction: column;
+    // flex-wrap: wrap;
+    background-color: $fc-5;
+    padding: 20px;
+    border-radius: 10px;
+    width: 780px;
+    max-width: 90%;
+    position: relative;
+
+    .close-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: none;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+
+        &:hover {
+            color: red;
+        }
+    }
+
+    .selectColumns {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+
+        .select-column {
+            h3 {
+                margin-bottom: 10px;
+                font-size: $font-size-32;
+                font-weight: $font-w-bold;
+                text-align: center;
+            }
+
+            &:nth-child(1) h3 {
+                color: #1E77B8; // HTML 標題顏色
+            }
+
+            &:nth-child(2) h3 {
+                color: $learn-p1; // CSS 標題顏色
+            }
+
+            .select-item {
+                margin-bottom: 10px;
+                background-color: $fc-6 ;
+                border-radius: 30px;
+
+                .question {
+                    font-weight: bold;
+                    font-size: $font-size-16 ;
+                    cursor: pointer;
+                    padding: 10px 20px;
+                    transition: color 0.2s;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+
+                    &:hover {
+                        scale: 1.03;
+                    }
+                }
+
+                .answer {
+                    font-weight: bold;
+                    font-size: $font-size-14 ;
+                    margin-top: 5px;
+                    padding-left: 10px;
+                    color: #666;
+                    padding: 0px 20px 10px 20px;
+
+                    p {
+                        margin: 5px 0; // 每段之間增加間
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -272,6 +272,7 @@ a {
 }
 #codeCourse #codePic .tier1c {
   position: absolute;
+  cursor: pointer;
   z-index: 6;
   width: 120px;
   height: 120px;
@@ -285,6 +286,14 @@ a {
     right: 70px;
     bottom: 55px;
   }
+}
+#codeCourse #codePic .tier1ctext {
+  position: absolute;
+  z-index: 7;
+  width: 190px;
+  height: 100px;
+  bottom: 170px;
+  right: -60px;
 }
 #codeCourse #course {
   display: flex;
