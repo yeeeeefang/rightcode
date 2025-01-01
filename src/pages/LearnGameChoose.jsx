@@ -136,7 +136,7 @@ const LearnGameChoose = () => {
     setTimeout(() => {
       const nextCount = questionCount + 1;
       setQuestionCount(nextCount);
-      if (nextCount % 10 === 0) {
+      if (nextCount % 3 === 0) {
         setShowModal(true);
       } else {
         setCurrentQuestion(Math.floor(Math.random() * questions.length));
