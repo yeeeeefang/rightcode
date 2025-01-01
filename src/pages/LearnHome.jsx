@@ -1,5 +1,5 @@
 import { useState } from "react"
-import "../assets/scss/LearnHome.scss"
+import "../assets/css/LearnHome.css"
 import Navbar from "../components/Navbar"
 import NavbarTwo from "../components/NavbarTwo"
 import { Link } from 'react-router-dom'
@@ -119,7 +119,7 @@ export default function LearnHome() {
                                 {/* <img src="/images/speech-bobble.png" alt="" /> */}
                             </div>
                             <img
-                                src="/images/redB.svg"
+                                src="./images/redB.svg"
                                 alt="Red Character"
                                 className="redA"
                             />
