@@ -1,8 +1,15 @@
+import React, { useState } from "react";
 import "../assets/css/LearnSelect.css"
 import NavbarTwo from "../components/NavbarTwo"
+import SelectModel from "../components/SelectModel"
 import { Link } from 'react-router-dom'
 
 export default function LearnSelect() {
+
+    const [isModalOpen, setModalOpen] = useState(false);
+
+    const openModal = () => setModalOpen(true);
+    const closeModal = () => setModalOpen(false);
     return (
         <>
             <section id="LearnSelectAllpage">
@@ -87,7 +94,8 @@ export default function LearnSelect() {
                                 </filter>
                             </defs>
                         </svg>
-                        <img className="tier1c" src="./images/blueS.gif" alt="" />
+                        <img className="tier1c" src="./images/blueS.gif" alt="" onClick={openModal} />
+                        <img className="tier1ctext" src="./images/selectbluetext.svg" alt=""/>
                     </section>
 
                     <section id="course">
@@ -99,6 +107,7 @@ export default function LearnSelect() {
                         </div>
                     </section>
                 </div>
+                <SelectModel isOpen={isModalOpen} onClose={closeModal} />
             </section>
         </>
     )

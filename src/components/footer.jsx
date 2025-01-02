@@ -69,7 +69,7 @@ function Footer() {
             </nav >
             {foomodal && (
                 <div className="foomodal" onClick={foomodalClose}>
-                    <div className="foomodal-content">
+                    <div className="foomodal-content"  onClick={(e) => e.stopPropagation()}> {/* 阻止事件冒泡 */}
                         <h3>謝謝支持</h3>
                         <p>幫助我們持續帶來樂趣、創新與挑戰！</p>
                         <div className="foomodal-wrapper">

@@ -1,5 +1,5 @@
 import { useState } from "react"
-import "../assets/scss/LearnHome.scss"
+import "../assets/css/LearnHome.css"
 import Navbar from "../components/Navbar"
 import NavbarTwo from "../components/NavbarTwo"
 import { Link } from 'react-router-dom'

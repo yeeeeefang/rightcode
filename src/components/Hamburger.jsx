@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import '../assets/css/Hamburger.css'
-import $ from 'jquery'
 
 function Hamburger({ onClose }) {
 

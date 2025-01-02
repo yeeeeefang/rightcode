@@ -28,19 +28,27 @@
 
     }
 
-    .LEPCss-content-top {
-        font-size: $font-size-14;
-        font-weight: $font-w-bold;
-        position: absolute;
-        right: 72px;
-        bottom: 23px;
-        width: 30%;
-        z-index: 3;
+    .LEPCss-conten-all {
 
-        .LEP-content-top-3 {
-            text-align: right;
+        .LEPCss-content-top {
+            font-size: $font-size-14;
+            font-weight: $font-w-bold;
+            margin: 0 0 50px 0;
+
+            .LEPCss-content-top-3 {
+                text-align: right;
+            }
+        }
+
+        .LEPCss-title {
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 0px 20px;
+            font-family: "SweiGothicCJKtc-Regular", serif;
+            height: 100%;
         }
     }
+
 
     #LEPCss-bk-big {
         display: flex;
@@ -53,16 +61,12 @@
 
         }
 
-        .LEPCss-title {
-            background-color: #fff;
-            border-radius: 20px;
-            padding: 0px 20px;
-            font-family: "SweiGothicCJKtc-Regular", serif;
-            height: 100%;
-        }
+
 
         .LEPCss-PersonCard {
             width: 100%;
+            margin-left: 100px;
+
 
             .LEPCss-personAll {
                 .LEPCss-PersonEXP {
@@ -72,7 +76,7 @@
 
                     .LEPCss-PE {
                         width: 442px;
-                        margin-right: 100px;
+                        margin-left: 100px;
                     }
                 }
             }

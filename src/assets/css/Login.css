@@ -278,6 +278,7 @@ a {
   color: #534D97;
   font-size: 0.9rem;
   margin-bottom: 16px;
+  cursor: pointer;
 }
 #login-page .login-main .login-form form .login-button {
   background-color: #534D97;
@@ -377,9 +378,10 @@ a {
   justify-content: center;
 }
 #login-page .forgot .forgot-content {
-  background-color: #FFF0C0;
-  padding: 20px;
-  border-radius: 10px;
+  background-color: #F1EAFF;
+  box-shadow: 5px 5px 0 #534D97;
+  padding: 12px;
+  border-radius: 16px;
   text-align: left;
   width: 25%;
   height: fit-content;
@@ -394,9 +396,9 @@ a {
   align-items: center;
 }
 #login-page .forgot .forgot-content .foricon h4 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  color: #534D97;
+  color: #403D3B;
 }
 #login-page .forgot .forgot-content .foricon img {
   width: 48px;
@@ -406,30 +408,33 @@ a {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
+  width: 100%;
 }
 #login-page .forgot .forgot-content .forgot-form label {
-  color: #534D97;
-  font-weight: bold;
+  color: #403D3B;
+  font-size: 1rem;
+  font-weight: 500;
   margin-bottom: 5px;
 }
 #login-page .forgot .forgot-content .forgot-form input {
-  border: 1px solid #ddd;
-  border-radius: 10px;
+  border: none;
+  background-color: #FFFCF0;
+  border-radius: 99px;
   padding: 8px;
   margin-bottom: 16px;
 }
 #login-page .forgot .forgot-content .forgot-button {
   width: 100px;
   height: 40px;
-  background-color: #534D97;
-  color: #fff;
+  background-color: #F1CAF5;
+  color: #FFFFFF;
   border: none;
   text-align: center;
   line-height: 40px;
   border-radius: 10px;
   font-size: 1rem;
   font-weight: bold;
-  box-shadow: 3px 3px 0 rgb(233, 210, 243);
+  box-shadow: 0 2px 0 #534D97;
   cursor: pointer;
 }
 #login-page .forgot .forgot-content .forgot-button:hover {

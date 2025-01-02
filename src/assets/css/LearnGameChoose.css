@@ -344,6 +344,7 @@ a {
   height: 80px;
 }
 #LearnGameChooseall .modal .modal-content .buttonbox .choosebutton {
+  height: 44px;
   margin: 10px;
   padding: 10px 20px;
   border: none;

@@ -189,16 +189,12 @@ a {
   bottom: 0px;
   transform: rotate(30deg);
 }
-#LEP-Home .LEP-content-top {
+#LEP-Home .LEP-content-top-all .LEP-content-top {
   font-size: 0.85rem;
   font-weight: 700;
-  position: absolute;
-  right: 72px;
-  bottom: 23px;
-  width: 30%;
-  z-index: 3;
+  margin: 0 0 50px 0;
 }
-#LEP-Home .LEP-content-top .LEP-content-top-3 {
+#LEP-Home .LEP-content-top-all .LEP-content-top .LEP-content-top-3 {
   text-align: right;
 }
 #LEP-Home #LEP-bk-big {
@@ -221,6 +217,7 @@ a {
 }
 #LEP-Home #LEP-bk-big .LEP-PersonCard {
   width: 100%;
+  margin-left: 100px;
 }
 #LEP-Home #LEP-bk-big .LEP-PersonCard .LEP-personAll .LEP-PersonEXP {
   display: flex;
@@ -229,7 +226,7 @@ a {
 }
 #LEP-Home #LEP-bk-big .LEP-PersonCard .LEP-personAll .LEP-PersonEXP .LEP-PE {
   width: 442px;
-  margin-right: 100px;
+  margin-left: 100px;
 }
 #LEP-Home #LEP-bk-big .LEP-PersonCard .LEP-card {
   margin: 50px 120px 0px 30px;

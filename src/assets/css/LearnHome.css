@@ -204,15 +204,15 @@ a {
   font-size: 5rem;
 }
 #learnhome-page .learnhome-section1 .learning-section .learngreen {
-  width: 220px;
-  height: 220px;
+  width: 225px;
+  height: 225px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 #learnhome-page .learnhome-section1 .learning-section .learngreen .learngreenB {
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   align-content: center;
   transform: rotate(5deg);
 }
@@ -340,4 +340,58 @@ a {
 }
 #learnhome-page .learnhome-section1 .learnhome-section2 .doit-section img {
   width: 320px;
+}
+@media (min-width: 1441px) {
+  #learnhome-page h2 {
+    font-size: 5rem;
+    font-weight: bold;
+    letter-spacing: 2rem;
+    text-align: center;
+  }
+  #learnhome-page .learnhome-section1 .learning-section {
+    height: 29vh;
+  }
+  #learnhome-page .learnhome-section1 .learning-section:hover h2 {
+    font-size: 6rem;
+  }
+  #learnhome-page .learnhome-section1 .learning-section .learngreen {
+    width: 260px;
+    height: 260px;
+  }
+  #learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .practice-section {
+    height: 29vh;
+  }
+  #learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .practice-section h2 {
+    width: 50%;
+  }
+  #learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .practice-section:hover h2 {
+    font-size: 6rem;
+  }
+  #learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .practice-section .learnblue {
+    height: 320px;
+    width: 320px;
+  }
+  #learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .explore-section {
+    height: 29vh;
+  }
+  #learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .explore-section h2 {
+    width: 60%;
+  }
+  #learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .explore-section:hover h2 {
+    font-size: 6rem;
+  }
+  #learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .explore-section .learnpink {
+    width: 300px;
+    height: 300px;
+  }
+  #learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .explore-section .learnpink .learnpink-svg {
+    width: 100%;
+    height: 100%;
+  }
+  #learnhome-page .learnhome-section1 .learnhome-section2 .doit-section {
+    width: 600px;
+  }
+  #learnhome-page .learnhome-section1 .learnhome-section2 .doit-section img {
+    width: 385px;
+  }
 }/*# sourceMappingURL=LearnHome.css.map */

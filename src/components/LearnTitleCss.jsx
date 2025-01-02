@@ -288,7 +288,7 @@ function LearnTitleCss({ onSelectTitle }) {
     return (
         <>
             <section id='CssClassTitle-all'>
-                <h1 className='Css-H1'>Css</h1>
+                <h1 className='Css-H1'>CSS</h1>
                 <div className='Css-title-all'>
                     {combinedDataCss.map((section, index) => (
                         <div key={section.id} className='Css-Class'>
