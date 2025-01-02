@@ -30,7 +30,7 @@ export default function LearnHome() {
                             <div className="learning-section">
                                 <div className="learngreen">
                                     
-                                        <img src="/images/learngreenB.gif" alt="" />
+                                        <img src="./images/learngreenB.gif" alt="" />
                                 </div>
                                 <h2>學習區</h2>
                             </div>
@@ -119,7 +119,7 @@ export default function LearnHome() {
                                 {/* <img src="/images/speech-bobble.png" alt="" /> */}
                             </div>
                             <img
-                                src="/images/redB.svg"
+                                src="./images/redB.svg"
                                 alt="Red Character"
                                 className="redA"
                             />
