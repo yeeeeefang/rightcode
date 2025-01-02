@@ -423,6 +423,10 @@ a {
   padding: 8px;
   margin-bottom: 16px;
 }
+#login-page .forgot .forgot-content .forgot-form .remember {
+  text-align: center;
+  font-size: 0.85rem;
+}
 #login-page .forgot .forgot-content .forgot-button {
   width: 100px;
   height: 40px;

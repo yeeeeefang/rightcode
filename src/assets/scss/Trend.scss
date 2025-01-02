@@ -7,11 +7,11 @@
     height: 820px;
     overflow: hidden;
     position: relative;
-    
-    
-   // border: 2px red solid;
 
-    
+
+    // border: 2px red solid;
+
+
 
     .lightcontainer {
         margin-top: -100px;
@@ -25,7 +25,8 @@
             z-index: 4;
             position: absolute;
         }
-        .hottitle{
+
+        .hottitle {
             font-size: 24px;
             font-weight: bold;
             text-align: center;
@@ -38,7 +39,7 @@
             display: flex;
             justify-content: center;
             width: 100%;
-            
+
             // img {
             //     opacity: 0; // 初始為隱藏
             //     animation: fadeInLight 1s linear  forwards; 
@@ -50,7 +51,7 @@
                 transform: translate(30px, 120px);
                 z-index: 1;
                 opacity: 0; // 初始為隱藏
-                animation: fadeInLight .3s ease-Out  forwards; 
+                animation: fadeInLight .3s ease-Out forwards;
                 animation-delay: 0.5s;
             }
 
@@ -60,7 +61,7 @@
                 height: 600px;
                 z-index: 2;
                 opacity: 0; // 初始為隱藏
-                animation: fadeInLight .1s ease-Out  forwards; 
+                animation: fadeInLight .1s ease-Out forwards;
                 animation-delay: 1s;
             }
 
@@ -70,9 +71,9 @@
                 height: 600px;
                 z-index: 3;
                 opacity: 0; // 初始為隱藏
-                animation: fadeInLight .1s ease-Out  forwards; 
+                animation: fadeInLight .1s ease-Out forwards;
                 animation-delay: 1.5s;
-                
+
             }
         }
     }
@@ -97,7 +98,7 @@
         top: 200px;
         right: 200px;
     }
-    
+
     #item3 {
         position: absolute;
         z-index: 8;
@@ -135,6 +136,14 @@
         left: 0;
         z-index: 5;
         width: 100%;
+
+        @media (min-width:1560px) {
+            position: absolute;
+            top: 470px;
+            left: 0;
+            z-index: 5;
+            width: 100%;
+        }
     }
 }
 
@@ -145,7 +154,7 @@
     background-color: #FFD640;
     background-image: url('../images/trendLine.png');
     background-size: 99%;
-    background-position:left top  140px;
+    background-position: left top 140px;
     background-repeat: no-repeat;
     // opacity: 0; // 初始透明
     // transition: opacity 0.5s ease-out; // 平滑顯現過渡
@@ -156,11 +165,12 @@
 
 @keyframes fadeInLight {
     0% {
-      opacity: 0;
-    //   filter: brightness(0%);
+        opacity: 0;
+        //   filter: brightness(0%);
     }
+
     100% {
-      opacity: 1;
-    //   filter: brightness(100%);
+        opacity: 1;
+        //   filter: brightness(100%);
     }
-  }
+}

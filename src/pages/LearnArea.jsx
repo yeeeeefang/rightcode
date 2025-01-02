@@ -1,4 +1,3 @@
-import '../assets/css/LearnArea.css';
 import { useEffect } from 'react';
 import LearnArea1 from "../components/LearnArea1";
 import LearnArea2 from '../components/LearnArea2';
@@ -7,7 +6,7 @@ import LearnArea4 from '../components/LearnArea4';
 import NavbarBack from '../components/NavbarBack';
 import Footer from '../components/Footer';
 import LearnAreaCollect from '../components/LearnAreaCollect';
-
+import '../assets/css/LearnArea.css';
 
 function LearnArea() {
     //每次點到時，都是從頂部開始

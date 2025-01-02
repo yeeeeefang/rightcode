@@ -2,11 +2,10 @@ import CircularProgress from "../components/CircularProgress"
 import LearnCard from "../components/LearnCard"
 import LearnPageExp from "../components/LearnPageExp"
 import LearnTitle from "../components/LearnTitle"
-import "../assets/css/LearnPage.css"
 import LearnPagePerson from "../components/LearnPagePerson"
 import NavbarBack from "../components/NavbarBack"
 import { useState } from "react"
-
+import "../assets/css/LearnPage.css"
 
 function LearnPage() {
 

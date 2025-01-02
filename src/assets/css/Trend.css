@@ -273,6 +273,15 @@ a {
   z-index: 5;
   width: 100%;
 }
+@media (min-width: 1560px) {
+  #div1 .path {
+    position: absolute;
+    top: 470px;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+  }
+}
 
 #div2 {
   background-color: #FFD640;
