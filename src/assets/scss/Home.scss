@@ -85,7 +85,7 @@
                 font-size: 32px;
                 color: $fc-2;
                 font-weight: $font-w-bold;
-                background-color: $fc-5;
+                background-color: $shadow-2;
                 line-height: 25px;
                 /* 背景顏色待調整 */
 
@@ -96,7 +96,7 @@
                 color: $fc-2;
                 font-weight: $font-w-bold;
                 line-height: 15px;
-                background-color: $fc-5;
+                background-color: $shadow-2;
                 display: inline-block;
                 margin-top: 15px;
             }
@@ -121,20 +121,20 @@
 
                 .Home-text-2 {
                     display: inline-flex;
-                    background-color: $fc-5;
+                    background-color: $shadow-2;
                     line-height: 25px;
                     font-size: 32px;
                     color: $fc-2;
                     text-align: right;
                     font-weight: $font-w-bold;
 
-                    /* background-color: $fc-5; */
+                    /* background-color: $shadow-2; */
                     /* 背景顏色待調整 */
                 }
 
                 .Home-eng-text-2 {
                     display: inline-block;
-                    background-color: $fc-5;
+                    background-color: $shadow-2;
                     font-size: 28px;
                     color: $fc-2;
                     font-weight: $font-w-bold;
@@ -222,7 +222,7 @@
             .Home-text-3 {
                 font-size: 32px;
                 font-weight: $font-w-bold;
-                background: linear-gradient(to top, $fc-5 30%, transparent 30%);
+                background: linear-gradient(to top, $shadow-2 30%, transparent 30%);
                 display: inline-block;
 
                 span {
