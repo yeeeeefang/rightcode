@@ -6,7 +6,6 @@
     background-color: $primary; // 背景黃色
     height: 100vh;
 
-
     .login-main {
         // overflow: hidden;
         justify-content: center;
@@ -32,7 +31,6 @@
                 left: 380px;
                 transform: rotate(40deg);
             }
-
         }
 
         .red-char {
@@ -89,11 +87,9 @@
                     transform: rotate(0);
                 }
             }
-
         }
 
         .login-form {
-
             background-color: $register-1;
             padding: 36px;
             border-radius: 20px;
@@ -138,22 +134,24 @@
                     cursor: pointer;
                 }
 
-                .login-button {
-                    background-color: $shadow-3;
-                    color: #fff;
-                    border: none;
-                    padding: 18px 36px;
-                    border-radius: 10px;
-                    font-size: 1rem;
-                    font-weight: bold;
-                    box-shadow: 3px 3px 0 rgb(233, 210, 243);
-                    cursor: pointer;
+                    .login-button {
+                        background-color: $shadow-3;
+                        color: $fc-6;
+                        border: none;
+                        width: 100%;
+                        padding: 18px 36px;
+                        border-radius: 10px;
+                        font-size: $font-size-16;
+                        font-weight: bold;
+                        box-shadow: 3px 3px 0 rgb(233, 210, 243);
+                        cursor: pointer;
 
-                    &:hover {
-                        background-color: #b9b4f5;
-                        color: $shadow-3;
+                        &:hover {
+                            background-color: #887fe0;
+                            color: $shadow-3;
+                        }
                     }
-                }
+                
             }
 
             .login-divider {
@@ -206,9 +204,7 @@
                     top: -150px;
                     left: 520px;
                     transform: rotate(20deg);
-
                 }
-
             }
 
             .red-char {
@@ -270,7 +266,6 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            
 
             .foricon {
                 display: flex;
@@ -278,8 +273,8 @@
                 align-items: center;
 
                 h4 {
-                    font-size: $font-size-24 ;
-                    font-weight: $font-w-bold ;
+                    font-size: $font-size-24;
+                    font-weight: $font-w-bold;
                     color: $fc-3;
                 }
 
@@ -313,14 +308,15 @@
                 .remember {
                     text-align: center;
                     font-size: $font-size-14;
+
                 }
             }
 
             .forgot-button {
-                width: 100px;
+                width: 200px;
                 height: 40px;
                 background-color: $g-card3;
-                color: $fc-6;
+                color: $fc-3;
                 border: none;
                 text-align: center;
                 line-height: 40px;

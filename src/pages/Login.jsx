@@ -45,7 +45,7 @@ export default function Login() {
 
                             <p className="forgot-password" onClick={forgotOpen}>忘記密碼</p>
 
-                            <button type="submit" className="login-button">登入</button>
+                            <Link to='/'><button type="submit" className="login-button">登入</button></Link> 
                         </form>
                         <div className="login-divider">
                             <hr />
@@ -71,14 +71,15 @@ export default function Login() {
                                 <input type="email" name="email" id="email" title="Email" placeholder="請輸入Email" required />
                                 <label htmlFor="password">*請輸入密碼：</label>
                                 <input type="password" name="password" id="password" title="密碼" placeholder="請輸入6~8英數混合字元" />
-                                <label htmlFor="password-1">再次確認密碼</label>
+                                <label htmlFor="password-1">*再次確認密碼</label>
                                 <input type="password" name="password" id="password-1" title="再次確認密碼" placeholder="請輸入6~8英數混合字元" />
                                 <div className='remember'>
                                     <input type="checkbox" name="remember" id="remember" title="記住密碼" value="記住密碼" />
                                     <label htmlFor="">記住這個帳號密碼</label>
                                 </div>
+                                
                             </form>
-                            <Link to='/Login'><p className='forgot-button'>確認</p></Link>
+                            <Link to='/Member'><p className='forgot-button'>確認</p></Link>
 
 
                         </div>

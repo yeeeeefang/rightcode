@@ -1,4 +1,5 @@
-import "../assets/css/register.css"
+import { Link } from "react-router-dom"
+import "../assets/scss/register.scss"
 import Navbar from "../components/Navbar"
 
 
@@ -47,7 +48,7 @@ export default function Register() {
                                 <input type="checkbox" name="remember" id="remember" title="記住密碼" value="記住密碼" />
                                 <label htmlFor="">記住這個帳號密碼</label>
                             </div>
-                            <button type="submit" className="register-button">登入</button>
+                            <Link to='/'><button type="submit" className="register-button">註冊</button></Link> 
                         </form>
                         <div className="register-divider">
                             <hr />

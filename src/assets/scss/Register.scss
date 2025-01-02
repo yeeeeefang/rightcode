@@ -103,7 +103,6 @@
                 flex-direction: column;
 
                 .register-form-content {
-
                     label {
                         display: block;
                         color: $shadow-3;
@@ -128,29 +127,26 @@
                     color: $shadow-3;
                     font-size: 0.9rem;
                     margin-bottom: 16px;
-
-
                 }
 
-                .register-button {
-                    background-color: $shadow-3;
-                    color: #fff;
-                    border: none;
-                    padding: 18px 36px;
-                    border-radius: 10px;
-                    box-shadow: 3px 3px 0 rgb(233, 210, 243);
-                    font-size: 1rem;
-                    font-weight: bold;
-                    cursor: pointer;
+                    .register-button {
+                        width: 100%;
+                        background-color: $shadow-3;
+                        color: $fc-6;
+                        border: none;
+                        padding: 18px 36px;
+                        border-radius: 10px;
+                        box-shadow: 3px 3px 0 rgb(233, 210, 243);
+                        font-size: $font-size-16;
+                        font-weight: bold;
+                        cursor: pointer;
 
-                    &:hover {
-                        background-color: #b9b4f5;
-                        color: $shadow-3;
+                        &:hover {
+                            background-color: #887fe0;
+                            color: $shadow-3;
+                        }
                     }
-
-                }
-
-
+                
             }
 
             .register-divider {
@@ -189,8 +185,7 @@
         }
 
         // 桌機板
-        @media($mediaLg) {
-
+        @media ($mediaLg) {
             .amoeba-blobs2 {
                 width: 125%;
                 left: 110px;
@@ -224,7 +219,6 @@
                     height: 230px;
                     top: 570px;
                     left: 1430px;
-
                 }
             }
 
@@ -248,8 +242,6 @@
                     margin: 36px 0 24px;
                 }
             }
-
-
         }
     }
 }
