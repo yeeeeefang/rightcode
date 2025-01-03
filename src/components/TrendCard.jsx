@@ -11,7 +11,7 @@ function TrendCard() {
                 <h3 className="learn">CSS</h3>
                 <img src="./images/trendCourse2.svg" alt="" />
                 <div className="item">
-                    <h4 className="learn">背景</h4>
+                    <h4 className="learn">背景-1</h4>
                     <p className="content">學習人數 2391人</p>
                     <p className="content">收藏人數 1022人</p>
                 </div>
@@ -27,9 +27,9 @@ function TrendCard() {
             </div>
             <div className="card3" onClick={handleturn}>
                 <h3 className="learn">CSS</h3>
-                <img src="./images/trendCourse3.svg" alt="" />
+                <img src="./images/trendCourse5.svg" alt="" />
                 <div className="item">
-                    <h4 className="learn">邊距與內距</h4>
+                    <h4 className="learn">邊距</h4>
                     <p className="content">學習人數 1930人</p>
                     <p className="content">收藏人數 1467人</p>
                 </div>

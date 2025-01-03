@@ -27,14 +27,14 @@ function TrendCard2() {
                             <h3 className="learn-1">CSS</h3>
                             <img src="./images/trendCourse2.svg" alt="" />
                             <div className="item-1">
-                                <h4 className="learn1-1">背景</h4>
+                                <h4 className="learn1-1">背景-1</h4>
                                 <p className="content-1">學習人數 473人</p>
                                 <p className="content-1">收藏人數 294人</p>
                             </div>
                         </div>
                         <div className="card3-1" onClick={handleturn}>
                             <h3 className="learn-1">HTML</h3>
-                            <img src="./images/trendCourse4.svg" alt="" />
+                            <img src="./images/trendCourse3.svg" alt="" />
                             <div className="item-1">
                                 <h4 className="learn1-1">音檔與影片</h4>
                                 <p className="content-1">學習人數 930人</p>
@@ -43,7 +43,7 @@ function TrendCard2() {
                         </div>
                         <div className="card4-1" onClick={handleturn}>
                             <h3 className="learn-1">CSS</h3>
-                            <img src="./images/trendCourse3.svg" alt="" />
+                            <img src="./images/trendCourse4.svg" alt="" />
                             <div className="item-1">
                                 <h4 className="learn1-1">顏色</h4>
                                 <p className="content-1">學習人數 1930人</p>
@@ -62,9 +62,9 @@ function TrendCard2() {
                     <div className="tdcard-2">
                         <div className="card5-1" onClick={handleturn}>
                             <h3 className="learn-1">CSS</h3>
-                            <img src="./images/trendCourse3.svg" alt="" />
+                            <img src="./images/trendCourse5.svg" alt="" />
                             <div className="item-1">
-                                <h4 className="learn1-1">邊距與內距</h4>
+                                <h4 className="learn1-1">邊距</h4>
                                 <p className="content-1">學習人數 930人</p>
                                 <p className="content-1">收藏人數 467人</p>
                             </div>
@@ -82,7 +82,7 @@ function TrendCard2() {
                             <h3 className="learn-1">CSS</h3>
                             <img src="./images/trendCourse7.svg" alt="" />
                             <div className="item-1">
-                                <h4 className="learn1-1">定位</h4>
+                                <h4 className="learn1-1">定位-1</h4>
                                 <p className="content-1">學習人數 2512人</p>
                                 <p className="content-1">收藏人數 1111人</p>
                             </div>

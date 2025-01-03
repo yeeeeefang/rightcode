@@ -315,7 +315,6 @@ a {
 }
 #LearnAreaall4 .road1 {
   position: absolute;
-  transform: rotateY(180deg);
   width: 250px;
   height: 210px;
   bottom: 80px;
