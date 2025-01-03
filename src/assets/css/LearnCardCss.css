@@ -167,7 +167,7 @@ a {
 /* reset end */
 #LearnPageAllCss {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 #LearnPageAllCss .LearnPageLeft-1,

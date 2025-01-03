@@ -172,7 +172,7 @@ a {
 }
 #LEP-Home {
   background-color: #8BC5EA;
-  background-image: url(../images/LearnpageDeco.svg);
+  background-image: url(../images/homeDeco.png);
   background-position: 50% 50%;
   background-size: 55%;
   background-repeat: no-repeat;
@@ -189,6 +189,9 @@ a {
   bottom: 0px;
   transform: rotate(30deg);
 }
+#LEP-Home .LEP-content-top-all {
+  width: 250px;
+}
 #LEP-Home .LEP-content-top-all .LEP-content-top {
   font-size: 0.85rem;
   font-weight: 700;
@@ -200,8 +203,8 @@ a {
 #LEP-Home #LEP-bk-big {
   display: flex;
   justify-content: center;
-  padding-left: 94px;
   align-items: center;
+  padding-left: 110px;
 }
 @media (min-width: 1441px) {
   #LEP-Home #LEP-bk-big {
@@ -229,6 +232,6 @@ a {
   margin-left: 100px;
 }
 #LEP-Home #LEP-bk-big .LEP-PersonCard .LEP-card {
-  margin: 50px 120px 0px 30px;
+  margin: 50px 130px 0px 30px;
   padding-top: 10px;
 }/*# sourceMappingURL=LearnPage.css.map */

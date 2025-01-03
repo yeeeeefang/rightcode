@@ -18,16 +18,39 @@
         margin: 5px;
 
         .navlearningBtn {
-            width: 220px;
-            height: 48px;
-            margin-right: 50px;
-
             .navHamBtn-starLearn {
                 display: block;
                 width: 220px;
                 height: 48px;
                 line-height: 48px;
                 margin-right: 50px;
+                text-align: center;
+                font-size: $font-size-24;
+                font-weight: $font-w-bold;
+                background-color: $member;
+                border-radius: 30px;
+                box-shadow: 5px 5px 0px 2px #000000;
+                transition: transform 0.5s, box-shadow 0.1s; // 添加平滑效果
+
+                &:hover {
+                    transition: all 0.5s ease;
+
+                    background-color: #ddc069;
+                }
+
+                &:active {
+                    box-shadow: none;
+                    transform: translateX(5px) translateY(5px);
+
+                }
+                
+            }
+            .navHamBtn-back {
+                display: block;
+                width: 150px;
+                height: 48px;
+                line-height: 48px;
+                margin-right: 30px;
                 text-align: center;
                 font-size: $font-size-24;
                 font-weight: $font-w-bold;
@@ -47,6 +70,7 @@
                     transform: translateX(5px) translateY(5px);
 
                 }
+                
             }
         }
 

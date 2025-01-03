@@ -30,7 +30,7 @@ function NavbarBack() {
                     <div className="navBarBk-1">
                         <div className="navlearningBtn">
                             <Link to='/LearnHome'>
-                                <p className='navHamBtn-starLearn'>返回選單</p>
+                                <p className='navHamBtn-back'>返回選單</p>
                             </Link>
                         </div>
                         <div className="navhamBtn" onClick={toggleHamburger}>

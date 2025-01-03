@@ -33,7 +33,7 @@ function Navbar() {
                     <div className="navBarBk-1">
                         <Link to='/LearnHome'>
                             <div className="navlearningBtn">
-                                <p className='navHamBtn-starLearn'>Start Learning</p>
+                                <p className='navHamBtn-starLearn'>開始學習</p>
 
                                 {/* <img src="../public./images/navBtn.png" alt=""
                                     ref={starLearnBtnRef}

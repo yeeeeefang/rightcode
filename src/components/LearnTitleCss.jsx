@@ -143,7 +143,7 @@ function LearnTitleCss({ onSelectTitle }) {
         },
         {
             id: "section-4",
-            title: "彈性盒模型 (Flexbox)",
+            title: "彈性盒模型",
             children: [
                 {
                     title: "｜容器屬性-1",
@@ -178,7 +178,7 @@ function LearnTitleCss({ onSelectTitle }) {
         },
         {
             id: "section-5",
-            title: "網格佈局 (Grid Layout)",
+            title: "網格佈局",
             children: [
                 {
                     title: "｜容器屬性-1",

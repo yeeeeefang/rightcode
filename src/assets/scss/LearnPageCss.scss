@@ -9,7 +9,7 @@
 
 #LEPCss-Home {
     background-color: #FFD0D0;
-    background-image: url(../images/LearnpageDeco.svg);
+    background-image: url(../images/homeDeco.png);
     background-position: 50% 50%;
     background-size: 55%;
     background-repeat: no-repeat;
@@ -29,6 +29,7 @@
     }
 
     .LEPCss-conten-all {
+        width: 250px;
 
         .LEPCss-content-top {
             font-size: $font-size-14;
@@ -40,13 +41,7 @@
             }
         }
 
-        .LEPCss-title {
-            background-color: #fff;
-            border-radius: 20px;
-            padding: 0px 20px;
-            font-family: "SweiGothicCJKtc-Regular", serif;
-            height: 100%;
-        }
+
     }
 
 
@@ -54,10 +49,20 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-left: 94px;
+        padding-left: 110px;
 
         @media ($mediaLg) {
             padding-top: 60px;
+
+
+        }
+
+        .LEPCss-title {
+            height: 100%;
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 0px 20px;
+            font-family: "SweiGothicCJKtc-Regular", serif;
 
         }
 
@@ -82,7 +87,7 @@
             }
 
             .LEPCss-card {
-                margin: 50px 120px 0px 30px;
+                margin: 50px 130px 0px 30px;
                 padding-top: 10px;
             }
         }

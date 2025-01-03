@@ -1,17 +1,20 @@
 @use './reset';
 @use './variables'as *;
 @import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
+
 @font-face {
     font-family: SweiGothicCJKtc-Regular;
-    src: url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff2) format("woff2")
-    , url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff) format("woff");
-  }
+    src: url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff) format("woff");
+}
+
 #Home-page-1 {
     background-color: $primary;
 }
-#Home-page-all2{
+
+#Home-page-all2 {
     background-color: $primary;
 }
+
 #Home-page-all {
     background-image: url(../images/homeAll.svg);
     background-color: $primary;
@@ -21,6 +24,7 @@
 }
 
 #Home-page-2 {
+
     /* height: 1400px;
     background-color: $primary;
     background-image: url('../public/images/homePathA.png');
@@ -230,8 +234,9 @@
                     color: $fc-4;
                 }
 
-                
+
             }
+
             .Home-sml-text-3 {
                 font-size: 20px;
                 font-weight: $font-w-medium;
@@ -355,11 +360,29 @@
         }
 
         .Home-content-bk-5 {
+            transition: transform 0.5s, box-shadow 0.2s; // 添加平滑效果
 
             .Home-greenIp {
                 width: 251px;
-                animation: jump 1.5s ease-in-out infinite;
+
                 /* 套用動畫 */
+            }
+
+            &:hover {
+
+                .Home-greenIp {
+                    animation: jump 1.5s ease-in-out infinite;
+                }
+
+                p {
+                    animation-play-state: paused;
+                    transition: all 0.5s ease;
+                    background-color: #f44f46;
+                }
+            }
+            &:active {
+                box-shadow: none; // 點擊時移除陰影
+                transform: translateX(5px) translateY(5px);
             }
 
             .Home-btn {
@@ -379,12 +402,11 @@
                 box-shadow: 10px 10px 0px 2px #000000;
                 transition: transform 0.5s, box-shadow 0.2s; // 添加平滑效果
                 margin-bottom: 110px;
+                animation: big 1.5s ease-in-out infinite;
 
-                &:active {
-                    box-shadow: none; // 點擊時移除陰影
-                    transform: translateX(5px) translateY(5px);
 
-                }
+                
+
             }
         }
     }
@@ -404,6 +426,28 @@
     70% {
         transform: translateY(0);
         /* 回到初始位置 */
+    }
+}
+
+@keyframes big {
+    0% {
+        transform: scale(1)
+            /* 初始位置 */
+    }
+
+    30% {
+        transform: scale(1);
+        /* 向上跳動 */
+    }
+
+    70% {
+        transform: scale(1.2);
+        /* 回到初始位置 */
+    }
+
+    100% {
+        transform: scale(1);
+
     }
 }
 
@@ -509,8 +553,10 @@
                 .Home-content-6 {
                     padding-bottom: 150px;
                 }
+
                 .Home-text-3 {
                     font-size: 40px;
+
                     span {
                         font-size: 70px;
                     }
@@ -601,12 +647,6 @@
                     transition: transform 0.5s, box-shadow 0.2s; // 添加平滑效果
                     margin-bottom: 90px;
 
-                    &:hover {
-                        transition: all 0.5s ease;
-
-                        background-color: #f44f46;
-                    }
-
                     &:active {
                         box-shadow: none; // 點擊時移除陰影
                         transform: translateX(5px) translateY(5px);
@@ -622,6 +662,7 @@
         }
     }
 }
+
 /* svg css */
 .st0 {
     fill: #FDFAD3;

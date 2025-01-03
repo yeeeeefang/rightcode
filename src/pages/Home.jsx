@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import 'aos/dist/aos.css'
 import Aos from 'aos'
 import Footer from '../components/Footer'
-import NavbarTwo from '../components/NavbarTwo'
+import Navbar from '../components/Navbar'
 
 
 function Home() {
@@ -262,7 +262,7 @@ function Home() {
             </div>
             <div id='Home-page-all2'>
                 <div id='navbartext'>
-                    <NavbarTwo></NavbarTwo>
+                    <Navbar></Navbar>
                 </div>
 
                 <div id="Home-page-all">

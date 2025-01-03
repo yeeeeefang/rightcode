@@ -3,7 +3,7 @@
 
 #LearnPageAllCss {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
     .LearnPageLeft-1,
@@ -14,6 +14,7 @@
             scale: (1.2);
         }
     }
+
     .LearnPageLeft-1.hideArrow,
     .LearnPageLeft-2.hideArrow {
         opacity: 0;
@@ -102,6 +103,6 @@
 
             }
         }
-        
+
     }
 }

@@ -9,7 +9,7 @@
 
 #LEP-Home {
     background-color: #8BC5EA;
-    background-image: url(../images/LearnpageDeco.svg);
+    background-image: url(../images/homeDeco.png);
     background-position: 50% 50%;
     background-size: 55%;
     background-repeat: no-repeat;
@@ -29,6 +29,7 @@
     }
 
     .LEP-content-top-all {
+        width: 250px;
         .LEP-content-top {
             font-size: $font-size-14;
             font-weight: $font-w-bold;
@@ -44,8 +45,9 @@
     #LEP-bk-big {
         display: flex;
         justify-content: center;
-        padding-left: 94px;
         align-items: center;
+        padding-left: 110px;
+
 
         @media ($mediaLg) {
             padding-top: 60px;
@@ -82,7 +84,7 @@
             }
 
             .LEP-card {
-                margin: 50px 120px 0px 30px;
+                margin: 50px 130px 0px 30px;
                 padding-top: 10px;
             }
         }

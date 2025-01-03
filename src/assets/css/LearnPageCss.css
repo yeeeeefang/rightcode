@@ -172,7 +172,7 @@ a {
 }
 #LEPCss-Home {
   background-color: #FFD0D0;
-  background-image: url(../images/LearnpageDeco.svg);
+  background-image: url(../images/homeDeco.png);
   background-position: 50% 50%;
   background-size: 55%;
   background-repeat: no-repeat;
@@ -189,6 +189,9 @@ a {
   bottom: 0px;
   transform: rotate(30deg);
 }
+#LEPCss-Home .LEPCss-conten-all {
+  width: 250px;
+}
 #LEPCss-Home .LEPCss-conten-all .LEPCss-content-top {
   font-size: 0.85rem;
   font-weight: 700;
@@ -197,23 +200,23 @@ a {
 #LEPCss-Home .LEPCss-conten-all .LEPCss-content-top .LEPCss-content-top-3 {
   text-align: right;
 }
-#LEPCss-Home .LEPCss-conten-all .LEPCss-title {
-  background-color: #fff;
-  border-radius: 20px;
-  padding: 0px 20px;
-  font-family: "SweiGothicCJKtc-Regular", serif;
-  height: 100%;
-}
 #LEPCss-Home #LEPCss-bk-big {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 94px;
+  padding-left: 110px;
 }
 @media (min-width: 1441px) {
   #LEPCss-Home #LEPCss-bk-big {
     padding-top: 60px;
   }
+}
+#LEPCss-Home #LEPCss-bk-big .LEPCss-title {
+  height: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 0px 20px;
+  font-family: "SweiGothicCJKtc-Regular", serif;
 }
 #LEPCss-Home #LEPCss-bk-big .LEPCss-PersonCard {
   width: 100%;
@@ -229,6 +232,6 @@ a {
   margin-left: 100px;
 }
 #LEPCss-Home #LEPCss-bk-big .LEPCss-PersonCard .LEPCss-card {
-  margin: 50px 120px 0px 30px;
+  margin: 50px 130px 0px 30px;
   padding-top: 10px;
 }/*# sourceMappingURL=LearnPageCss.css.map */
