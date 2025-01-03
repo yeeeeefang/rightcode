@@ -270,8 +270,9 @@ a {
   margin-bottom: 16px;
 }
 #register-page .register-main .register-form form .register-button {
+  width: 100%;
   background-color: #534D97;
-  color: #fff;
+  color: #FFFFFF;
   border: none;
   padding: 18px 36px;
   border-radius: 10px;
@@ -281,7 +282,7 @@ a {
   cursor: pointer;
 }
 #register-page .register-main .register-form form .register-button:hover {
-  background-color: #b9b4f5;
+  background-color: #887fe0;
   color: #534D97;
 }
 #register-page .register-main .register-form .register-divider {

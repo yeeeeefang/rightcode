@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import "../assets/scss/Login.scss"
+import "../assets/css/Login.css"
 import Navbar from "../components/Navbar"
 import { Link } from 'react-router-dom';
 
