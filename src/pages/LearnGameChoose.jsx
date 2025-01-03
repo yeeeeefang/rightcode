@@ -195,7 +195,7 @@ const LearnGameChoose = () => {
             <div className="buttonbox">
               <button className="choosebutton" onClick={handleRestart}>繼續遊玩</button>
               {/* <button onClick={handleExit}>離開</button> */}
-              <Link to='/LearnPage' className="choosebutton"><p>離開</p></Link>
+              <Link to='/LearnHome' className="choosebutton"><p>離開</p></Link>
             </div>
           </div>
         </div>
