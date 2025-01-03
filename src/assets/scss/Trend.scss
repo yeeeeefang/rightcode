@@ -51,8 +51,8 @@
                 transform: translate(30px, 120px);
                 z-index: 1;
                 opacity: 0; // 初始為隱藏
-                animation: fadeInLight .3s ease-Out forwards;
-                animation-delay: 0.5s;
+                animation: fadeInLight .1s ease-Out forwards;
+                animation-delay: 0.1s;
             }
 
             .light2 {
@@ -62,7 +62,7 @@
                 z-index: 2;
                 opacity: 0; // 初始為隱藏
                 animation: fadeInLight .1s ease-Out forwards;
-                animation-delay: 1s;
+                animation-delay: .4s;
             }
 
             .light3 {
@@ -72,7 +72,7 @@
                 z-index: 3;
                 opacity: 0; // 初始為隱藏
                 animation: fadeInLight .1s ease-Out forwards;
-                animation-delay: 1.5s;
+                animation-delay: .7s;
 
             }
         }

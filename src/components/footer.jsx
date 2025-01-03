@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../../src/assets/css/Footer.css';
+import '../../src/assets/scss/Footer.scss';
 
 
 

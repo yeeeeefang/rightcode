@@ -204,8 +204,8 @@ a {
   transform: translate(30px, 120px);
   z-index: 1;
   opacity: 0;
-  animation: fadeInLight 0.3s ease-Out forwards;
-  animation-delay: 0.5s;
+  animation: fadeInLight 0.1s ease-Out forwards;
+  animation-delay: 0.1s;
 }
 #div1 .lightcontainer .container .light2 {
   transform: translate(0, 120px);
@@ -214,7 +214,7 @@ a {
   z-index: 2;
   opacity: 0;
   animation: fadeInLight 0.1s ease-Out forwards;
-  animation-delay: 1s;
+  animation-delay: 0.4s;
 }
 #div1 .lightcontainer .container .light3 {
   transform: translate(0, 120px);
@@ -223,7 +223,7 @@ a {
   z-index: 3;
   opacity: 0;
   animation: fadeInLight 0.1s ease-Out forwards;
-  animation-delay: 1.5s;
+  animation-delay: 0.7s;
 }
 #div1 .deco-1 {
   position: absolute;

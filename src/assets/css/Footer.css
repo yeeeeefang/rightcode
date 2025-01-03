@@ -260,16 +260,15 @@ a {
 }
 .foomodal .foomodal-content h3 {
   font-size: 2.5rem;
-  padding-bottom: 10px;
   font-weight: 900;
-  color: #FFD640;
+  color: rgba(0, 0, 0, 0.85);
   letter-spacing: 10px;
-  -webkit-text-stroke: 2px rgba(0, 0, 0, 0.85);
-  text-stroke: 2px rgba(0, 0, 0, 0.85);
 }
 .foomodal .foomodal-content p {
   font-size: 1.25rem;
   font-weight: 500;
+  color: #897359;
+  margin-bottom: 10px;
 }
 .foomodal .foomodal-content .foomodal-wrapper {
   width: 250px;
@@ -290,6 +289,7 @@ a {
 .foomodal .foomodal-content .foored h4 {
   font-size: 1.5rem;
   font-weight: 700;
+  color: #403D3B;
 }
 .foomodal .foomodal-content .foored img {
   width: 48px;

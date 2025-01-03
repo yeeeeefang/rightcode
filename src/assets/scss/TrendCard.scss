@@ -25,7 +25,7 @@
         box-shadow: 8px 8px 0 #33322f;
         position: relative;
         opacity: 0;
-        animation:cardShow 0.5s ease-in-out forwards 3s;        
+        animation:cardShow 0.3s ease-in-out forwards 1.2s;        
 
         &::before{ content:""; 
             width: 82px;
@@ -84,7 +84,7 @@
         box-shadow: 8px 8px 0 #33322f;
         position: relative;
         opacity: 0;
-        animation:cardShow 0.5s ease-in-out forwards 2.5s;  
+        animation:cardShow 0.3s ease-in-out forwards 1s;  
 
         &::before{ content:""; 
             width: 82px;
@@ -142,7 +142,7 @@
         box-shadow: 8px 8px 0 #33322f;
         position: relative;
         opacity: 0;
-        animation:cardShow 0.5s ease-in-out forwards 3.5s;  
+        animation:cardShow 0.3s ease-in-out forwards 1.7s;  
 
         &::before{ content:""; 
             width: 82px;
