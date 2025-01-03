@@ -23,7 +23,7 @@ function Navbar() {
 
     return (
         <>
-            <div>
+            <div className='navbarall' >
                 <div className="navBarBk">
                     <div className="navlogo">
 

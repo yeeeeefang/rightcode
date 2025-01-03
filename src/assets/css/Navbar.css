@@ -168,6 +168,7 @@ a {
 .navBarBk {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 30px 50px;
   position: sticky;
   z-index: 999;
@@ -178,6 +179,7 @@ a {
 }
 .navBarBk .navBarBk-1 {
   display: flex;
+  align-items: center;
   margin: 5px;
 }
 .navBarBk .navBarBk-1 .navlearningBtn .navHamBtn-starLearn {
@@ -193,6 +195,7 @@ a {
   border-radius: 30px;
   box-shadow: 5px 5px 0px 2px #000000;
   transition: transform 0.5s, box-shadow 0.1s;
+  margin-bottom: 5px;
 }
 .navBarBk .navBarBk-1 .navlearningBtn .navHamBtn-starLearn:hover {
   transition: all 0.5s ease;
@@ -204,12 +207,12 @@ a {
 }
 .navBarBk .navBarBk-1 .navlearningBtn .navHamBtn-back {
   display: block;
-  width: 150px;
-  height: 48px;
-  line-height: 48px;
-  margin-right: 30px;
+  width: 130px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 50px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
   background-color: #fff;
   border-radius: 30px;

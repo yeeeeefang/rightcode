@@ -239,7 +239,8 @@ a {
   display: flex;
 }
 #Home-page-2 .Home-content-bk-2 .Home-content-3 .Home-content-3-img {
-  padding: 80px 0 0 50px;
+  width: 15%;
+  padding: 160px 0px 0px 50px;
 }
 #Home-page-2 .Home-content-bk-2 .Home-content-3 .Home-text-2 {
   display: inline-block;
@@ -300,9 +301,9 @@ a {
   font-weight: 500;
 }
 #Home-page-2 .Home-content-bk-2 .Home-content-4 .Home-content-4-img {
-  padding: 0 50px 0 0;
+  padding: 50px 50px 0 0;
   transform: rotate(-10deg);
-  width: 30%;
+  width: 25%;
   margin: auto;
 }
 
@@ -333,6 +334,9 @@ a {
   text-align: center;
   line-height: 65px;
   font-weight: 700;
+}
+#Home-page-3 .Home-content-bk .Home-ladder {
+  width: 80%;
 }
 #Home-page-3 .Home-content-bk .Home-content-bk-4 {
   color: rgba(0, 0, 0, 0.85);
@@ -369,7 +373,7 @@ a {
 }
 
 #Home-page-4 {
-  padding-top: 20px;
+  padding-top: 0px;
   /* height: 2000px;
   background-color: $primary;
   background-image: url(../public/images/homePathB.png);
@@ -408,7 +412,7 @@ a {
   font-weight: 700;
 }
 #Home-page-4 .Home-content-bk-all .Home-content-bk-1 .Home-content-img {
-  width: 80%;
+  width: 60%;
   margin: auto;
   /* 記得調整 */
   padding-top: 30px;
@@ -498,7 +502,7 @@ a {
 #Home-page-5 .Home-content-bk-4 .Home-content-bk-5 p {
   display: block;
   background-color: #FF6C64;
-  width: 240px;
+  width: 250px;
   line-height: 113px;
   font-size: 40px;
   text-align: center;
@@ -565,7 +569,8 @@ a {
     margin: 250px 0 0 250px;
   }
   #Home-page-2 .Home-content-bk-2 .Home-content-3 .Home-content-3-img {
-    padding: 100px 0 0 80px;
+    width: 15%;
+    padding: 350px 0 0 80px;
   }
   #Home-page-2 .Home-content-bk-2 .Home-content-3 .Home-text-2 {
     font-size: 40px;
@@ -594,10 +599,10 @@ a {
   }
   #Home-page-2 .Home-content-bk-2 .Home-content-4 .Home-content-4-img {
     padding: 0 80px 0 0;
-    width: 30%;
+    width: 25%;
   }
   #Home-page-3 {
-    margin-top: 180px;
+    margin-top: 40px;
     margin-bottom: 150px;
   }
   #Home-page-3 .Home-content-bk .Home-content-bk-3 p {
@@ -626,7 +631,7 @@ a {
     font-weight: 500;
   }
   #Home-page-3 .Home-content-bk .Home-ladder {
-    width: 130%;
+    width: 100%;
   }
   #Home-page-4 {
     padding-top: 70px;
@@ -646,8 +651,8 @@ a {
     font-size: 28px;
   }
   #Home-page-4 .Home-content-bk-all .Home-content-bk-1 .Home-content-img {
-    padding-top: 40px;
-    width: 70%;
+    padding-top: 90px;
+    width: 50%;
   }
   #Home-page-4 .Home-content-bk-all .Home-content-bk-2,
   #Home-page-4 .Home-content-bk-all .Home-content-bk-3 {

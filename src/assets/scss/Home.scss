@@ -81,7 +81,8 @@
             display: flex;
 
             .Home-content-3-img {
-                padding: 80px 0 0 50px;
+                width:15%;
+                padding: 160px 0px 0px 50px;
             }
 
             .Home-text-2 {
@@ -159,9 +160,9 @@
 
             .Home-content-4-img {
 
-                padding: 0 50px 0 0;
+                padding: 50px 50px 0 0;
                 transform: rotate(-10deg);
-                width: 30%;
+                width: 25%;
                 margin: auto;
 
             }
@@ -200,6 +201,9 @@
                 line-height: 65px;
                 font-weight: $font-w-bold;
             }
+        }
+        .Home-ladder {
+            width: 80%;
         }
 
         .Home-content-bk-4 {
@@ -241,12 +245,13 @@
                 font-size: 20px;
                 font-weight: $font-w-medium;
             }
+            
         }
     }
 }
 
 #Home-page-4 {
-    padding-top: 20px;
+    padding-top: 0px;
 
     /* height: 2000px;
     background-color: $primary;
@@ -290,7 +295,7 @@
             }
 
             .Home-content-img {
-                width: 80%;
+                width: 60%;
                 margin: auto;
                 /* 記得調整 */
                 padding-top: 30px;
@@ -393,7 +398,7 @@
             p {
                 display: block;
                 background-color: #FF6C64;
-                width: 240px;
+                width: 250px;
                 line-height: 113px;
                 font-size: 40px;
                 text-align: center;
@@ -482,7 +487,8 @@
 
             .Home-content-3 {
                 .Home-content-3-img {
-                    padding: 100px 0 0 80px;
+                    width: 15%;
+                    padding: 350px 0 0 80px;
                 }
 
                 .Home-text-2 {
@@ -522,14 +528,14 @@
 
                 .Home-content-4-img {
                     padding: 0 80px 0 0;
-                    width: 30%;
+                    width: 25%;
                 }
             }
         }
     }
 
     #Home-page-3 {
-        margin-top: 180px;
+        margin-top: 40px;
         margin-bottom: 150px;
 
         .Home-content-bk {
@@ -569,7 +575,7 @@
             }
 
             .Home-ladder {
-                width: 130%;
+                width: 100%;
             }
         }
     }
@@ -597,8 +603,8 @@
                 }
 
                 .Home-content-img {
-                    padding-top: 40px;
-                    width: 70%;
+                    padding-top: 90px;
+                    width: 50%;
                 }
             }
 

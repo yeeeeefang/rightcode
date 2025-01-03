@@ -4,6 +4,7 @@
 .navBarBk {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 30px 50px;
     position: sticky;
     z-index: 999;
@@ -15,9 +16,11 @@
 
     .navBarBk-1 {
         display: flex;
+        align-items: center;
         margin: 5px;
 
         .navlearningBtn {
+
             .navHamBtn-starLearn {
                 display: block;
                 width: 220px;
@@ -31,6 +34,7 @@
                 border-radius: 30px;
                 box-shadow: 5px 5px 0px 2px #000000;
                 transition: transform 0.5s, box-shadow 0.1s; // 添加平滑效果
+                margin-bottom: 5px;
 
                 &:hover {
                     transition: all 0.5s ease;
@@ -43,16 +47,17 @@
                     transform: translateX(5px) translateY(5px);
 
                 }
-                
+
             }
+
             .navHamBtn-back {
                 display: block;
-                width: 150px;
-                height: 48px;
-                line-height: 48px;
-                margin-right: 30px;
+                width: 130px;
+                height: 40px;
+                line-height: 40px;
+                margin-right: 50px;
                 text-align: center;
-                font-size: $font-size-24;
+                font-size: $font-size-16;
                 font-weight: $font-w-bold;
                 background-color: #fff;
                 border-radius: 30px;
@@ -70,7 +75,7 @@
                     transform: translateX(5px) translateY(5px);
 
                 }
-                
+
             }
         }
 
