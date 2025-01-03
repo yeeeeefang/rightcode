@@ -199,7 +199,7 @@ a {
 }
 .navBarBk .navBarBk-1 .navlearningBtn .navHamBtn-starLearn:hover {
   transition: all 0.5s ease;
-  background-color: #ddc069;
+  background-color: #ffc200;
 }
 .navBarBk .navBarBk-1 .navlearningBtn .navHamBtn-starLearn:active {
   box-shadow: none;

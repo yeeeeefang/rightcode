@@ -1,7 +1,7 @@
 import '../../src/assets/css/Navbar.css'
 import { Link } from "react-router-dom"
 import Hamburger from './Hamburger'
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 function NavbarBack() {
 
@@ -16,6 +16,26 @@ function NavbarBack() {
     const hideHamburger = () => {
         setHamburgerVisible(false);
     };
+
+    const hamburgerRef = useRef(null); // 參考 Hamburger 元素
+        useEffect(() => {
+            const handleClickOutside = (event) => {
+                // 如果點擊的地方不在 Navbar 或 Hamburger 內部，隱藏 Hamburger
+                if (
+                    hamburgerRef.current && !hamburgerRef.current.contains(event.target)
+                ) {
+                    setHamburgerVisible(false);
+                }
+            };
+    
+            // 監聽全域點擊事件
+            document.addEventListener('mousedown', handleClickOutside);
+    
+            // 清除事件監聽器
+            return () => {
+                document.removeEventListener('mousedown', handleClickOutside);
+            };
+        }, []);
 
     return (
         <>
@@ -43,7 +63,9 @@ function NavbarBack() {
                     </div>
                 </div>
             </div>
-            <div className={`HumMenu ${isHamburgerVisible ? 'show' : ''} ${!isHamburgerVisible ? 'hide' : ''}`}>
+            <div 
+            ref={hamburgerRef}
+            className={`HumMenu ${isHamburgerVisible ? 'show' : ''} ${!isHamburgerVisible ? 'hide' : ''}`}>
                 <Hamburger onClose={hideHamburger} />
             </div>
         </>
