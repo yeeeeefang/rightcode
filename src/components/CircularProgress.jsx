@@ -1,6 +1,7 @@
 import 'react-circular-progressbar/dist/styles.css';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import { useEffect, useState } from 'react';
+import '../assets/css/CircularProgress.css'
 
 function CircularProgress() {
 
@@ -22,7 +23,7 @@ function CircularProgress() {
     }, []);
     return (
         <>
-            <div style={{ width: 250, height: 250, fontFamily: 'nunito' }}>
+            <div className='circularfont' >
                 <CircularProgressbar
                     value={percentage}
                     text={`${percentage}%`}
