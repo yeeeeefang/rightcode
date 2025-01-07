@@ -186,8 +186,7 @@ a {
   overflow: hidden;
 }
 #login-page .login-main .characters .green-char {
-  width: 200px;
-  height: 200px;
+  width: 180px;
   position: absolute;
   top: -67px;
   left: 380px;
@@ -195,7 +194,6 @@ a {
 }
 #login-page .login-main .red-char {
   width: 220px;
-  height: 220px;
   position: absolute;
   top: 420px;
   left: 1200px;
@@ -214,14 +212,12 @@ a {
 }
 #login-page .login-main .blue-char {
   width: 175px;
-  height: 175px;
   position: absolute;
   top: 245px;
   left: 145px;
 }
 #login-page .login-main .pink-char {
   width: 170px;
-  height: 170px;
   position: absolute;
   top: 450px;
   left: 550px;

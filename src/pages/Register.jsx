@@ -1,23 +1,28 @@
 import { Link } from "react-router-dom"
 import "../assets/css/register.css"
 import Navbar from "../components/Navbar"
+import { useForm } from "react-hook-form";
 
 
 export default function Register() {
+    const {
+        register, //是一種狀態(state)，可以綁定N個表單欄位
+        handleSubmit, //是一種方法
+        formState:{errors}, // 捕捉驗證規則
+    } = useForm();
+    // 建立一個字定義的方法，被表單觸發時，將register資料進來
+    const onSubmit = async(data) => {
+        // 取得表單被綁定的全部資料，以物件型態顯示
+        console.log(data);
+        // 取得表單指定的欄位資料 => data.欄位名稱
+        console.log(data.uesrpw);
+        await(data.username,data.email, data.uesrpw)
+    }
     return (
         <>
 
             <div id="register-page">
                 <Navbar />
-                {/* topbar  */}
-                {/* <header className="topbar">
-                    <div className="logo">
-                        <h1 className="logo"><img src="./images/logo.png" alt="rightCode" title="rightCode" /></h1>
-                    </div>
-                    <div className="learnBtn">
-                        <figure><img src="./images/hamBtn.svg" alt="" /></figure>
-                    </div>
-                </header> */}
                 <div className="register-main">
                     <div className="amoeba-blobs2">
                         <img src="./images/register.png" alt="" />
@@ -34,13 +39,17 @@ export default function Register() {
                         <h2>會員註冊</h2>
                         <form>
                             <div className="register-form-content">
+                                {/* 使用者名稱 */}
                                 <label htmlFor="username">*姓名：</label>
-                                <input type="text" name="username" id="username" title="姓名" placeholder="請輸入姓名" required autoFocus />
+                                <input type="text"  id="username" title="姓名" placeholder="請輸入姓名" required 
+                                {...register('username')}/>
                                 <label htmlFor="email">*Email：</label>
-                                <input type="email" name="email" id="email" title="Email" placeholder="請輸入Email" required />
+                                <input type="email" id="email" title="Email" placeholder="請輸入Email" required 
+                                {...register('email')}/>
 
-                                <label htmlFor="password">*請輸入密碼：</label>
-                                <input type="password" name="password" id="password" title="密碼" placeholder="請輸入6~8英數混合字元" />
+                                <label htmlFor="uesrpw">*請輸入密碼：</label>
+                                <input type="password" id="uesrpw" title="密碼" placeholder="請輸入6~8英數混合字元" 
+                                {...register('uesrpw')}/>
                                 {/* <label  htmlFor="password-1">再次確認密碼</label>
                             <input type="password" name="password" id="password-1" title="再次確認密碼" placeholder="請輸入6~8英數混合字元" /> */}
                             </div>
@@ -48,7 +57,8 @@ export default function Register() {
                                 <input type="checkbox" name="remember" id="remember" title="記住密碼" value="記住密碼" />
                                 <label htmlFor="">記住這個帳號密碼</label>
                             </div>
-                            <Link to='/'><button type="submit" className="register-button">註冊</button></Link> 
+                            {/* <Link to='/'></Link>  */}
+                            <button type="submit" className="register-button">註冊</button>
                         </form>
                         <div className="register-divider">
                             <hr />

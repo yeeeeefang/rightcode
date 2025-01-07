@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import "../assets/css/Login.css"
+import "../assets/scss/Login.scss"
 import Navbar from "../components/Navbar"
 import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
