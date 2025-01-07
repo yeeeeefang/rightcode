@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import "../assets/scss/Login.scss"
 import Navbar from "../components/Navbar"
 import { Link } from 'react-router-dom';
@@ -8,7 +8,23 @@ export default function Login() {
 
     const [forgot, setForgot] = useState(false);
     const forgotOpen = () => { setForgot(true); }
-    const forgotClose = () => { setForgot(false); }
+    const forgotRef = useRef(null)
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (forgotRef.current && !forgotRef.current.contains(event.target)) {
+                setForgot(false); // 點擊彈窗外部時關閉彈窗
+            }
+        };
+
+        // 監聽全域點擊事件
+        document.addEventListener('mousedown', handleClickOutside);
+
+        return () => {
+            // 清除事件監聽器
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
 
     const {
         register, //是一種狀態(state)，可以綁定N個表單欄位
@@ -22,7 +38,7 @@ export default function Login() {
         // 取得表單指定的欄位資料 => data.欄位名稱
         console.log(data.uesrpw);
 
-        await(data.email, data.uesrpw)
+        await (data.email, data.uesrpw)
     }
 
     return (
@@ -70,8 +86,8 @@ export default function Login() {
                     </div>
                 </div>
                 {forgot && (
-                    <div className="forgot" onClick={forgotClose}>
-                        <div className="forgot-content">
+                    <div className="forgot" >
+                        <div className="forgot-content" ref={forgotRef}>
                             <div className="foricon">
                                 <h4>忘記密碼</h4>
                                 {/* <img src="./images/icon_pink.svg" alt="" /> */}
