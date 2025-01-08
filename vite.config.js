@@ -3,9 +3,9 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base:process.env.NODE_ENV==='production'?'/rightcode/':'/',
+  // base:process.env.NODE_ENV==='production'?'/rightcode/':'/',
   // base:'/newcode/',
-  // base:'./',
+  base:'./',
   plugins: [react()],
   server: {
     open: true, // 啟動時自動打開瀏覽器
