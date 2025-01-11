@@ -264,6 +264,7 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-right: 80px;
 }
 #LearnGame-page .LearnGame-blackboard .LearnGame-ready-1 .LearnGame-ready-bk-1 {
   display: flex;

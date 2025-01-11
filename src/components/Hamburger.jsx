@@ -1,7 +1,77 @@
 import { Link } from 'react-router-dom'
 import '../assets/css/Hamburger.css'
+import { useRef, useState } from 'react';
+import ReactDOM from 'react-dom';
 
-function Hamburger({ onClose }) {
+function Hamburger({ onClose,modalRef,modalRef2,modalRef3 }) {
+
+    const [foomodal, setFoomodal] = useState(false);
+    const foomodalOpen = () => { setFoomodal(true); }
+    const foomodalClose = () => { setFoomodal(false); }
+
+    const Foomodal = () => {
+        return ReactDOM.createPortal(
+            <div className="foomodal" ref={modalRef} onClick={foomodalClose}>
+                <div className="foomodal-content" onClick={(e) => e.stopPropagation()}> {/* 阻止事件冒泡 */}
+                    <h3>謝謝支持</h3>
+                    <p>幫助我們持續帶來樂趣、創新與挑戰！</p>
+                    <div className="foomodal-wrapper">
+                        <img className="foomodalimg" src="./images/qrCode.svg" alt="QR Code" />
+                    </div>
+                    <div className="foored">
+                        <h4>讓我們一起打造更好的Right Code</h4>
+                        <img src="./images/icon_red.svg" alt="" />
+                    </div>
+                </div>
+            </div>,
+            document.getElementById('portal-root') // 使用 Portal 的掛載點
+        );
+    };
+
+    const [foomodal2, setFoomodal2] = useState(false);
+    const foomodalOpen2 = () => { setFoomodal(true); }
+    const foomodalClose2 = () => { setFoomodal(false); }
+
+    const Foomodal2 = () => {
+        return ReactDOM.createPortal(
+            <div className="foomodal" ref={modalRef2} onClick={foomodalClose2}>
+                <div className="foomodal-content" onClick={(e) => e.stopPropagation()}> {/* 阻止事件冒泡 */}
+                    <h3>謝謝支持</h3>
+                    <p>幫助我們持續帶來樂趣、創新與挑戰！</p>
+                    <div className="foomodal-wrapper">
+                        <img className="foomodalimg" src="./images/qrCode.svg" alt="QR Code" />
+                    </div>
+                    <div className="foored">
+                        <h4>讓我們一起打造更好的Right Code</h4>
+                        <img src="./images/icon_red.svg" alt="" />
+                    </div>
+                </div>
+            </div>,
+            document.getElementById('portal-root') // 使用 Portal 的掛載點
+        );
+    };
+    const [foomodal3, setFoomodal3] = useState(false);
+    const foomodalOpen3 = () => { setFoomodal(true); }
+    const foomodalClose3 = () => { setFoomodal(false); }
+
+    const Foomodal3 = () => {
+        return ReactDOM.createPortal(
+            <div className="foomodal" ref={modalRef3} onClick={foomodalClose2}>
+                <div className="foomodal-content" onClick={(e) => e.stopPropagation()}> {/* 阻止事件冒泡 */}
+                    <h3>謝謝支持</h3>
+                    <p>幫助我們持續帶來樂趣、創新與挑戰！</p>
+                    <div className="foomodal-wrapper">
+                        <img className="foomodalimg" src="./images/qrCode.svg" alt="QR Code" />
+                    </div>
+                    <div className="foored">
+                        <h4>讓我們一起打造更好的Right Code</h4>
+                        <img src="./images/icon_red.svg" alt="" />
+                    </div>
+                </div>
+            </div>,
+            document.getElementById('portal-root') // 使用 Portal 的掛載點
+        );
+    };
 
 
     return (
@@ -56,7 +126,7 @@ function Hamburger({ onClose }) {
                         <p>登出</p>
                     </Link>
 
-                    <svg className='donimg' width="101" height="87" viewBox="0 0 101 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className='donimg' onClick={foomodalOpen} width="101" height="87" viewBox="0 0 101 87" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path className="testt" d="M65.7075 1.96708C68.3254 -0.655694 72.5698 -0.655694 75.1877 1.96708C77.8056 4.58986 77.8056 8.84222 75.1877 11.465L65.3928 21.2782C64.5015 22.1712 63.0571 22.1712 62.1658 21.2782L52.3709 11.465C49.753 8.84222 49.753 4.58986 52.3709 1.96708C54.9888 -0.655694 59.2332 -0.655694 61.8511 1.96708L62.1658 2.28236C63.0571 3.17541 64.5015 3.17541 65.3928 2.28236L65.7075 1.96708Z" fill="#EC2B2B" />
                         <path className="testt1" d="M38.964 16.3581C41.5818 13.7353 45.8262 13.7353 48.4441 16.3581C51.062 18.9808 51.062 23.2332 48.4441 25.856L38.6493 35.6692C37.7579 36.5622 36.3136 36.5622 35.4222 35.6692L25.6274 25.856C23.0095 23.2332 23.0095 18.9808 25.6274 16.3581C28.2452 13.7353 32.4896 13.7353 35.1075 16.3581L35.4222 16.6733C36.3136 17.5664 37.7579 17.5664 38.6493 16.6733L38.964 16.3581Z" fill="#EC2B2B" />
                         <path d="M7.35689 31.3985C7.35689 30.676 7.94096 30.0902 8.66146 30.0902H59.5395C60.26 30.0902 60.844 30.676 60.844 31.3985V87H13.8797C10.2773 87 7.35689 84.0713 7.35689 80.4586V31.3985Z" fill="#5F4A3A" />
@@ -71,6 +141,11 @@ function Hamburger({ onClose }) {
                         <path d="M48.3813 69.9925C47.9221 69.9925 47.6925 69.7622 47.6925 69.3017V63.3569C47.6925 62.8964 47.9221 62.6662 48.3813 62.6662H51.9819C52.4411 62.6662 52.6707 62.8755 52.6707 63.2941C52.6707 63.7128 52.4411 63.9221 51.9819 63.9221H49.0492V65.6281H51.6688C52.128 65.6281 52.3576 65.8374 52.3576 66.2561C52.3576 66.6747 52.128 66.884 51.6688 66.884H49.0492V68.7365H52.0967C52.5559 68.7365 52.7855 68.9459 52.7855 69.3645C52.7855 69.7832 52.5559 69.9925 52.0967 69.9925H48.3813Z" fill="white" />
                     </svg>
                 </div>
+                {foomodal && <Foomodal />} {/* 使用 Portal 組件 */}
+                {foomodal2 && <Foomodal2 />} {/* 使用 Portal 組件 */}
+                {foomodal3 && <Foomodal3 />} {/* 使用 Portal 組件 */}
+
+
 
             </section>
         </>

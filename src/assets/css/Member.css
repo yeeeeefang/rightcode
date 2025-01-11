@@ -287,7 +287,6 @@ a {
 #memberPage #member #memberAll .memberAward .award .aPic1 .awardName {
   position: absolute;
   z-index: 9;
-  right: 5%;
   bottom: 0;
   color: rgba(0, 0, 0, 0.85);
   font-size: 0.8em;

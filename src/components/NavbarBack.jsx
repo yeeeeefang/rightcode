@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from 'react';
 function NavbarBack() {
 
     const [isHamburgerVisible, setHamburgerVisible] = useState(false); // 控制 Hamburger 顯示/隱藏
+    const modalRef2 = useRef(null); // 參考模態框元素（foomodal）
 
     // 切換 Hamburger 顯示狀態
     const toggleHamburger = () => {
@@ -18,24 +19,25 @@ function NavbarBack() {
     };
 
     const hamburgerRef = useRef(null); // 參考 Hamburger 元素
-        useEffect(() => {
-            const handleClickOutside = (event) => {
-                // 如果點擊的地方不在 Navbar 或 Hamburger 內部，隱藏 Hamburger
-                if (
-                    hamburgerRef.current && !hamburgerRef.current.contains(event.target)
-                ) {
-                    setHamburgerVisible(false);
-                }
-            };
-    
-            // 監聽全域點擊事件
-            document.addEventListener('mousedown', handleClickOutside);
-    
-            // 清除事件監聽器
-            return () => {
-                document.removeEventListener('mousedown', handleClickOutside);
-            };
-        }, []);
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            // 如果點擊的地方不在 Navbar 或 Hamburger 內部，隱藏 Hamburger
+            if (
+                hamburgerRef.current && !hamburgerRef.current.contains(event.target)
+                && (!modalRef2.current || !modalRef2.current.contains(event.target))
+            ) {
+                setHamburgerVisible(false);
+            }
+        };
+
+        // 監聽全域點擊事件
+        document.addEventListener('mousedown', handleClickOutside);
+
+        // 清除事件監聽器
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
 
     return (
         <>
@@ -63,10 +65,11 @@ function NavbarBack() {
                     </div>
                 </div>
             </div>
-            <div 
-            ref={hamburgerRef}
-            className={`HumMenu ${isHamburgerVisible ? 'show' : ''} ${!isHamburgerVisible ? 'hide' : ''}`}>
-                <Hamburger onClose={hideHamburger} />
+            <div
+                ref={hamburgerRef}
+                className={`HumMenu ${isHamburgerVisible ? 'show' : ''} ${!isHamburgerVisible ? 'hide' : ''}`}>
+                <Hamburger onClose={hideHamburger}
+                    modalRef={modalRef2} />
             </div>
         </>
     )

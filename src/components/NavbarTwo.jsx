@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 function NavbarTwo() {
 
     const [isHamburgerVisible, setHamburgerVisible] = useState(false); // 控制 Hamburger 顯示/隱藏
+    const modalRef3 = useRef(null); // 參考模態框元素（foomodal）
 
     // 切換 Hamburger 顯示狀態
     const toggleHamburger = () => {
@@ -24,6 +25,8 @@ function NavbarTwo() {
             // 如果點擊的地方不在 Navbar 或 Hamburger 內部，隱藏 Hamburger
             if (
                 hamburgerRef.current && !hamburgerRef.current.contains(event.target)
+                && (!modalRef3.current || !modalRef3.current.contains(event.target))
+
             ) {
                 setHamburgerVisible(false);
             }
@@ -61,7 +64,9 @@ function NavbarTwo() {
                 <div
                     ref={hamburgerRef}
                     className={`HumMenu ${isHamburgerVisible ? 'show' : ''} ${!isHamburgerVisible ? 'hide' : ''}`}>
-                    <Hamburger onClose={hideHamburger} />
+                    <Hamburger 
+                    onClose={hideHamburger}
+                    modalRef={modalRef3}  />
                 </div>
             </section>
         </>

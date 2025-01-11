@@ -7,6 +7,7 @@ function Navbar() {
 
 
     const [isHamburgerVisible, setHamburgerVisible] = useState(false); // 控制 Hamburger 顯示/隱藏
+    const modalRef = useRef(null); // 參考模態框元素（foomodal）
 
     // 切換 Hamburger 顯示狀態
     const toggleHamburger = () => {
@@ -26,7 +27,8 @@ function Navbar() {
         const handleClickOutside = (event) => {
             // 如果點擊的地方不在 Navbar 或 Hamburger 內部，隱藏 Hamburger
             if (
-                hamburgerRef.current && !hamburgerRef.current.contains(event.target)
+                hamburgerRef.current && !hamburgerRef.current.contains(event.target) 
+                &&(!modalRef.current || !modalRef.current.contains(event.target))
             ) {
                 setHamburgerVisible(false);
             }
@@ -78,11 +80,13 @@ function Navbar() {
                     </div>
                 </div>
             </div>
-            <div 
-            ref={hamburgerRef}
-            className={`HumMenu ${isHamburgerVisible ? 'show' : ''} ${!isHamburgerVisible ? 'hide' : ''}`}>
+            <div
+                ref={hamburgerRef}
+                className={`HumMenu ${isHamburgerVisible ? 'show' : ''} ${!isHamburgerVisible ? 'hide' : ''}`}>
 
-                <Hamburger onClose={hideHamburger} />
+                <Hamburger onClose={hideHamburger}
+                    modalRef={modalRef} // 傳遞模態框參考
+                />
             </div>
         </>
     )

@@ -4,7 +4,9 @@ import '../../src/assets/css/Footer.css';
 
 
 
+
 function Footer() {
+
     const [foomodal, setFoomodal] = useState(false);
     const foomodalOpen = () => { setFoomodal(true); }
     const foomodalClose = () => { setFoomodal(false); }
@@ -15,7 +17,7 @@ function Footer() {
                 <div id="nav1-1">
                     <ul className="item1">
                         <p className='pp1'>首頁</p>
-                        <li className="item2"><Link to="/Home"><p>關於我們</p></Link></li>
+                        <li className="item2"><Link to="/"><p>關於我們</p></Link></li>
 
                     </ul>
                     <ul className="item1">
@@ -69,7 +71,7 @@ function Footer() {
             </nav >
             {foomodal && (
                 <div className="foomodal" onClick={foomodalClose}>
-                    <div className="foomodal-content"  onClick={(e) => e.stopPropagation()}> {/* 阻止事件冒泡 */}
+                    <div className="foomodal-content" onClick={(e) => e.stopPropagation()}> {/* 阻止事件冒泡 */}
                         <h3>謝謝支持</h3>
                         <p>幫助我們持續帶來樂趣、創新與挑戰！</p>
                         <div className="foomodal-wrapper">

@@ -1,11 +1,11 @@
 @use './reset';
 @use './variables'as *;
 @import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
+
 @font-face {
     font-family: SweiGothicCJKtc-Regular;
-    src: url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff2) format("woff2")
-    , url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff) format("woff");
-  }
+    src: url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff) format("woff");
+}
 
 #Hamburger {
     display: flex;
@@ -230,5 +230,79 @@
         box-shadow: none; // 點擊時移除陰影
         transform: translateX(5px) translateY(5px);
         background-color: #fabf33;
+    }
+}
+
+/* 跳窗 */
+.foomodal {
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $fc-2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .foomodal-content {
+        background-color: $shadow-2;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        width: 40%;
+        height: fit-content;
+
+        h3 {
+            font-size: $font-size-40;
+            // padding-bottom: 10px;
+            font-weight: $font-w-black;
+            color: $fc-2;
+            letter-spacing: 10px;
+            // -webkit-text-stroke: 2px $fc-2;
+            // text-stroke: 2px $fc-2;
+        }
+
+
+
+        p {
+            font-size: $font-size-20;
+            font-weight: $font-w-medium;
+            color: $shadow-1;
+            margin-bottom: 10px;
+        }
+
+        .foomodal-wrapper {
+            width: 250px;
+            height: 250px;
+            position: relative;
+            margin: 0 auto;
+
+            .foomodalimg {
+                // width: 90%; 
+                height: auto;
+                z-index: 2; // 確保獎盃圖片在最上層
+                position: relative;
+            }
+        }
+
+        .foored {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h4 {
+                font-size: $font-size-24;
+                font-weight: $font-w-bold;
+                color: $fc-3;
+            }
+
+            img {
+                width: 48px;
+                height: 48px;
+            }
+        }
+
     }
 }
