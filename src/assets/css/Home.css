@@ -199,7 +199,7 @@ a {
 #Home-page-2 .Home-content-bk-1 .Home-content-2 {
   display: flex;
   flex-direction: column;
-  font-size: 48px;
+  font-size: 3rem;
   color: #CA5171;
   margin-left: 50px;
   font-weight: 700;
@@ -216,7 +216,7 @@ a {
 }
 #Home-page-2 .Home-content-bk-1 .Home-content-1 span,
 #Home-page-2 .Home-content-bk-1 .Home-content-2 span {
-  font-size: 64px;
+  font-size: 4rem;
   color: #FFFFFF;
   padding: 0 20px;
   text-shadow: 5px 5px #897359;
@@ -225,7 +225,7 @@ a {
 #Home-page-2 .Home-content-bk-1 .Home-content-1 .Home-eng-text-2,
 #Home-page-2 .Home-content-bk-1 .Home-content-2 .Home-eng-text-1,
 #Home-page-2 .Home-content-bk-1 .Home-content-2 .Home-eng-text-2 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 #Home-page-2 .Home-content-bk-1 .Home-content-2 {
   margin-left: 256px;
@@ -244,7 +244,7 @@ a {
 }
 #Home-page-2 .Home-content-bk-2 .Home-content-3 .Home-text-2 {
   display: inline-block;
-  font-size: 32px;
+  font-size: 2rem;
   color: rgba(0, 0, 0, 0.85);
   font-weight: 700;
   background-color: #FFF0C0;
@@ -252,7 +252,7 @@ a {
   /* 背景顏色待調整 */
 }
 #Home-page-2 .Home-content-bk-2 .Home-content-3 .Home-eng-text-2 {
-  font-size: 28px;
+  font-size: 1.8rem;
   color: rgba(0, 0, 0, 0.85);
   font-weight: 700;
   line-height: 15px;
@@ -261,7 +261,7 @@ a {
   margin-top: 15px;
 }
 #Home-page-2 .Home-content-bk-2 .Home-content-3 .Home-sml-text-2 {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: rgba(0, 0, 0, 0.85);
   font-weight: 500;
   padding-top: 20px;
@@ -271,6 +271,11 @@ a {
   flex-direction: column;
   margin: 66px 119px 0 0;
 }
+@media (max-width: 1280px) {
+  #Home-page-2 .Home-content-bk-2 .Home-content-4 {
+    margin: 66px 70px 0 0;
+  }
+}
 #Home-page-2 .Home-content-bk-2 .Home-content-4 .Home-text-block-2 {
   text-align: right;
 }
@@ -278,7 +283,7 @@ a {
   display: inline-flex;
   background-color: #FFF0C0;
   line-height: 25px;
-  font-size: 32px;
+  font-size: 2rem;
   color: rgba(0, 0, 0, 0.85);
   text-align: right;
   font-weight: 700;
@@ -288,7 +293,7 @@ a {
 #Home-page-2 .Home-content-bk-2 .Home-content-4 .Home-text-block-2 .Home-eng-text-2 {
   display: inline-block;
   background-color: #FFF0C0;
-  font-size: 28px;
+  font-size: 1.8rem;
   color: rgba(0, 0, 0, 0.85);
   font-weight: 700;
   line-height: 15px;
@@ -296,7 +301,7 @@ a {
 }
 #Home-page-2 .Home-content-bk-2 .Home-content-4 .Home-text-block-2 .Home-sml-text-2 {
   padding-top: 20px;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: rgba(0, 0, 0, 0.85);
   font-weight: 500;
 }
@@ -310,13 +315,6 @@ a {
 #Home-page-3 {
   margin-top: 80px;
   margin-bottom: 100px;
-  /* height: 820px;
-  background-color: $primary;
-  position: relative;
-  background-image: url(../public/images/homeDeco.png);
-  background-size: 600px;
-  background-repeat: no-repeat;
-  background-position: center; */
 }
 #Home-page-3 .Home-content-bk {
   display: flex;
@@ -324,6 +322,11 @@ a {
   align-items: center;
   margin: auto;
   width: 75%;
+}
+@media (max-width: 1280px) {
+  #Home-page-3 .Home-content-bk {
+    width: 100%;
+  }
 }
 #Home-page-3 .Home-content-bk .Home-content-bk-3 p {
   height: 65px;
@@ -334,6 +337,11 @@ a {
   text-align: center;
   line-height: 65px;
   font-weight: 700;
+}
+@media (max-width: 1280px) {
+  #Home-page-3 .Home-content-bk .Home-content-bk-3 p {
+    margin-left: 140px;
+  }
 }
 #Home-page-3 .Home-content-bk .Home-ladder {
   width: 80%;
@@ -358,18 +366,33 @@ a {
   padding-bottom: 50px;
 }
 #Home-page-3 .Home-content-bk .Home-content-bk-4 .Home-text-3 {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 700;
   background: linear-gradient(to top, #FFF0C0 30%, transparent 30%);
   display: inline-block;
+}
+@media (max-width: 1366px) {
+  #Home-page-3 .Home-content-bk .Home-content-bk-4 .Home-text-3 {
+    font-size: 1.5rem;
+  }
 }
 #Home-page-3 .Home-content-bk .Home-content-bk-4 .Home-text-3 span {
   font-size: 58px;
   color: #69B169;
 }
+@media (max-width: 1366px) {
+  #Home-page-3 .Home-content-bk .Home-content-bk-4 .Home-text-3 span {
+    font-size: 3rem;
+  }
+}
 #Home-page-3 .Home-content-bk .Home-content-bk-4 .Home-sml-text-3 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
+}
+@media (max-width: 1366px) {
+  #Home-page-3 .Home-content-bk .Home-content-bk-4 .Home-sml-text-3 {
+    font-size: 1rem;
+  }
 }
 
 #Home-page-4 {
@@ -384,11 +407,16 @@ a {
 #Home-page-4 .Home-content-6 {
   display: flex;
   justify-content: flex-end;
-  font-size: 36px;
+  font-size: 2.3rem;
   text-align: center;
   color: #FFFFFF;
   font-weight: 700;
   margin: 10px 150px;
+}
+@media (max-width: 1280px) {
+  #Home-page-4 .Home-content-6 {
+    margin: 200px 50px 0 0;
+  }
 }
 #Home-page-4 .Home-content-bk-all {
   display: flex;
@@ -400,16 +428,26 @@ a {
 #Home-page-4 .Home-content-bk-all .Home-content-bk-1 .Home-content-7 {
   transform: rotate(13deg);
   text-align: right;
-  font-size: 24px;
+  font-size: 1.5rem;
   padding-bottom: 10px;
   font-weight: 700;
+}
+@media (max-width: 1280px) {
+  #Home-page-4 .Home-content-bk-all .Home-content-bk-1 .Home-content-7 {
+    font-size: 1.25rem;
+  }
 }
 #Home-page-4 .Home-content-bk-all .Home-content-bk-1 .Home-content-8 {
   transform: rotate(-13deg);
   text-align: start;
   padding-top: 10px;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
+}
+@media (max-width: 1280px) {
+  #Home-page-4 .Home-content-bk-all .Home-content-bk-1 .Home-content-8 {
+    font-size: 1.25rem;
+  }
 }
 #Home-page-4 .Home-content-bk-all .Home-content-bk-1 .Home-content-img {
   width: 60%;
@@ -443,14 +481,14 @@ a {
 #Home-page-4 .Home-content-bk-all .Home-content-bk-2 .Home-content-11,
 #Home-page-4 .Home-content-bk-all .Home-content-bk-3 .Home-content-9,
 #Home-page-4 .Home-content-bk-all .Home-content-bk-3 .Home-content-11 {
-  font-size: 36px;
+  font-size: 2.3rem;
   font-weight: 700;
 }
 #Home-page-4 .Home-content-bk-all .Home-content-bk-2 .Home-content-10,
 #Home-page-4 .Home-content-bk-all .Home-content-bk-2 .Home-content-12,
 #Home-page-4 .Home-content-bk-all .Home-content-bk-3 .Home-content-10,
 #Home-page-4 .Home-content-bk-all .Home-content-bk-3 .Home-content-12 {
-  font-size: 20px;
+  font-size: 1.25rem;
   text-align: center;
   font-weight: 500;
 }
@@ -458,11 +496,21 @@ a {
 #Home-page-5 {
   padding: 160px 0px 180px;
 }
+@media (max-width: 1280px) {
+  #Home-page-5 {
+    padding: 240px 0px 240px;
+  }
+}
 #Home-page-5 .Home-content-bk-4 {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-right: 35%;
+}
+@media (max-width: 1280px) {
+  #Home-page-5 .Home-content-bk-4 {
+    padding-right: 30%;
+  }
 }
 #Home-page-5 .Home-content-bk-4 .Home-content-15 {
   background-image: url(../images/Home-content-1.png);
@@ -472,7 +520,7 @@ a {
 }
 #Home-page-5 .Home-content-bk-4 .Home-content-13 {
   text-align: center;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 700;
   margin: 80px 100px 90px 65px;
 }
@@ -485,6 +533,11 @@ a {
 }
 #Home-page-5 .Home-content-bk-4 .Home-content-bk-5:hover .Home-greenIp {
   animation: jump 1.5s ease-in-out infinite;
+}
+@media (max-width: 1366px) {
+  #Home-page-5 .Home-content-bk-4 .Home-content-bk-5:hover .Home-greenIp {
+    animation: jump2 1.5s ease-in-out infinite;
+  }
 }
 #Home-page-5 .Home-content-bk-4 .Home-content-bk-5:hover p {
   animation-play-state: paused;
@@ -504,7 +557,7 @@ a {
   background-color: #FF6C64;
   width: 250px;
   line-height: 113px;
-  font-size: 40px;
+  font-size: 2.5rem;
   text-align: center;
   font-weight: 700;
   border-radius: 20px;
@@ -512,6 +565,11 @@ a {
   transition: transform 0.5s, box-shadow 0.2s;
   margin-bottom: 110px;
   animation: big 1.5s ease-in-out infinite;
+}
+@media (max-width: 1366px) {
+  #Home-page-5 .Home-content-bk-4 .Home-content-bk-5 p {
+    margin-bottom: 60px;
+  }
 }
 
 @keyframes jump {
@@ -521,6 +579,20 @@ a {
   }
   30% {
     transform: translateY(-100px);
+    /* 向上跳動 */
+  }
+  70% {
+    transform: translateY(0);
+    /* 回到初始位置 */
+  }
+}
+@keyframes jump2 {
+  0% {
+    transform: translateY(0px);
+    /* 初始位置 */
+  }
+  30% {
+    transform: translateY(-80px);
     /* 向上跳動 */
   }
   70% {
@@ -547,7 +619,7 @@ a {
 @media (min-width: 1441px) {
   #Home-page-2 .Home-content-bk-1 .Home-content-1,
   #Home-page-2 .Home-content-bk-1 .Home-content-2 {
-    font-size: 64px;
+    font-size: 4rem;
     margin-left: 100px;
   }
   #Home-page-2 .Home-content-bk-1 .Home-content-1 .Home-eng-text-1,
@@ -555,7 +627,7 @@ a {
   #Home-page-2 .Home-content-bk-1 .Home-content-2 .Home-eng-text-1,
   #Home-page-2 .Home-content-bk-1 .Home-content-2 .Home-eng-text-2 {
     margin-left: 150px;
-    font-size: 28px;
+    font-size: 1.8rem;
   }
   #Home-page-2 .Home-content-bk-1 .Home-content-1 span,
   #Home-page-2 .Home-content-bk-1 .Home-content-2 span {
@@ -573,14 +645,14 @@ a {
     padding: 350px 0 0 80px;
   }
   #Home-page-2 .Home-content-bk-2 .Home-content-3 .Home-text-2 {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
   #Home-page-2 .Home-content-bk-2 .Home-content-3 .Home-eng-text-2 {
-    font-size: 32px;
+    font-size: 2rem;
     margin-top: 20px;
   }
   #Home-page-2 .Home-content-bk-2 .Home-content-3 .Home-sml-text-2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     padding-top: 30px;
     font-weight: 500;
   }
@@ -588,13 +660,13 @@ a {
     margin: 200px 150px 0 0;
   }
   #Home-page-2 .Home-content-bk-2 .Home-content-4 .Home-text-block-2 .Home-text-2 {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
   #Home-page-2 .Home-content-bk-2 .Home-content-4 .Home-text-block-2 .Home-eng-text-2 {
-    font-size: 32px;
+    font-size: 2rem;
   }
   #Home-page-2 .Home-content-bk-2 .Home-content-4 .Home-text-block-2 .Home-sml-text-2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
   }
   #Home-page-2 .Home-content-bk-2 .Home-content-4 .Home-content-4-img {
@@ -621,13 +693,13 @@ a {
     padding-bottom: 150px;
   }
   #Home-page-3 .Home-content-bk .Home-content-bk-4 .Home-text-3 {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
   #Home-page-3 .Home-content-bk .Home-content-bk-4 .Home-text-3 span {
     font-size: 70px;
   }
   #Home-page-3 .Home-content-bk .Home-content-bk-4 .Home-sml-text-3 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
   }
   #Home-page-3 .Home-content-bk .Home-ladder {
@@ -637,7 +709,7 @@ a {
     padding-top: 70px;
   }
   #Home-page-4 .Home-content-6 {
-    font-size: 48px;
+    font-size: 3rem;
     margin: 20px 200px;
   }
   #Home-page-4 .Home-content-bk-all .Home-content-bk-1 {
@@ -645,10 +717,10 @@ a {
     width: 30%;
   }
   #Home-page-4 .Home-content-bk-all .Home-content-bk-1 .Home-content-7 {
-    font-size: 28px;
+    font-size: 1.8rem;
   }
   #Home-page-4 .Home-content-bk-all .Home-content-bk-1 .Home-content-8 {
-    font-size: 28px;
+    font-size: 1.8rem;
   }
   #Home-page-4 .Home-content-bk-all .Home-content-bk-1 .Home-content-img {
     padding-top: 90px;
@@ -668,13 +740,13 @@ a {
   #Home-page-4 .Home-content-bk-all .Home-content-bk-2 .Home-content-12,
   #Home-page-4 .Home-content-bk-all .Home-content-bk-3 .Home-content-10,
   #Home-page-4 .Home-content-bk-all .Home-content-bk-3 .Home-content-12 {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
   #Home-page-5 {
     padding: 350px 0px;
   }
   #Home-page-5 .Home-content-bk-4 .Home-content-13 {
-    font-size: 48px;
+    font-size: 3rem;
     margin: 100px 150px 100px 80px;
   }
   #Home-page-5 .Home-content-bk-4 .Home-content-bk-5 .Home-greenIp {
@@ -685,7 +757,7 @@ a {
     background-color: #FF6C64;
     width: 240px;
     line-height: 113px;
-    font-size: 40px;
+    font-size: 2.5rem;
     text-align: center;
     font-weight: 700;
     border-radius: 20px;

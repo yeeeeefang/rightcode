@@ -234,6 +234,11 @@ a {
   transform: rotate(-35deg);
   z-index: 9;
 }
+@media (min-width: 1441px) {
+  #LearnGame-page .LearnGame-img-position-blue {
+    left: 350px;
+  }
+}
 #LearnGame-page .LearnGame-blackboard {
   width: 1000px;
   height: 575px;

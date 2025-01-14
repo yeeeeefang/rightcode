@@ -191,7 +191,7 @@ a {
   margin-top: 50px;
 }
 #LearnGameChooseall .LearnGameChoose .questiontitle {
-  font-size: 36px;
+  font-size: 2.3rem;
   font-weight: 700;
   color: #FFFFFF;
   line-height: 100px;
@@ -229,7 +229,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
+  font-size: 1rem;
   transition: transform 0.6s;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -284,7 +284,7 @@ a {
   border-radius: 5px;
   background-color: #4caf50;
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -349,7 +349,7 @@ a {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 1rem;
 }
 #LearnGameChooseall .modal .modal-content .buttonbox .choosebutton:first-child {
   background-color: #1CB76B;

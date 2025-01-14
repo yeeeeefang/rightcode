@@ -100,10 +100,10 @@ export default function LearnSelect() {
 
                     <section id="course">
                         <div className="select">
-                            <Link to="/LearnPage" className="select-link HTML"><h2>HTML</h2></Link>
+                            <Link to="/LearnPage" className="select-link HTML"><h2>前端基礎框架 <br />HTML</h2></Link>
                         </div>
                         <div className="select">
-                            <Link to="/LearnPageCss" className="select-link CSS"><h2>CSS</h2></Link>
+                            <Link to="/LearnPageCss" className="select-link CSS"><h2> 前端基礎樣式 <br />CSS</h2></Link>
                         </div>
                     </section>
                 </div>
