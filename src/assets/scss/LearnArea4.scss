@@ -15,7 +15,7 @@
 
 
     .game-container {
-    
+
         // 可拖動區域樣式
         .draggable-items {
             display: flex;
@@ -57,7 +57,7 @@
                 align-items: center;
 
                 .label {
-                    width: 420px;
+                    width: 320px;
                     height: auto;
                 }
 
@@ -93,7 +93,7 @@
 
         // 遊戲結束按鈕樣式
         .game-over-buttons {
-            margin-top: 20px;
+            margin-top: 60px;
             display: flex;
             gap: 10px;
             justify-content: center;
@@ -186,18 +186,49 @@
         }
     }
 
-    .road1{
+    .road1 {
         position: absolute;
         width: 250px;
         height: 210px;
         bottom: 80px;
         right: 20px;
     }
-    .road2{
+
+    .road2 {
         position: absolute;
         width: 100%;
         bottom: -1px;
         left: 0px;
         z-index: 0;
     }
+
+    .showimg {
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        bottom: 350px;
+        right: 180px;
+        // border: #C3825A 4px solid;
+    }
+    
 }
+
+@media ($mediaLg){
+    #LearnAreaall4 {
+        position: relative;
+    .road1 {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        bottom: 300px;
+        right: 170px;
+    }
+    .showimg {
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        bottom: 550px;
+        right: 250px;
+        // border: #C3825A 4px solid;
+    }
+    }}

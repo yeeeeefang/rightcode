@@ -1,6 +1,7 @@
 import React from "react";
-import { useState } from "react";
-import '../assets/css/LearnArea4.css';
+import { useState,useEffect } from "react";
+// import '../assets/css/LearnArea4.css';
+import '../assets/scss/LearnArea4.scss';
 import { Link } from "react-router-dom";
 
 export default function LearnArea4() {
@@ -9,9 +10,11 @@ export default function LearnArea4() {
     { id: 2, iconName: "./images/learnAreaS.png", brandName: "./images/learnAreaQ2.png", isDropped: false },
     { id: 3, iconName: "./images/learnAreaU.png", brandName: "./images/learnAreaQ3.png", isDropped: false }
   ]);
-
   const [droppedItems, setDroppedItems] = useState([]);
   const [isModalVisible, setIsModalVisible] = useState(false);
+  //新增正確跟錯誤的提示圖
+  const [showCorrect, setShowCorrect] = useState(false);
+  const [showNocorrect, setShowNocorrect] = useState(false);
 
   const handleDragStart = (e, id) => {
     e.dataTransfer.setData("id", id);
@@ -34,8 +37,16 @@ export default function LearnArea4() {
       const targetElement = e.target;
       targetElement.innerHTML = `<img src="${draggedItem.iconName}" alt="icon" />`;
       targetElement.classList.add("dropped");
+
+      //顯示正確圖
+      setShowCorrect(true);
+      setTimeout(() => setShowCorrect(false), 1000);
+    } else {
+      //顯示錯誤圖
+      // console.log("Answer incorrect: Showing incorrect hint.");
+      setShowNocorrect(true);
+      setTimeout(() => setShowNocorrect(false), 1000);
     }
-    // 如果放置錯誤，不執行任何更新
   };
 
   const allowDrop = (e) => {
@@ -50,6 +61,8 @@ export default function LearnArea4() {
     ]);
     setDroppedItems([]);
     setIsModalVisible(false);
+    setShowCorrect(false);
+    setShowNocorrect(false);
     document.querySelectorAll(".droppable").forEach((el) => {
       el.innerHTML = "";
       el.classList.remove("dropped");
@@ -138,6 +151,13 @@ export default function LearnArea4() {
       <div className="road">
         <img className="road1" src="./images/greenA.svg" alt="" />
         <img className="road2" src="./images/learnAreaPath.png" alt="" />
+        {/* 新增正確與錯誤的提示圖 */}
+        {showCorrect && (
+          <img className="showimg" src="./images/correct.png" alt="" />
+        )}
+        {showNocorrect && (
+          <img className="showimg" src="./images/nocorrect.png" alt="" />
+        )}
       </div>
     </section>
   );
