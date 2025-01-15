@@ -13,6 +13,7 @@
 
 #Home-page-all2 {
     background-color: $primary;
+
 }
 
 #Home-page-all {
@@ -21,6 +22,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'SweiGothicCJKtc-Regular', sans-serif;
+
 }
 
 #Home-page-2 {
@@ -38,7 +40,7 @@
         .Home-content-2 {
             display: flex;
             flex-direction: column;
-            font-size: 48px;
+            font-size: $font-size-48;
             color: $fc-1;
             margin-left: 50px;
             font-weight: $font-w-bold;
@@ -54,7 +56,7 @@
             }
 
             span {
-                font-size: 64px;
+                font-size: $font-size-64;
                 color: #FFFFFF;
                 padding: 0 20px;
                 text-shadow: 5px 5px $shadow-1;
@@ -62,12 +64,13 @@
 
             .Home-eng-text-1,
             .Home-eng-text-2 {
-                font-size: 24px;
+                font-size: $font-size-24;
             }
         }
 
         .Home-content-2 {
             margin-left: 256px;
+
         }
     }
 
@@ -76,18 +79,19 @@
         flex-direction: column;
         margin: 190px 0 0 190px;
 
+
         .Home-content-3 {
 
             display: flex;
 
             .Home-content-3-img {
-                width:15%;
+                width: 15%;
                 padding: 160px 0px 0px 50px;
             }
 
             .Home-text-2 {
                 display: inline-block;
-                font-size: 32px;
+                font-size: $font-size-32;
                 color: $fc-2;
                 font-weight: $font-w-bold;
                 background-color: $shadow-2;
@@ -97,7 +101,7 @@
             }
 
             .Home-eng-text-2 {
-                font-size: 28px;
+                font-size: $font-size-28;
                 color: $fc-2;
                 font-weight: $font-w-bold;
                 line-height: 15px;
@@ -107,7 +111,7 @@
             }
 
             .Home-sml-text-2 {
-                font-size: 20px;
+                font-size: $font-size-20;
                 color: $fc-2;
                 font-weight: $font-w-medium;
                 padding-top: 20px;
@@ -121,6 +125,10 @@
             flex-direction: column;
             margin: 66px 119px 0 0;
 
+            @media (max-width:1280px) {
+                margin: 66px 70px 0 0;
+            }
+
             .Home-text-block-2 {
                 text-align: right;
 
@@ -128,7 +136,7 @@
                     display: inline-flex;
                     background-color: $shadow-2;
                     line-height: 25px;
-                    font-size: 32px;
+                    font-size: $font-size-32;
                     color: $fc-2;
                     text-align: right;
                     font-weight: $font-w-bold;
@@ -140,7 +148,7 @@
                 .Home-eng-text-2 {
                     display: inline-block;
                     background-color: $shadow-2;
-                    font-size: 28px;
+                    font-size: $font-size-28;
                     color: $fc-2;
                     font-weight: $font-w-bold;
                     line-height: 15px;
@@ -149,9 +157,8 @@
 
                 .Home-sml-text-2 {
                     padding-top: 20px;
-                    font-size: 20px;
+                    font-size: $font-size-20;
                     color: $fc-2;
-
                     font-weight: $font-w-medium;
                 }
             }
@@ -175,20 +182,17 @@
 #Home-page-3 {
     margin-top: 80px;
     margin-bottom: 100px;
-
-    /* height: 820px;
-    background-color: $primary;
-    position: relative;
-    background-image: url(../public/images/homeDeco.png);
-    background-size: 600px;
-    background-repeat: no-repeat;
-    background-position: center; */
     .Home-content-bk {
         display: flex;
         justify-content: space-around;
         align-items: center;
         margin: auto;
         width: 75%;
+
+        @media (max-width:1280px) {
+            width: 100%;
+
+        }
 
         .Home-content-bk-3 {
             p {
@@ -200,10 +204,16 @@
                 text-align: center;
                 line-height: 65px;
                 font-weight: $font-w-bold;
+
+                @media (max-width:1280px) {
+                    margin-left: 140px;
+                }
             }
         }
+
         .Home-ladder {
             width: 80%;
+
         }
 
         .Home-content-bk-4 {
@@ -228,24 +238,36 @@
             }
 
             .Home-text-3 {
-                font-size: 32px;
+                font-size: $font-size-32;
                 font-weight: $font-w-bold;
                 background: linear-gradient(to top, $shadow-2 30%, transparent 30%);
                 display: inline-block;
 
+                @media (max-width:1366px) {
+                    font-size: $font-size-24;
+                }
+
                 span {
                     font-size: 58px;
                     color: $fc-4;
+
+                    @media (max-width:1366px) {
+                        font-size: $font-size-48;
+                    }
                 }
 
 
             }
 
             .Home-sml-text-3 {
-                font-size: 20px;
+                font-size: $font-size-20;
                 font-weight: $font-w-medium;
+
+                @media (max-width:1366px) {
+                    font-size: $font-size-16;
+                }
             }
-            
+
         }
     }
 }
@@ -262,11 +284,15 @@
     .Home-content-6 {
         display: flex;
         justify-content: flex-end;
-        font-size: 36px;
+        font-size: $font-size-36;
         text-align: center;
         color: #FFFFFF;
         font-weight: $font-w-bold;
         margin: 10px 150px;
+
+        @media (max-width:1280px) {
+            margin: 200px 50px 0 0;
+        }
     }
 
     .Home-content-bk-all {
@@ -280,9 +306,13 @@
             .Home-content-7 {
                 transform: rotate(13deg);
                 text-align: right;
-                font-size: 24px;
+                font-size: $font-size-24;
                 padding-bottom: 10px;
                 font-weight: $font-w-bold;
+
+                @media (max-width:1280px) {
+                    font-size: $font-size-20;
+                }
 
             }
 
@@ -290,8 +320,12 @@
                 transform: rotate(-13deg);
                 text-align: start;
                 padding-top: 10px;
-                font-size: 24px;
+                font-size: $font-size-24;
                 font-weight: $font-w-bold;
+
+                @media (max-width:1280px) {
+                    font-size: $font-size-20;
+                }
             }
 
             .Home-content-img {
@@ -326,13 +360,13 @@
 
             .Home-content-9,
             .Home-content-11 {
-                font-size: 36px;
+                font-size: $font-size-36;
                 font-weight: $font-w-bold;
             }
 
             .Home-content-10,
             .Home-content-12 {
-                font-size: 20px;
+                font-size: $font-size-20;
                 text-align: center;
                 font-weight: $font-w-medium;
             }
@@ -344,11 +378,19 @@
 #Home-page-5 {
     padding: 160px 0px 180px;
 
+    @media (max-width:1280px) {
+        padding: 240px 0px 240px;
+    }
+
     .Home-content-bk-4 {
         display: flex;
         justify-content: center;
         align-items: center;
         padding-right: 35%;
+
+        @media (max-width:1280px) {
+            padding-right: 30%;
+        }
 
         .Home-content-15 {
             background-image: url(../images/Home-content-1.png);
@@ -359,7 +401,7 @@
 
         .Home-content-13 {
             text-align: center;
-            font-size: 32px;
+            font-size: $font-size-32;
             font-weight: $font-w-bold;
             margin: 80px 100px 90px 65px;
         }
@@ -377,6 +419,11 @@
 
                 .Home-greenIp {
                     animation: jump 1.5s ease-in-out infinite;
+
+                    @media (max-width:1366px) {
+                        animation: jump2 1.5s ease-in-out infinite;
+
+                    }
                 }
 
                 p {
@@ -385,6 +432,7 @@
                     background-color: #f44f46;
                 }
             }
+
             &:active {
                 box-shadow: none; // 點擊時移除陰影
                 transform: translateX(5px) translateY(5px);
@@ -400,7 +448,7 @@
                 background-color: #FF6C64;
                 width: 250px;
                 line-height: 113px;
-                font-size: 40px;
+                font-size: $font-size-40;
                 text-align: center;
                 font-weight: $font-w-bold;
                 border-radius: 20px;
@@ -409,8 +457,10 @@
                 margin-bottom: 110px;
                 animation: big 1.5s ease-in-out infinite;
 
+                @media (max-width:1366px) {
+                    margin-bottom: 60px;
+                }
 
-                
 
             }
         }
@@ -427,6 +477,25 @@
         transform: translateY(-100px);
         /* 向上跳動 */
     }
+
+
+    70% {
+        transform: translateY(0);
+        /* 回到初始位置 */
+    }
+}
+
+@keyframes jump2 {
+    0% {
+        transform: translateY(0px);
+        /* 初始位置 */
+    }
+
+    30% {
+        transform: translateY(-80px);
+        /* 向上跳動 */
+    }
+
 
     70% {
         transform: translateY(0);
@@ -456,19 +525,20 @@
     }
 }
 
+
 @media ($mediaLg) {
     #Home-page-2 {
         .Home-content-bk-1 {
 
             .Home-content-1,
             .Home-content-2 {
-                font-size: 64px;
+                font-size: $font-size-64;
                 margin-left: 100px;
 
                 .Home-eng-text-1,
                 .Home-eng-text-2 {
                     margin-left: 150px;
-                    font-size: 28px;
+                    font-size: $font-size-28;
                 }
 
                 span {
@@ -492,16 +562,16 @@
                 }
 
                 .Home-text-2 {
-                    font-size: 40px;
+                    font-size: $font-size-40;
                 }
 
                 .Home-eng-text-2 {
-                    font-size: 32px;
+                    font-size: $font-size-32;
                     margin-top: 20px;
                 }
 
                 .Home-sml-text-2 {
-                    font-size: 24px;
+                    font-size: $font-size-24;
                     padding-top: 30px;
                     font-weight: $font-w-medium;
                 }
@@ -512,15 +582,15 @@
 
                 .Home-text-block-2 {
                     .Home-text-2 {
-                        font-size: 40px;
+                        font-size: $font-size-40;
                     }
 
                     .Home-eng-text-2 {
-                        font-size: 32px;
+                        font-size: $font-size-32;
                     }
 
                     .Home-sml-text-2 {
-                        font-size: 24px;
+                        font-size: $font-size-24;
                         font-weight: $font-w-medium;
 
                     }
@@ -561,7 +631,7 @@
                 }
 
                 .Home-text-3 {
-                    font-size: 40px;
+                    font-size: $font-size-40;
 
                     span {
                         font-size: 70px;
@@ -569,7 +639,7 @@
                 }
 
                 .Home-sml-text-3 {
-                    font-size: 24px;
+                    font-size: $font-size-24;
                     font-weight: $font-w-medium;
                 }
             }
@@ -585,7 +655,7 @@
         padding-top: 70px;
 
         .Home-content-6 {
-            font-size: 48px;
+            font-size: $font-size-48;
             margin: 20px 200px;
         }
 
@@ -595,11 +665,11 @@
                 width: 30%;
 
                 .Home-content-7 {
-                    font-size: 28px;
+                    font-size: $font-size-28;
                 }
 
                 .Home-content-8 {
-                    font-size: 28px;
+                    font-size: $font-size-28;
                 }
 
                 .Home-content-img {
@@ -619,7 +689,7 @@
 
                 .Home-content-10,
                 .Home-content-12 {
-                    font-size: 24px;
+                    font-size: $font-size-24;
                 }
             }
         }
@@ -631,7 +701,7 @@
         .Home-content-bk-4 {
 
             .Home-content-13 {
-                font-size: 48px;
+                font-size: $font-size-48;
                 margin: 100px 150px 100px 80px;
             }
 
@@ -645,7 +715,7 @@
                     background-color: #FF6C64;
                     width: 240px;
                     line-height: 113px;
-                    font-size: 40px;
+                    font-size: $font-size-40;
                     text-align: center;
                     font-weight: $font-w-bold;
                     border-radius: 20px;
@@ -668,6 +738,8 @@
         }
     }
 }
+
+@media (max-width:1366px) {}
 
 /* svg css */
 .st0 {

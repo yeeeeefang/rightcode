@@ -81,6 +81,9 @@
         left: 100px;
         transform: rotate(-35deg);
         z-index: 9;
+        @media ($mediaLg) {
+            left: 350px;
+        }
 
     }
 
