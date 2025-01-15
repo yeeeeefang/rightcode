@@ -212,7 +212,7 @@ a {
   align-items: center;
 }
 #LearnAreaall4 .game-container .matching-pairs .matching-pair .label {
-  width: 420px;
+  width: 320px;
   height: auto;
 }
 #LearnAreaall4 .game-container .matching-pairs .matching-pair .droppable {
@@ -240,7 +240,7 @@ a {
   background-color: rgba(43, 117, 81, 0.3);
 }
 #LearnAreaall4 .game-container .game-over-buttons {
-  margin-top: 20px;
+  margin-top: 60px;
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -326,4 +326,31 @@ a {
   bottom: -1px;
   left: 0px;
   z-index: 0;
+}
+#LearnAreaall4 .showimg {
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  bottom: 350px;
+  right: 180px;
+}
+
+@media (min-width: 1441px) {
+  #LearnAreaall4 {
+    position: relative;
+  }
+  #LearnAreaall4 .road1 {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    bottom: 300px;
+    right: 170px;
+  }
+  #LearnAreaall4 .showimg {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    bottom: 550px;
+    right: 250px;
+  }
 }/*# sourceMappingURL=LearnArea4.css.map */

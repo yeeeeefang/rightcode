@@ -1,7 +1,6 @@
 import React from "react";
 import { useState,useEffect } from "react";
-// import '../assets/css/LearnArea4.css';
-import '../assets/scss/LearnArea4.scss';
+import '../assets/css/LearnArea4.css';
 import { Link } from "react-router-dom";
 
 export default function LearnArea4() {
