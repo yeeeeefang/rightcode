@@ -113,7 +113,7 @@ export default function LearnArea4() {
               <h2>Congratulations!</h2>
               <p>已完成此課程！(•̀ᴗ•́)و</p>
               <p>我覺得 ...</p>
-              <Link to="/LearnHome" onClick={handleEmotionClick}>
+              <Link to="/LearnPage" onClick={handleEmotionClick}>
                 <div className="emotions-container" >
                   {[
                     { id: 1, name: "great", image: "./images/icon_greenA.svg" },
