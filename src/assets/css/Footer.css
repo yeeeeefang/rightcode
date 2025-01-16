@@ -230,6 +230,7 @@ a {
 }
 .nav1 .foo .icon .iconfb,
 .nav1 .foo .icon .iconig {
+  cursor: pointer;
   width: 48px;
 }
 .nav1 .foo .footersamll {
