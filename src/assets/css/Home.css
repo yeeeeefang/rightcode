@@ -767,6 +767,11 @@ a {
     animation: jump2 1.5s ease-in-out infinite;
   }
 }
+@media (max-width: 1024px) {
+  #Home-page-5 .Home-content-bk-4 .Home-content-bk-5:hover .Home-greenIp {
+    animation: jump3 1.5s ease-in-out infinite;
+  }
+}
 #Home-page-5 .Home-content-bk-4 .Home-content-bk-5:hover p {
   animation-play-state: paused;
   transition: all 0.5s ease;
@@ -834,6 +839,20 @@ a {
   }
   30% {
     transform: translateY(-80px);
+    /* 向上跳動 */
+  }
+  70% {
+    transform: translateY(0);
+    /* 回到初始位置 */
+  }
+}
+@keyframes jump3 {
+  0% {
+    transform: translateY(0px);
+    /* 初始位置 */
+  }
+  30% {
+    transform: translateY(-40px);
     /* 向上跳動 */
   }
   70% {

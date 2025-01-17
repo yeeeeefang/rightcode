@@ -589,7 +589,9 @@
 
                     @media (max-width:1366px) {
                         animation: jump2 1.5s ease-in-out infinite;
-
+                    }
+                    @media (max-width:1024px) {
+                        animation: jump3 1.5s ease-in-out infinite;
                     }
                 }
 
@@ -670,6 +672,23 @@
 
     30% {
         transform: translateY(-80px);
+        /* 向上跳動 */
+    }
+
+
+    70% {
+        transform: translateY(0);
+        /* 回到初始位置 */
+    }
+}
+@keyframes jump3 {
+    0% {
+        transform: translateY(0px);
+        /* 初始位置 */
+    }
+
+    30% {
+        transform: translateY(-40px);
         /* 向上跳動 */
     }
 
