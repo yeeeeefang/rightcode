@@ -1,5 +1,5 @@
 @use './reset';
-@use './variables/' as *;
+@use './variables/'as *;
 
 .nav1 {
   /* 定在最底下 */
@@ -13,6 +13,9 @@
   background-color: $learn-h1;
   padding: 40px 125px;
   height: 250px;
+  @media (max-width:1024px) {
+    padding: 15px;
+  }
 
   a:hover {
     scale: 1.05;
@@ -20,7 +23,9 @@
 
   #nav1-1 {
     display: flex;
-
+    @media (max-width:1024px) {
+      white-space: nowrap;
+    }
     .item1 {
       padding-right: 80px;
 
@@ -29,23 +34,24 @@
         padding-bottom: 25px;
         font-weight: $font-w-bold;
       }
-  
 
-    .item2 {
-      padding-bottom: 20px;
-      font-size: $font-size-16;
-      font-weight: $font-w-medium ;
+
+      .item2 {
+        padding-bottom: 20px;
+        font-size: $font-size-16;
+        font-weight: $font-w-medium;
       }
 
     }
-    
+
 
     .lm {
       display: flex;
+
       // width: 160px;
-      a{
+      a {
         font-size: $font-size-16;
-      font-weight: $font-w-medium ;
+        font-weight: $font-w-medium;
       }
     }
   }
@@ -118,20 +124,20 @@
     height: fit-content;
 
     h3 {
-      font-size: $font-size-40 ;
+      font-size: $font-size-40;
       // padding-bottom: 10px;
-      font-weight: $font-w-black ;
+      font-weight: $font-w-black;
       color: $fc-2;
       letter-spacing: 10px;
       // -webkit-text-stroke: 2px $fc-2;
       // text-stroke: 2px $fc-2;
     }
 
-    
+
 
     p {
       font-size: $font-size-20;
-      font-weight: $font-w-medium ;
+      font-weight: $font-w-medium;
       color: $shadow-1;
       margin-bottom: 10px;
     }
@@ -154,11 +160,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
       h4 {
-        font-size: $font-size-24 ;
-        font-weight: $font-w-bold ;
+        font-size: $font-size-24;
+        font-weight: $font-w-bold;
         color: $fc-3;
       }
+
       img {
         width: 48px;
         height: 48px;

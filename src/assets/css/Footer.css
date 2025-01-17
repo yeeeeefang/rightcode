@@ -184,11 +184,21 @@ a {
   padding: 40px 125px;
   height: 250px;
 }
+@media (max-width: 1024px) {
+  .nav1 {
+    padding: 15px;
+  }
+}
 .nav1 a:hover {
   scale: 1.05;
 }
 .nav1 #nav1-1 {
   display: flex;
+}
+@media (max-width: 1024px) {
+  .nav1 #nav1-1 {
+    white-space: nowrap;
+  }
 }
 .nav1 #nav1-1 .item1 {
   padding-right: 80px;

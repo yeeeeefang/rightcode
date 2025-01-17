@@ -49,8 +49,9 @@ function Home() {
     }, []); // 空依賴陣列確保只在組件掛載後執行一次
 
     useEffect(() => {
-        Aos.init()
-    }, [])
+        // 檢查視窗寬度是否超過 1024px
+            Aos.init();
+    }, []); // 只執行一次
 
     const blueARef = useRef(null);
     useEffect(() => {
