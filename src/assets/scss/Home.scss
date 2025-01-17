@@ -301,7 +301,12 @@
             margin: 200px 50px 0 0;
         }
 
-        @media (max-width:1470px) {
+        @media (max-width:1440px) {
+            margin: 10px 150px;
+
+        }
+
+        @media (min-width:1470px) {
             margin: 140px 170px 10px 0;
         }
     }
@@ -932,4 +937,3 @@ footer {
         display: none;
     }
 }
-
