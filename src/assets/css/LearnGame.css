@@ -234,7 +234,7 @@ a {
   transform: rotate(-35deg);
   z-index: 9;
 }
-@media (min-width: 1441px) {
+@media (min-width: 1500px) {
   #LearnGame-page .LearnGame-img-position-blue {
     left: 350px;
   }

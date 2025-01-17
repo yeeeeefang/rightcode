@@ -190,10 +190,11 @@ a {
   position: absolute;
   top: -67px;
   left: 380px;
-  transform: rotate(40deg);
+  transform-origin: center;
+  transform: scaleX(-1) rotate(-45deg);
 }
 #login-page .login-main .red-char {
-  width: 220px;
+  width: 240px;
   position: absolute;
   top: 420px;
   left: 1200px;
@@ -211,10 +212,10 @@ a {
   }
 }
 #login-page .login-main .blue-char {
-  width: 175px;
+  width: 150px;
   position: absolute;
-  top: 245px;
-  left: 145px;
+  top: 222px;
+  left: 155px;
 }
 #login-page .login-main .pink-char {
   width: 170px;
@@ -320,7 +321,7 @@ a {
 #login-page .login-main .login-form .social-login button:hover {
   scale: 1.05;
 }
-@media (min-width: 1441px) {
+@media (min-width: 1500px) {
   #login-page .login-main .amoeba-blobs {
     width: 100%;
     top: -600px;
@@ -332,31 +333,30 @@ a {
     height: 280px;
     top: -150px;
     left: 520px;
-    transform: rotate(20deg);
   }
   #login-page .login-main .red-char {
-    width: 300px;
-    height: 300px;
+    width: 330px;
+    height: 330px;
     top: 500px;
-    left: 1440px;
+    left: 1540px;
   }
   #login-page .login-main .blue-char {
-    width: 240px;
-    height: 240px;
-    top: 300px;
-    left: 160px;
+    width: 260px;
+    height: 260px;
+    top: 210px;
+    left: 170px;
   }
   #login-page .login-main .pink-char {
-    width: 220px;
-    height: 220px;
+    width: 250px;
+    height: 250px;
     top: 570px;
     left: 680px;
   }
   #login-page .login-main .login-form {
-    width: 480px;
-    height: 560px;
     top: 50px;
-    left: 920px;
+    left: 1020px;
+    top: 100px;
+    transform: scale(1.3);
   }
   #login-page .login-main .login-form .login-divider {
     margin: 36px 0 24px;

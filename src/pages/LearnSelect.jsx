@@ -95,15 +95,26 @@ export default function LearnSelect() {
                             </defs>
                         </svg>
                         <img className="tier1c" src="./images/blueS.gif" alt="" onClick={openModal} />
-                        <img className="tier1ctext" src="./images/selectbluetext.svg" alt=""/>
+                        <img className="tier1ctext" src="./images/selectbluetext.svg" alt="" />
                     </section>
 
                     <section id="course">
                         <div className="select">
-                            <Link to="/LearnPage" className="select-link HTML"><h2>前端基礎框架 <br />HTML</h2></Link>
+                            <Link to="/LearnPage" className="select-link HTML">
+                                <div className="Select-link-text">
+                                    <h2>HTML
+                                        <span>前端基礎框架</span>
+                                    </h2>
+                                </div></Link>
                         </div>
                         <div className="select">
-                            <Link to="/LearnPageCss" className="select-link CSS"><h2> 前端基礎樣式 <br />CSS</h2></Link>
+                            <Link to="/LearnPageCss" className="select-link CSS">
+                                <div className="Select-link-text">
+                                    <h2>CSS
+                                        <span>前端基礎樣式</span>
+                                    </h2>
+                                </div>
+                            </Link>
                         </div>
                     </section>
                 </div>

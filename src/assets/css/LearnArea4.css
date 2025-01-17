@@ -335,7 +335,7 @@ a {
   right: 180px;
 }
 
-@media (min-width: 1441px) {
+@media (min-width: 1500px) {
   #LearnAreaall4 {
     position: relative;
   }

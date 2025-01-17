@@ -182,6 +182,7 @@
 #Home-page-3 {
     margin-top: 80px;
     margin-bottom: 100px;
+
     .Home-content-bk {
         display: flex;
         justify-content: space-around;
@@ -191,7 +192,6 @@
 
         @media (max-width:1280px) {
             width: 100%;
-
         }
 
         .Home-content-bk-3 {
@@ -293,6 +293,10 @@
         @media (max-width:1280px) {
             margin: 200px 50px 0 0;
         }
+
+        @media (max-width:1470px) {
+            margin: 140px 170px 10px 0;
+        }
     }
 
     .Home-content-bk-all {
@@ -381,6 +385,9 @@
     @media (max-width:1280px) {
         padding: 240px 0px 240px;
     }
+    @media (max-width:1470px) {
+        padding: 160px 0px 250px;
+    }
 
     .Home-content-bk-4 {
         display: flex;
@@ -460,8 +467,10 @@
                 @media (max-width:1366px) {
                     margin-bottom: 60px;
                 }
-
-
+                @media (max-width:1470px) {
+                    margin-bottom: 120px;
+                }
+            
             }
         }
     }
@@ -526,7 +535,7 @@
 }
 
 
-@media ($mediaLg) {
+@media (min-width:1500px) {
     #Home-page-2 {
         .Home-content-bk-1 {
 
@@ -739,7 +748,7 @@
     }
 }
 
-@media (max-width:1366px) {}
+
 
 /* svg css */
 .st0 {

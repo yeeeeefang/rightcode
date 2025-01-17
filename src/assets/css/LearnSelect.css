@@ -339,11 +339,12 @@ a {
     background-repeat: no-repeat;
   }
 }
-#codeCourse #course .select h2 {
+#codeCourse #course .select .Select-link-text {
   position: absolute;
   width: 100%;
   height: 100%;
   display: flex;
+  top: 0px;
   justify-content: center;
   align-items: center;
   font-size: 3rem;
@@ -352,8 +353,19 @@ a {
   text-align: center;
 }
 @media (max-width: 1023px) {
-  #codeCourse #course .select h2 {
+  #codeCourse #course .select .Select-link-text {
+    top: auto;
     font-size: 2.3rem;
+  }
+}
+#codeCourse #course .select .Select-link-text span {
+  display: block;
+  font-size: 1.8rem;
+}
+@media (max-width: 1023px) {
+  #codeCourse #course .select .Select-link-text span {
+    top: auto;
+    font-size: 1.25rem;
   }
 }
 #codeCourse #course .HTML {

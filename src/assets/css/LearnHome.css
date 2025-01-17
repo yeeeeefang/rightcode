@@ -341,7 +341,7 @@ a {
 #learnhome-page .learnhome-section1 .learnhome-section2 .doit-section img {
   width: 320px;
 }
-@media (min-width: 1441px) {
+@media (min-width: 1500px) {
   #learnhome-page h2 {
     font-size: 5rem;
     font-weight: bold;

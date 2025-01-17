@@ -206,7 +206,7 @@ a {
   align-items: center;
   padding-left: 110px;
 }
-@media (min-width: 1441px) {
+@media (min-width: 1500px) {
   #LEPCss-Home #LEPCss-bk-big {
     padding-top: 60px;
   }
