@@ -1,11 +1,14 @@
 @use "./reset";
-@use "./variables" as *;
+@use "./variables"as *;
 
 #register-page {
     overflow: hidden;
     background-color: $primary; // 背景黃色
     height: 100vh;
 
+    @media (max-width:640px) {
+        display: none;
+    }
 
     .register-main {
         // overflow: hidden;
@@ -128,24 +131,24 @@
                     margin-bottom: 16px;
                 }
 
-                    .register-button {
-                        width: 100%;
-                        background-color: $shadow-3;
-                        color: $fc-6;
-                        border: none;
-                        padding: 18px 36px;
-                        border-radius: 10px;
-                        box-shadow: 3px 3px 0 rgb(233, 210, 243);
-                        font-size: $font-size-16;
-                        font-weight: bold;
-                        cursor: pointer;
+                .register-button {
+                    width: 100%;
+                    background-color: $shadow-3;
+                    color: $fc-6;
+                    border: none;
+                    padding: 18px 36px;
+                    border-radius: 10px;
+                    box-shadow: 3px 3px 0 rgb(233, 210, 243);
+                    font-size: $font-size-16;
+                    font-weight: bold;
+                    cursor: pointer;
 
-                        &:hover {
-                            background-color: #887fe0;
-                            color: $shadow-3;
-                        }
+                    &:hover {
+                        background-color: #887fe0;
+                        color: $shadow-3;
                     }
-                
+                }
+
             }
 
             .register-divider {

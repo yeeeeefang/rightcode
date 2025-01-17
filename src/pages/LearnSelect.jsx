@@ -3,6 +3,7 @@ import "../assets/css/LearnSelect.css"
 import NavbarTwo from "../components/NavbarTwo"
 import SelectModel from "../components/SelectModel"
 import { Link } from 'react-router-dom'
+import PhonePage from "./PhonePage";
 
 export default function LearnSelect() {
 
@@ -120,6 +121,8 @@ export default function LearnSelect() {
                 </div>
                 <SelectModel isOpen={isModalOpen} onClose={closeModal} />
             </section>
+            <PhonePage></PhonePage>
+
         </>
     )
 }

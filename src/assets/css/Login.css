@@ -165,11 +165,25 @@ a {
     background-color: $lesser-1;
 } */
 /* reset end */
+.phonePage {
+  display: none;
+}
+@media (max-width: 640px) {
+  .phonePage {
+    display: block;
+  }
+}
+
 #login-page {
   overflow: hidden;
   background-color: #FFD640;
   height: 100vh;
   /* 跳窗 */
+}
+@media (max-width: 640px) {
+  #login-page {
+    display: none;
+  }
 }
 #login-page .login-main {
   justify-content: center;

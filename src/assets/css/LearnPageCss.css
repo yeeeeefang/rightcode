@@ -166,6 +166,15 @@ a {
     background-color: $lesser-1;
 } */
 /* reset end */
+.phonePage {
+  display: none;
+}
+@media (max-width: 640px) {
+  .phonePage {
+    display: block;
+  }
+}
+
 @font-face {
   font-family: SweiGothicCJKtc-Regular;
   src: url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff) format("woff");
@@ -179,6 +188,11 @@ a {
   overflow: hidden;
   height: 100vh;
   position: relative;
+}
+@media (max-width: 640px) {
+  #LEPCss-Home {
+    display: none;
+  }
 }
 #LEPCss-Home .LEPCss-img-top {
   position: absolute;

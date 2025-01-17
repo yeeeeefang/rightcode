@@ -165,10 +165,24 @@ a {
     background-color: $lesser-1;
 } */
 /* reset end */
+.phonePage {
+  display: none;
+}
+@media (max-width: 640px) {
+  .phonePage {
+    display: block;
+  }
+}
+
 #register-page {
   overflow: hidden;
   background-color: #FFD640;
   height: 100vh;
+}
+@media (max-width: 640px) {
+  #register-page {
+    display: none;
+  }
 }
 #register-page .register-main {
   position: relative;

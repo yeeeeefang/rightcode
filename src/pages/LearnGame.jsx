@@ -1,6 +1,7 @@
 import '../assets/css/LearnGame.css'
 import Navbar from '../components/Navbar'
 import { Link } from 'react-router-dom';
+import PhonePage from './PhonePage';
 
 function LearnGame() {
 
@@ -44,6 +45,8 @@ function LearnGame() {
                     </div>
                 </div>
             </section>
+            <PhonePage></PhonePage>
+
         </>
     )
 }

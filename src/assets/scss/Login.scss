@@ -5,7 +5,9 @@
     overflow: hidden;
     background-color: $primary; // 背景黃色
     height: 100vh;
-
+    @media (max-width:640px) {
+        display: none;
+    }
     .login-main {
         // overflow: hidden;
         justify-content: center;

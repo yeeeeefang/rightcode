@@ -2,6 +2,7 @@ import { useState } from "react"
 import "../assets/css/LearnHome.css"
 import NavbarTwo from "../components/NavbarTwo"
 import { Link } from 'react-router-dom'
+import PhonePage from "./PhonePage"
 
 export default function LearnHome() {
 
@@ -28,8 +29,8 @@ export default function LearnHome() {
                         <Link to='/LearnSelect'>
                             <div className="learning-section">
                                 <div className="learngreen">
-                                    
-                                        <img src="./images/learngreenB.gif" alt="" />
+
+                                    <img src="./images/learngreenB.gif" alt="" />
                                 </div>
                                 <h2>學習區</h2>
                             </div>
@@ -69,7 +70,7 @@ export default function LearnHome() {
                                                 </linearGradient>
                                             </defs>
                                         </svg>
-                                        
+
 
                                     </div>
                                 </div>
@@ -128,6 +129,7 @@ export default function LearnHome() {
                 </div>
 
             </div>
+            <PhonePage></PhonePage>
 
         </>
     )

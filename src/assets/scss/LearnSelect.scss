@@ -4,6 +4,9 @@
 #LearnSelectAllpage {
     background-color: $primary;
     height: 100vh;
+    @media (max-width:640px) {
+        display: none;
+    }
 }
 
 #codeCourse {

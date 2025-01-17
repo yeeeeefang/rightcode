@@ -8,10 +8,10 @@
     overflow: hidden;
     position: relative;
 
-
     // border: 2px red solid;
-
-
+    @media (max-width:640px) {
+        display: none;
+    }
 
     .lightcontainer {
         margin-top: -100px;
@@ -156,11 +156,21 @@
     background-size: 99%;
     background-position: left top 140px;
     background-repeat: no-repeat;
+
     // opacity: 0; // 初始透明
     // transition: opacity 0.5s ease-out; // 平滑顯現過渡
     // &.scrolled {
     //     opacity: 1; // 滚动时显示
     //   }
+    @media (max-width:640px) {
+        display: none;
+    }
+}
+
+#div3 {
+    @media (max-width:640px) {
+        display: none;
+    }
 }
 
 @keyframes fadeInLight {

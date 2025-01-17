@@ -4,6 +4,9 @@
 
 #learnArea-a {
     background-color: $primary;
+    @media (max-width:640px) {
+        display: none;
+    }
     #la1 {
         background-image: url('../images/LearnArea-bg.svg');
         // background-size: w;

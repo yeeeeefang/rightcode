@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import '../assets/css/LearnGameChoose.css'
 import Navbar from '../components/Navbar'
 import { Link } from 'react-router-dom';
+import PhonePage from "./PhonePage";
 
 const questions = [
   {
@@ -154,7 +155,7 @@ const LearnGameChoose = () => {
     alert("感謝遊玩！");
   };
 
-  return (
+  return (<>
     <section id="LearnGameChooseall">
       <div className="gamenavbar">
         <Navbar />
@@ -200,8 +201,15 @@ const LearnGameChoose = () => {
           </div>
         </div>
       )}
-      
+
     </section>
+    <div className='phonePage'>
+      <img src="images/phonePohto.png" alt="" />
+    </div>
+    <PhonePage></PhonePage>
+
+  </>
+
   );
 };
 

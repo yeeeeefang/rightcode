@@ -165,9 +165,23 @@ a {
     background-color: $lesser-1;
 } */
 /* reset end */
+.phonePage {
+  display: none;
+}
+@media (max-width: 640px) {
+  .phonePage {
+    display: block;
+  }
+}
+
 #LearnSelectAllpage {
   background-color: #FFD640;
   height: 100vh;
+}
+@media (max-width: 640px) {
+  #LearnSelectAllpage {
+    display: none;
+  }
 }
 
 #codeCourse {

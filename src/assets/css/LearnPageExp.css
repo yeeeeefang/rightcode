@@ -165,6 +165,15 @@ a {
     background-color: $lesser-1;
 } */
 /* reset end */
+.phonePage {
+  display: none;
+}
+@media (max-width: 640px) {
+  .phonePage {
+    display: block;
+  }
+}
+
 #LearnPageExp {
   font-weight: 500;
   margin-top: -25px;

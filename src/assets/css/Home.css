@@ -166,6 +166,15 @@ a {
     background-color: $lesser-1;
 } */
 /* reset end */
+.phonePage {
+  display: none;
+}
+@media (max-width: 640px) {
+  .phonePage {
+    display: block;
+  }
+}
+
 @font-face {
   font-family: SweiGothicCJKtc-Regular;
   src: url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff) format("woff");
@@ -173,9 +182,19 @@ a {
 #Home-page-1 {
   background-color: #FFD640;
 }
+@media (max-width: 640px) {
+  #Home-page-1 {
+    display: none;
+  }
+}
 
 #Home-page-all2 {
   background-color: #FFD640;
+}
+@media (max-width: 640px) {
+  #Home-page-all2 {
+    display: none;
+  }
 }
 
 #Home-page-all {
@@ -948,4 +967,10 @@ a {
 .Home-ladder.active {
   transform: translateY(150px);
   /* 向右移動 100px */
+}
+
+@media (max-width: 640px) {
+  footer {
+    display: none;
+  }
 }/*# sourceMappingURL=Home.css.map */

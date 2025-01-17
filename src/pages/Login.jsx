@@ -3,6 +3,7 @@ import "../assets/scss/Login.scss"
 import Navbar from "../components/Navbar"
 import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
+import PhonePage from './PhonePage';
 
 export default function Login() {
 
@@ -112,6 +113,8 @@ export default function Login() {
                     </div>
                 )}
             </div>
+            <PhonePage></PhonePage>
+
         </>
     )
 }

@@ -173,3 +173,10 @@ a {
 
 
 /* reset end */
+
+.phonePage {
+    display: none;
+    @media (max-width:640px) {
+        display: block;
+    }
+}

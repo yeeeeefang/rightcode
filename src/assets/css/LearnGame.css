@@ -165,11 +165,25 @@ a {
     background-color: $lesser-1;
 } */
 /* reset end */
+.phonePage {
+  display: none;
+}
+@media (max-width: 640px) {
+  .phonePage {
+    display: block;
+  }
+}
+
 #LearnGame-page-all {
   background-color: #FFD640;
   overflow: hidden;
   height: 100vh;
   position: relative;
+}
+@media (max-width: 640px) {
+  #LearnGame-page-all {
+    display: none;
+  }
 }
 
 #LearnGame-page {

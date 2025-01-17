@@ -1,6 +1,7 @@
 import "../assets/css/Member.css"
 import Navbar from "../components/Navbar"
 import { Link } from 'react-router-dom'
+import PhonePage from "./PhonePage"
 
 export default function Member() {
     const awardNames = [
@@ -152,9 +153,9 @@ export default function Member() {
                             <h2>獎盃挑戰</h2>
                             <div className="award">
                                 <div className="aPic1"><img src="./images/award.svg" alt="" />
-                                <span className="awardName">我是獎盃名稱</span></div>
+                                    <span className="awardName">我是獎盃名稱</span></div>
                                 <div className="aPic1"><img src="./images/award.svg" alt="" />
-                                <span className="awardName">我是獎盃名稱</span></div>
+                                    <span className="awardName">我是獎盃名稱</span></div>
                             </div>
                         </div>
                     </div>
@@ -297,11 +298,10 @@ export default function Member() {
                             </div>
                         </div>
                     </section>
-
-
-
                 </div>
             </div>
+            <PhonePage></PhonePage>
+
 
         </>
     )

@@ -16,6 +16,9 @@
     overflow: hidden;
     height: 100vh;
     position: relative;
+    @media (max-width:640px) {
+        display: none;
+    }
 
     .LEPCss-img-top {
         position: absolute;

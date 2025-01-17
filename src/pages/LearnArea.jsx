@@ -7,6 +7,7 @@ import NavbarBack from '../components/NavbarBack';
 import Footer from '../components/Footer';
 import LearnAreaCollect from '../components/LearnAreaCollect';
 import '../assets/css/LearnArea.css';
+import PhonePage from './PhonePage';
 
 function LearnArea() {
     //每次點到時，都是從頂部開始
@@ -27,9 +28,10 @@ function LearnArea() {
                     <LearnArea3 />
                     <LearnArea4 />
                 </div>
-                <Footer/>
-                <LearnAreaCollect/>
+                <Footer />
+                <LearnAreaCollect />
             </div>
+            <PhonePage></PhonePage>
 
         </>
     )

@@ -165,11 +165,25 @@ a {
     background-color: $lesser-1;
 } */
 /* reset end */
+.phonePage {
+  display: none;
+}
+@media (max-width: 640px) {
+  .phonePage {
+    display: block;
+  }
+}
+
 #learnhome-page {
   overflow: hidden;
   background-color: #8ECAE6;
   height: 100vh;
   /* 最大的容器 */
+}
+@media (max-width: 640px) {
+  #learnhome-page {
+    display: none;
+  }
 }
 #learnhome-page .link-learn {
   width: 100%;

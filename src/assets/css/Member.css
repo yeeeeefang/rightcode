@@ -166,10 +166,24 @@ a {
     background-color: $lesser-1;
 } */
 /* reset end */
+.phonePage {
+  display: none;
+}
+@media (max-width: 640px) {
+  .phonePage {
+    display: block;
+  }
+}
+
 #nav {
   position: fixed;
   z-index: 10;
   width: 100%;
+}
+@media (max-width: 640px) {
+  #nav {
+    display: none;
+  }
 }
 
 #memberPage {
@@ -177,6 +191,11 @@ a {
   display: flex;
   justify-content: end;
   padding-top: 118px;
+}
+@media (max-width: 640px) {
+  #memberPage {
+    display: none;
+  }
 }
 #memberPage #member {
   display: flex;

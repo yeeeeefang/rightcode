@@ -6,6 +6,7 @@ import "../assets/css/LearnPageCss.css"
 import LearnPagePersonCss from "../components/LearnPagePersonCss"
 import NavbarBack from "../components/NavbarBack"
 import { useState } from "react"
+import PhonePage from "./PhonePage"
 
 
 function LearnPageCss() {
@@ -47,6 +48,8 @@ function LearnPageCss() {
                     </div>
                 </div>
             </section>
+            <PhonePage></PhonePage>
+
         </>
     )
 }

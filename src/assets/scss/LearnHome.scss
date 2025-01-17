@@ -5,6 +5,9 @@
     overflow: hidden;
     background-color: $learn-h1; // 背景藍
     height: 100vh;
+    @media (max-width:640px) {
+        display: none;
+    }
 
     .link-learn {
         width: 100%;

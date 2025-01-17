@@ -32,6 +32,7 @@ function LinkPage() {
                 <Link to='/Member'><p>進入會員頁</p></Link>
 
             </div>
+
         </>
     )
 }

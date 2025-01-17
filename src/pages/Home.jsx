@@ -6,10 +6,10 @@ import 'aos/dist/aos.css'
 import Aos from 'aos'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+import PhonePage from './PhonePage'
 
 
 function Home() {
-
     useEffect(() => {
         const handleMouseMove = (event) => {
             const eyes = [
@@ -456,6 +456,7 @@ function Home() {
             <footer>
                 <Footer></Footer>
             </footer>
+            <PhonePage></PhonePage>
         </>
 
     )

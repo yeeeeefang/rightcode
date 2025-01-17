@@ -165,6 +165,15 @@ a {
     background-color: $lesser-1;
 } */
 /* reset end */
+.phonePage {
+  display: none;
+}
+@media (max-width: 640px) {
+  .phonePage {
+    display: block;
+  }
+}
+
 #LearnAreaall4 {
   height: 110vh;
   background-color: #FFD640;

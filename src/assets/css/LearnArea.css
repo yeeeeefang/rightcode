@@ -165,8 +165,22 @@ a {
     background-color: $lesser-1;
 } */
 /* reset end */
+.phonePage {
+  display: none;
+}
+@media (max-width: 640px) {
+  .phonePage {
+    display: block;
+  }
+}
+
 #learnArea-a {
   background-color: #FFD640;
+}
+@media (max-width: 640px) {
+  #learnArea-a {
+    display: none;
+  }
 }
 #learnArea-a #la1 {
   background-image: url("../images/LearnArea-bg.svg");

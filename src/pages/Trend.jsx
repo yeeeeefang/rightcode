@@ -4,6 +4,7 @@ import "../assets/css/Trend.css"
 import Navbar from '../components/Navbar'
 import Footer from "../components/Footer";
 import { useEffect } from "react";
+import PhonePage from "./PhonePage";
 
 export default function Trend() {
   //每次點到時，都是從頂部開始
@@ -52,9 +53,11 @@ export default function Trend() {
       <section id="div2">
         <TrendCard2 />
       </section>
-      <section>
+      <section id="div3">
         <Footer />
       </section>
+      <PhonePage></PhonePage>
+
     </>
   )
 }

@@ -9,11 +9,18 @@
 
 #Home-page-1 {
     background-color: $primary;
+
+    @media (max-width:640px) {
+        display: none;
+    }
 }
 
 #Home-page-all2 {
     background-color: $primary;
 
+    @media (max-width:640px) {
+        display: none;
+    }
 }
 
 #Home-page-all {
@@ -385,6 +392,7 @@
     @media (max-width:1280px) {
         padding: 240px 0px 240px;
     }
+
     @media (max-width:1470px) {
         padding: 160px 0px 250px;
     }
@@ -467,10 +475,11 @@
                 @media (max-width:1366px) {
                     margin-bottom: 60px;
                 }
+
                 @media (max-width:1470px) {
                     margin-bottom: 120px;
                 }
-            
+
             }
         }
     }
@@ -917,3 +926,10 @@
     transform: translateY(150px);
     /* 向右移動 100px */
 }
+
+footer {
+    @media (max-width:640px) {
+        display: none;
+    }
+}
+

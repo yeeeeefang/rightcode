@@ -6,6 +6,7 @@ import LearnPagePerson from "../components/LearnPagePerson"
 import NavbarBack from "../components/NavbarBack"
 import { useState } from "react"
 import "../assets/css/LearnPage.css"
+import PhonePage from "./PhonePage"
 
 function LearnPage() {
 
@@ -46,6 +47,8 @@ function LearnPage() {
                     </div>
                 </div>
             </section>
+            <PhonePage></PhonePage>
+
         </>
     )
 }

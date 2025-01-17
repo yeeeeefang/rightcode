@@ -165,6 +165,15 @@ a {
     background-color: $lesser-1;
 } */
 /* reset end */
+.phonePage {
+  display: none;
+}
+@media (max-width: 640px) {
+  .phonePage {
+    display: block;
+  }
+}
+
 #LearnGameChooseall {
   background-color: #FFD640;
   width: 100%;
@@ -174,6 +183,11 @@ a {
   justify-content: center;
   align-items: center;
   position: relative;
+}
+@media (max-width: 640px) {
+  #LearnGameChooseall {
+    display: none;
+  }
 }
 #LearnGameChooseall .gamenavbar {
   width: 100%;
