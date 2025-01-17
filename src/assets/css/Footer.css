@@ -252,6 +252,12 @@ a {
   cursor: pointer;
   width: 48px;
 }
+.nav1 .foo .icon .iconfb:hover {
+  scale: 1.05;
+}
+.nav1 .foo .icon .iconig:hover {
+  scale: 1.05;
+}
 .nav1 .foo .footersamll {
   padding-top: 10px;
   text-align: right;
