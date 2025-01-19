@@ -26,7 +26,7 @@
 
         .characters {
             .green-char {
-                width: 180px;
+                width: 200px;
                 position: absolute;
                 top: -67px;
                 left: 380px;
@@ -38,7 +38,7 @@
         .red-char {
             width: 240px;
             position: absolute;
-            top: 420px;
+            top: 380px;
             left: 1200px;
             animation: float 2s ease-in-out infinite;
 
@@ -48,7 +48,7 @@
                 }
 
                 50% {
-                    transform: translateY(-20px); // 向上移動 10px（可調整）
+                    transform: translateY(10px); // 向上移動 10px（可調整）
                 }
 
                 100% {
@@ -127,6 +127,7 @@
 
                 .forgot-password {
                     text-align: right;
+                    text-decoration: underline;
                     color: $shadow-3;
                     font-size: 0.9rem;
                     margin-bottom: 16px;

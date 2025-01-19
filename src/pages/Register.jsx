@@ -41,14 +41,14 @@ export default function Register() {
                         <form>
                             <div className="register-form-content">
                                 {/* 使用者名稱 */}
-                                <label htmlFor="username">*姓名：</label>
+                                <label htmlFor="username">請輸入姓名：</label>
                                 <input type="text" id="username" title="姓名" placeholder="請輸入姓名" required
                                     {...register('username')} />
-                                <label htmlFor="email">*Email：</label>
+                                <label htmlFor="email">請輸入Email：</label>
                                 <input type="email" id="email" title="Email" placeholder="請輸入Email" required
                                     {...register('email')} />
 
-                                <label htmlFor="uesrpw">*請輸入密碼：</label>
+                                <label htmlFor="uesrpw">請輸入密碼：</label>
                                 <input type="password" id="uesrpw" title="密碼" placeholder="請輸入6~8英數混合字元"
                                     {...register('uesrpw')} />
                                 {/* <label  htmlFor="password-1">再次確認密碼</label>
